@@ -1,11 +1,11 @@
 ﻿=== CatalogX - Product Catalog Mode For WooCommerce ===
 Contributors: wcmp
-Tags: product inquiry, enquiry, woocommerce catalogue ,inquiry form, Product Catalog Features
+Tags: product enquiry, woocommerce catalog ,request a quote, Product Catalog, wordpress catalog
 Donate link: https://multivendorx.com/donate
 Requires at least: 5.0
-Tested up to: 6.6.1
+Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 5.0.9
+Stable tag: 5.0.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -159,6 +159,11 @@ Answer: Simply enable the 'Product Enquiry Button When Product is Out Of Stock' 
 10. Catalog Enquiry with MultiVendorX - Vendor Catalog Settings
 
 == Changelog ==
+
+= 5.0.10 - 2024-11-05 =
+* Added: Compatibility of WordPress 6.6.2.
+* Added: Compatibility of WooCommerce 9.3.3.
+* Fixed: Resolved fatal error issue.
 
 = 5.0.9 - 2024-09-10 =
 * Added: Compatibility of WordPress 6.6.1.

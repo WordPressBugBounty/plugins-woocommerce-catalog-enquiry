@@ -4,10 +4,10 @@
  * Plugin URI: https://multivendorx.com/
  * Description: Convert your WooCommerce store into a catalog website in a click
  * Author: MultiVendorX
- * Version: 5.0.9
+ * Version: 5.0.10
  * Author URI: https://multivendorx.com/
  * WC requires at least: 4.2
- * WC tested up to: 9.2.3
+ * WC tested up to: 9.3.3
  * Text Domain: woocommerce-catalog-enquiry
  * Domain Path: /languages/
 */
@@ -40,9 +40,9 @@ function woocommerce_catalog_enquiry_plugin_links( $links ) {
 }
 add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'woocommerce_catalog_enquiry_plugin_links' );
 
-add_filter( 'plugin_row_meta', 'plugin_row_meta', 10, 2 );
+add_filter( 'plugin_row_meta', 'pro_tag_add_in_plugin_row', 10, 2 );
 
-function plugin_row_meta( $links, $file ) {
+function pro_tag_add_in_plugin_row( $links, $file ) {
     if($file == 'woocommerce-catalog-enquiry/Woocommerce_Catalog_Enquiry.php' && apply_filters( 'woocommerce_catalog_enquiry_free_active', true )){
         $row_meta = array(
             'pro'    => '<a href="https://multivendorx.com/woocommerce-request-a-quote-product-catalog/" title="' . esc_attr( __( 'Upgrade to Pro', WOOCOMMERCE_CATALOG_ENQUIRY_TEXT_DOMAIN ) ) . '">' . __( 'Upgrade to Pro', WOOCOMMERCE_CATALOG_ENQUIRY_TEXT_DOMAIN ) . '</a>'
