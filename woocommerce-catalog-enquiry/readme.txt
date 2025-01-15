@@ -3,9 +3,9 @@ Contributors: wcmp
 Tags: product enquiry, woocommerce catalog ,request a quote, Product Catalog, wordpress catalog
 Donate link: https://multivendorx.com/donate
 Requires at least: 5.0
-Tested up to: 6.6.2
+Tested up to: 6.7.1
 Requires PHP: 7.4
-Stable tag: 5.0.10
+Stable tag: 5.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -159,6 +159,11 @@ Answer: Simply enable the 'Product Enquiry Button When Product is Out Of Stock' 
 10. Catalog Enquiry with MultiVendorX - Vendor Catalog Settings
 
 == Changelog ==
+
+= 5.0.11 - 2025-01-15 =
+* Added: Compatibility of WordPress 6.7.1.
+* Added: Compatibility of WooCommerce 9.5.2.
+* Added: Banner added.
 
 = 5.0.10 - 2024-11-05 =
 * Added: Compatibility of WordPress 6.6.2.

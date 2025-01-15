@@ -54,7 +54,59 @@ class Woocommerce_Catalog_Enquiry {
 		add_action('init', array(&$this, 'init'), 0);
 		// Catalog Email setup
 		add_filter('woocommerce_email_classes', array(&$this, 'woocommerce_catalog_enquiry_email_setup' ));
+		add_action('admin_notices', array($this, 'admin_service_page_notice'));
 	}
+
+	public function admin_service_page_notice() {
+        global $Woocommerce_Catalog_Enquiry;
+        ?>
+        <div class="mvx_admin_new_banner" id="mvx_service_banner">
+            <div class="mvx-banner-content">
+					<h1 class="mvx-banner-title">
+						<img src="<?php echo esc_url( $Woocommerce_Catalog_Enquiry->plugin_url . 'assets/images/img-1.png' ); ?>">
+						Something Extraordinary is Brewing at CatalogX
+						<img src="<?php echo esc_url( $Woocommerce_Catalog_Enquiry->plugin_url . 'assets/images/rocket.png' ); ?>">
+					</h1>
+					<p class="mvx-banner-description">
+						Hold onto your seats! We're about to unveil a game-changing CatalogX that'll revolutionize your experience!
+						<img src="<?php echo esc_url( $Woocommerce_Catalog_Enquiry->plugin_url . 'assets/images/img-2.png' ); ?>">
+					</p>                
+            </div>
+			<div class="button-section">
+				<a target="__blank" href="https://catalogx.com/latest-release/">Sneak Peek</a> 
+			</div>
+        </div>
+        <style>
+        .mvx_admin_new_banner{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:1rem;
+            padding:1rem;
+            border:.063rem solid #d4d1d9;
+            margin:3rem auto 1.5rem 0;
+            border-radius:.25rem;
+            width:95%;
+            background:url('<?php echo $Woocommerce_Catalog_Enquiry->plugin_url . 'assets/images/banner-back-color.jpg'; ?>') center/100% 100% no-repeat;
+            position:relative
+        } 
+		.mvx-banner-content h1,
+		.mvx-banner-content p{
+			color:white;
+		}
+		.mvx_admin_new_banner a{
+			background: white;
+			padding: 7px 15px 9px 15px;
+			font-size: 16px;
+			line-height: 16px;
+			color: black;
+			border-radius: 10px;
+			text-decoration:none;
+		}
+        
+        </style>
+        <?php
+    }
 	
 	/**
 	 * initilize plugin on WP init
