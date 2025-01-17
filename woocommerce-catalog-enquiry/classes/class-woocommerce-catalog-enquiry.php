@@ -55,10 +55,15 @@ class Woocommerce_Catalog_Enquiry {
 		// Catalog Email setup
 		add_filter('woocommerce_email_classes', array(&$this, 'woocommerce_catalog_enquiry_email_setup' ));
 		add_action('admin_notices', array($this, 'admin_service_page_notice'));
+		add_action('wp_ajax_dismiss_admin_service_notice', array( $this, 'dismiss_admin_service_notice' ));
 	}
 
 	public function admin_service_page_notice() {
         global $Woocommerce_Catalog_Enquiry;
+		// Check if the notice is already dismissed by the user
+        if ( get_option( 'admin_service_notice_dismissed', false ) ) {
+            return;
+        }
         ?>
         <div class="mvx_admin_new_banner" id="mvx_service_banner">
             <div class="mvx-banner-content">
@@ -70,7 +75,11 @@ class Woocommerce_Catalog_Enquiry {
 					<p class="mvx-banner-description">
 						Hold onto your seats! We're about to unveil a game-changing CatalogX that'll revolutionize your experience!
 						<img src="<?php echo esc_url( $Woocommerce_Catalog_Enquiry->plugin_url . 'assets/images/img-2.png' ); ?>">
-					</p>                
+					</p> 
+					<div class="rightside">
+                    <!-- Button to dismiss the notice -->
+                    <button id="dismiss_service_notice" type="button" class="notice-dismiss"></button>
+                </div>               
             </div>
 			<div class="button-section">
 				<a target="__blank" href="https://catalogx.com/latest-release/">Sneak Peek</a> 
@@ -105,7 +114,37 @@ class Woocommerce_Catalog_Enquiry {
 		}
         
         </style>
+		<script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $('#dismiss_service_notice').on('click', function() {
+                    var data = {
+                        action: 'dismiss_admin_service_notice'
+                    };
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '<?php echo esc_url(admin_url("admin-ajax.php")); ?>',
+                        data: data,
+                        success: function(response) {
+                            var banner = $('#mvx_service_banner');
+                            if (banner) {
+                                banner.remove();
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
         <?php
+    }
+	
+	public function dismiss_admin_service_notice() {
+        if ( current_user_can( 'manage_options' ) ) {
+            update_option( 'admin_service_notice_dismissed', true );
+            wp_send_json_success();
+        } else {
+            wp_send_json_error();
+        }
     }
 	
 	/**
