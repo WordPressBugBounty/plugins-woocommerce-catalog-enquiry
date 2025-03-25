@@ -1,583 +1,235 @@
-﻿=== CatalogX - Product Catalog Mode For WooCommerce ===
+=== CatalogX - Product Catalog Mode For WooCommerce ===
 Contributors: wcmp
 Tags: product enquiry, woocommerce catalog ,request a quote, Product Catalog, wordpress catalog
 Donate link: https://multivendorx.com/donate
 Requires at least: 5.0
-Tested up to: 6.7.1
+Tested up to: 6.7.2
 Requires PHP: 7.4
-Stable tag: 5.0.12
+Stable tag: 6.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Elevate your WooCommerce Shop with Product Catalog Mode For WooCommerce and Integrated Inquiry button for an engaging catalog experience 
+CatalogX: Powerful WooCommerce catalog plugin with integrated inquiry based quotation system and dynamic wholesale pricing for B2B eCommerce success.
+## Description
+Transform Your WooCommerce Store with CatalogX: Integrated Enquiry Based Quotation System & Advanced Wholesale/B2B Pricing Management.
 
-== Description ==
+Elevate your WooCommerce store with CatalogX, featuring a fully integrated enquiry system for seamless quote requests and advanced wholesale/B2B pricing management. Enhance your catalog experience by allowing customers to easily submit inquiries for each product via custom enquiry forms.
 
-### Best WooComerce Catalog Mode plugin with online Catalog mode and enquiry feature - product Catalog inquiry by WooComerce powered by WooComerce ###
-
-Transform your WooCommerce-powered online store into an interactive catalog with the Product Catalog Mode for WooCommerce plugin. Collect customer inquiries for each product effortlessly via email using dedicated custom inquiry forms. Tailor the form fields to your needs, and choose between a sleek inline or attention-grabbing pop-up display. With custom CSS options, you can seamlessly integrate the inquiry button into your website's theme. Elevate your online presence, drive conversions, and enhance visibility for unparalleled success.
+CatalogX streamlines the quotation process, enabling customers to request quotes directly from your site. Perfect for wholesale and B2B businesses, it simplifies the management of wholesale and role-based pricing. With extensive customization options, you can tailor the shopping experience to fit your unique business needs.
 
 = Features =
+🚫 Disable Purchase Options
+🛒 Replace Add-to-Cart button with a Custom Button.
+🔒 Hide product prices.
 📔 WooCommerce Catalog Mode
 💬 Product Inquiry
 📔 Hide Add to Cart
 💰Price Visibility Management
+🎨Enhanced Single Product Page Design
 📝Enquiry Form Customization
 ⚙️Variable Product Support
 👤Role-Based Management
-🤝[MultiVendorX](https://wordpress.org/plugin/dc-woocommerce-multi-vendor/) Compatibility
+📦Bulk Order Inquiry
+🔠WooCommerce Shortcodes
+🤝MultiVendor Support using [MultiVendorX](https://wordpress.org/plugin/dc-woocommerce-multi-vendor/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg) Compatibility
 
-[youtube https://www.youtube.com/watch?v=wuC8RhlDNKk]
+##👉 Want to see CatalogX in action? 
 
-🌐Explore our [Documentation](https://multivendorx.com/docs/knowledgebase/product-catalog-mode-for-woocommerce/?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry)
+ #🌐 Explore our [Documentation](https://catalogx.com/docs/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
-👉 Learn More About ([PRO](https://multivendorx.com/woocommerce-product-catalog-mode-pro-quote-request/?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry))
+ #👉 Learn More About [CatalogX PRO](https://catalogx.com/pricing/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
-✌️**Benefits**:
-
-* 🛒 Enable Catalog Mode for the Complete WooCommerce Site or Specific Product.
-* ❌ Hide 'Add to Cart' or enable simultaneous use of both 'Add to Cart' and 'Send Enquiry' [PRO].
-* 🔍 Gather inquiries for each variation of variable products.
-* 💲 Manage Price Visibility to Boost Lead Generation.
-* 🔘 Place Enquiry & Quote Request Buttons Anywhere using Shortcode.
-* 🔍 Attract potential buyers for 'Out of Stock' items by enabling users to inquire about them.
-* 🏗️ Incorporate an Inquiry Button on Pages Created with Your Preferred Page Builder.
-* 📈 Gain a Comprehensive Overview of Product Demand.
-* 🕒 Respond to Customers Efficiently and Save Time.
-* 👤 Role-Based Query Management.
-* 💌 Customize Emails and Quotations with Your Company Logo Attachment [PRO].
-* 🛒 Enable Inquiries for Bulk or High-Value Orders using the Enquiry Cart [PRO].
-* ✏️ Customize Your Inquiry Form [PRO].
-* 🛒 Monitor All Inquiries via an Inquiry Cart [PRO].
-* 🔍 Effortlessly Find Customer Quotations with Quick Search [PRO].
-* 🤝 Compatible with multivendor plugin MultiVendorX [PRO].
+ #👉 Try CatalogX [Free & Pro Demo](https://multivendordemo.com/catalogx/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
 
-## ➡️ Product Catalog Mode For Woocommerce Tools For A Perfect Catalog Site ##
+##✌️Catalog 
+
+The Catalog module 🛒 helps you create a tailored shopping experience by offering a private or catalog-only mode for your WooCommerce store. This feature is perfect for businesses that want to manage price visibility, attract specific customer segments, or operate a members-only store. By controlling how and when prices are displayed, you can increase lead generation and encourage customer inquiries, which can then be converted into sales 💬.
+
+#Key Features:
+🛍️ Enable Catalog Mode for the entire site or specific products to create a unique shopping experience.
+🔒 Create a private store by hiding prices and the add-to-cart button until users log in.
+🔄 Simultaneously use both 'Add to Cart' and 'Send Enquiry' options to capture different customer actions [PRO].
+🗂️ Collect inquiries for each variation of variable products to cater to specific customer needs.
+📈 Manage price visibility strategically to boost lead generation.
+
+##✌️ [Enquiry]
+The Enquiry Module is essential 📨 for businesses that want to engage with potential customers who have questions or are interested in bulk or high-value orders. By placing inquiry and quote request buttons strategically across your site, you make it easy for users to reach out, even for out-of-stock items. This module helps you capture leads, respond efficiently, and better understand product demand, all of which contribute to higher conversion rates and customer satisfaction.
+
+#Key Features:
+📍 Place Enquiry & Quote Request buttons anywhere using shortcode for maximum visibility.
+🔄 Allow users to inquire about 'Out of Stock' items, keeping them engaged with your store.
+🔗 Integrate an Inquiry Button on pages built with your preferred page builder for seamless functionality.
+🔍 Gain insights into product demand by tracking customer inquiries.
+⏱️ Improve response times and save effort with role-based query management.
+🛒 Enable bulk or high-value order inquiries using the Enquiry Cart [PRO].
+✏️ Customize your inquiry form to match your brand and gather the most relevant information [PRO].
+📊 Monitor and manage all inquiries efficiently via an Inquiry Cart [PRO].
+
+##✌️ [Quotation]
+The Quote Module is designed 💬 to help businesses that regularly deal with custom orders, bulk purchases, or high-value transactions. By allowing customers to request quotes directly from your product catalog, you open up new sales opportunities and streamline the buying process. This module is particularly useful for businesses in B2B, wholesale, or custom manufacturing, where personalized pricing and quick response times are critical for closing deals 💼.
+
+#Key Features:
+🔍 Quickly find customer quotations with the Quick Search feature [PRO].
+🤝 Ensure compatibility with MultiVendor plugins like [MultiVendorX](https://wordpress.org/plugin/dc-woocommerce-multi-vendor/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg) for a seamless experience [PRO].
+🛒 Enable visitors to request a quote for all or selected products, catering to different customer needs.
+🔐 Restrict quote requests to registered users to ensure qualified leads.
+📲 Receive instant notifications via Google Chat and SMS when a customer places a quote request, keeping you informed and responsive [Coming Soon].
+
+##✌️ [Wholesale]
+The Wholesale Module is perfect for businesses 🛒 that serve both retail and wholesale customers. This module helps you create distinct pricing structures, manage customer segments, and protect your retail pricing strategies. By offering exclusive wholesale pricing and preventing coupon use for wholesale customers, you can better manage your profit margins while still offering competitive deals to your business clients 💼.
+
+#Key Features:
+🛑 Hide retail prices from wholesale customers to focus on wholesale pricing strategies[PRO].
+🚫 Prevent WooCommerce coupons from being used by wholesale customers, protecting your margins[PRO].
+💲 Display both retail and wholesale prices to business users, offering transparency and flexibility[PRO].
+💸 Configure fixed amount or percentage discounts to suit different customer segments[PRO].
+🏷️ Set up different prices for each user or product to tailor your offerings [PRO].
+
+##✌️ [Dynamic Rule-Based Pricing] [PRO]
+The Dynamic Rule-Based Pricing module is a powerful tool 💪 for businesses looking to maximize sales through targeted pricing strategies. By creating custom discount rules based on user roles, product categories, and more, you can attract specific customer groups, encourage larger purchases, and optimize your pricing for different scenarios. This module is essential for businesses aiming to increase conversions, customer loyalty, and overall revenue through smart pricing techniques 💰.
+
+#Key Features:
+⚙️ Implement flexible pricing strategies to adapt to different customer needs and market conditions[PRO].
+🎯 Create custom discount rules that offer exclusive deals to specific user roles like subscribers or wholesale buyers[PRO].
+🏷️ Target promotions based on products, categories, or user roles to maximize sales potential [PRO].
+📊 Add multiple user role levels with corresponding pricing rules for greater pricing flexibility [PRO].
+🛒 Encourage larger purchases by offering tiered discounts based on product quantity or cart value [PRO].
+🔄 Apply discounts to individual products or entire categories, depending on your promotional strategy [PRO].
+📋 Prioritize pricing rules easily with a drag-and-drop interface, ensuring the most effective discounts are applied first [PRO].
+
+##✌️ [Real-Time Page Builder] [PRO]
+Description: The Real-Time Page Builder module empowers businesses ✨ to design and customize their WooCommerce shop pages without needing technical skills. This module is perfect for store owners who want to create a visually appealing and highly functional shop page that aligns with their brand. By offering real-time previews, drag-and-drop customization, and mobile-friendly design checks, this module helps you create a professional, conversion-optimized shopping experience that drives sales and enhances customer satisfaction 📈.
+
+#Key Features:
+🛠️ Transform your shop page in real-time with visual customization, seeing changes as you make them.
+🎨 Craft the perfect shop page with live editing, ensuring every element is just right before going live.
+👆 Move elements easily using drag-and-drop functionality, eliminating the need for technical skills.
+🎨 Control button placement and customize text, colors, and fonts to match your brand.
+🔗 Set up button actions to guide customer navigation, improving user experience and conversion rates.
+📱 Preview your shop page’s mobile-friendly design to ensure a seamless experience across devices.
+🔄 Experiment with new designs in a safe testing environment without affecting your live site.
+📊 Boost sales by strategically placing buttons where they'll get the most clicks.
+🎨 Easily match your brand’s style with custom color and font options, creating a cohesive look.
+
+##➡️ CatalogX - Woocommerce Tool For A Perfect B2B Site 
 
 In the competitive world of e-commerce, differentiation is key. Our ingenious WordPress WooCommere Product Catalog plugin allows you to effortlessly transform your website into a captivating, user-friendly catalog. Whether you're building a dedicated catalog site or adding catalog mode to your existing online store, we've got you covered!
 
-**🚀 Switch to Catalog Mode in a Snap**: Easily switch catalog mode on/off, display products attractively, encourage inquiries, and personalize pricing messages. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-mode-for-woocommerce/#general-settings?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀 Switch to Catalog Mode in a Snap: Easily switch catalog mode on/off, display products attractively, encourage inquiries, and personalize pricing messages. To Know More, [Click Here](https://catalogx.com/docs/catalog/#0-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-**🚀Hide Add to Cart:** Enable catalog mode to conceal the "Add to Cart" option, allowing you to display products even when you're unavailable. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-mode-for-woocommerce/#general-settings?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀Hide Add to Cart: Enable catalog mode to conceal the "Add to Cart" option, allowing you to display products even when you're unavailable. To Know More, [Click Here](https://catalogx.com/docs/catalog/#3-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-**🚀Out of Stock Product Enquiry**: Activate catalog mode for out-of-stock products, allowing inquiries and tracking customer interest effortlessly. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-mode-for-woocommerce/#general-settings?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀Out of Stock Product Enquiry: Activate catalog mode for out-of-stock products, allowing inquiries and tracking customer interest effortlessly. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#3-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-**🚀Hide Product Price:** Hide product prices and add to cart buttons effortlessly with this WordPress catalog plugin. Upgrade for personalized messages. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-mode-for-woocommerce/#general-settings?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀Hide Product Price: Hide product prices and add to cart buttons effortlessly with this WordPress catalog plugin. Upgrade for personalized messages. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#3-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-**🚀Personalise Enquiry Form [PRO]**: You can simply add, remove, or change fields in your enquiry form with the help of drag and drop enquiry form builder. Personalized inquiry forms provide administrators with tailored information, streamlining responses and improving user engagement. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-enquiry-pro/#enquiry-form-fieldsutm_source=wordpress.org?utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀Personalise Enquiry Form [PRO]: You can simply add, remove, or change fields in your enquiry form with the help of drag and drop enquiry form builder. Personalized inquiry forms provide administrators with tailored information, streamlining responses and improving user engagement. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#5-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-**🚀Choose Catalog Product Selection:** Tailor your catalog by selecting products to include or exclude, simplifying category-based listings without complex display filtering. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-mode-for-woocommerce/#exclusion?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀Choose Catalog Product Selection: Tailor your catalog by selecting products to include or exclude, simplifying category-based listings without complex display filtering. To Know More, [Click Here](https://catalogx.com/docs/exclusion/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-**🚀Customize the Enquiry Button:** Easily customize your WooCommerce enquiry cart button, including color, font size, radius, and CSS class options. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-mode-for-woocommerce/#-button-customiser?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀Customize the Enquiry Button: Easily customize your enquiry cart button, including color, font size, radius, and CSS class options. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#4-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-**🚀Role-Based Catalog Mode:** Activate catalog mode selectively by user login status and restrict access based on user roles like authors, vendors, etc. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-mode-for-woocommerce/#exclusion?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀Role-Based Catalog Mode: Activate catalog mode selectively by user login status and restrict access based on user roles like authors, vendors, etc. To Know More, [Click Here](https://catalogx.com/docs/dynamic-pricing-rules/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-**🚀Enquiry Cart [PRO]**: Get a bird’s eye view of all inquiries made by the customers using the benefit of enquiry cart. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-enquiry-pro/#enquiry-cart--multiple-product-enquiry-button-customizer?utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀Enquiry Cart [PRO]: Get a bird’s eye view of all inquiries made by the customers using the benefit of enquiry cart. 
 
-**🚀Enquiry List [PRO]:** Admins have a dedicated Enquiry List page to view, sort, and manage inquiries by customer, product, or enquiry number. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-enquiry-pro/#enquiry-form?utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
+🚀Enquiry List [PRO]: Admins have a dedicated Enquiry List page to view, sort, and manage inquiries by customer, product, or enquiry number.
 
-👉 Try Our Free and Pro [Demo](https://multivendordemo.com/product-catalog-enquiry-pro/wp-admin/)
-
-
-### **➡️ Upgrade to WooCommerce Product Catalog Mode Pro - Quote Request for Enhanced Features:**
-
-Unlock even more possibilities with WooCommerce Product Catalog Mode Pro - Quote Request:
-
-**🚀Activate Catalog and Sales Modes Simultaneously [PRO]**: Boost Sales with Combined Catalog and Sales Modes. Let Customers Inquire Before Making a Purchase Decision. To Know More, [Click Here](https://multivendorx.com/docs/knowledgebase/product-catalog-enquiry-pro/#common-settings?utm_medium=freelandingpage&utm_campaign=Catalogenquiry).
-
-**🚀Control Price Display [PRO]:** Easily toggle price visibility for catalog items. Admins can choose to hide or show product prices, and even replace them with informative messages like 'contact vendor' or 'coming soon.'
-
-**🚀Streamline Shopping with a Product Inquiry Cart [PRO]:** Offering a Product Inquiry Cart lets customers inquire about multiple products simultaneously, saving time and enhancing the shopping experience.
-
-**🚀Integrated Query Management System [PRO]:** Switching to Advanced mode offers real-time query management with an integrated system. Additionally, it stores all queries and responses for future evaluation.
-
-**🚀Tailor-Made Enquiry Form Customization [PRO]:** With WooCommerce Request a Quote & Product Catalog, you can freely design your form, adding fields as needed, unlike the free version with predefined questions.
-
-**🚀Manage and Customise Query Mails [PRO]:** Customize Inquiry Emails with Templates and Send Queries to Customers and Vendors Automatically.
-
-**🚀Make it Marketplace Ready:** Our Multivendor plugin, [MultiVendorX](https://multivendorx.com/?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry), integrates with Product Catalog Mode for WooCommerce. Vendors can view and respond to inquiries about their products from their dashboard.
-
-👉 Learn More About Pro: [WooCommerce Product Catalog Mode Pro - Quote Request](https://multivendorx.com/woocommerce-product-catalog-mode-pro-quote-request/?utm_source=wordpress.org&utm_medium=freelandingpage&utm_campaign=Catalogenquiry)
-
-👉 **Who Can Benefit from Product Catalog Mode**
-
-* 🛒 Online Retailers
-* 👩‍🍳 Small Business Owners
-* 🏭 Manufacturers and Wholesalers
-* 🏪 Local Businesses
-* 🚀 Startups
-* 🏡 The Real Estate
-* 🎨 Artists & Photographers
-* 💼 Service Oriented Businesses
-* 🤝 Consultants
-* 🌟 Non-Profit Organizers displaying Initiative and Fundraisers
-
-👉 **Shortcodes**:
-
-**🚀[wce_enquiry_button]**: You can display enquiry form using this shortcode anywhere. 
-
-**🚀[woocommerce_catalog_enquiry_cart]:**With this shortcode, display all products in the enquiry cart and send a single inquiry email for all items in the cart. [**PRO**]
+#👉 Try Our [Free & Pro Demo]
 
 
-== Frequently Asked Questions == 
+##➡️ Upgrade to [CatalogX Pro]
 
-= How do I enable Catalog mode on my site? =
+Unlock even more possibilities with CatalogXPro :
 
-Ans: Simply activate the 'Catalog Mode' settings, and the 'Add to Cart' button will be removed from your site.
+🚀Activate Catalog and Sales Modes Simultaneously [PRO]: Boost Sales with Combined Catalog and Sales Modes. Let Customers Inquire Before Making a Purchase Decision. To Know More, [Click Here](https://catalogx.com/docs/catalog/#3-toc-title).
+🚀Control Price Display [PRO]: Easily toggle price visibility for catalog items. Admins can choose to hide or show product prices, and even replace them with informative messages like 'contact vendor' or 'coming soon.'
 
-= Can I display both the Enquiry tab and the Add To Cart button simultaneously? =
+🚀Streamline Shopping with a Product Inquiry Cart [PRO]: Offering a Product Inquiry Cart lets customers inquire about multiple products simultaneously, saving time and enhancing the shopping experience.
 
-Ans: Yes, you can achieve this with our Pro version, WooCommerce Product Catalog Mode Pro - Quote Request, which allows you to keep both the 'Add to Cart' button and the Enquiry Tab.
+🚀Integrated Query Management System [PRO]: Switching to Advanced mode offers real-time query management with an integrated system. Additionally, it stores all queries and responses for future evaluation.
 
-= How can I show the 'Quote' tab on the product page? =
+🚀Tailor-Made Enquiry Form Customization [PRO]: With CatalogX Pro, you can freely design your form, adding fields as needed, unlike the free version with predefined questions.
 
-Ans: You can customize the button text through the Button Appearance Settings.
+🚀Manage and Customise Query Mails [PRO]: Customize Inquiry Emails with Templates and Send Queries to Customers and Vendors Automatically.
 
-= How do I respond to customer inquiries once they've been submitted? =
+🚀Make it Marketplace Ready: Our Multivendor plugin, MultiVendorX, integrates with [MultiVendorX](https://wordpress.org/plugin/dc-woocommerce-multi-vendor/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg) and CatalogX Pro. Vendors can view and respond to inquiries about their products from their dashboard.
 
-Ans: Administrators receive email notifications for each inquiry, allowing them to respond directly from their mailbox.
+#👉 Learn More About Pro: [CatalogX Pro](https://catalogx.com/pricing/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
-= Can I display the inquiry tab for specific products only? =
+#👉 Who Can Benefit from [CatalogX](https://catalogx.com/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
+Online Retailers
+Small Business Owners
+Manufacturers and Wholesalers
+Local Businesses
+Startups
+The Real Estate
+Artists & Photographers
+Service Oriented Businesses
+Consultants
+Non-Profit Organisers displaying Initiative and Fund Raisers.
 
-Ans: Yes, you can achieve this by using the exclusion settings to exclude products from catalog mode, thereby displaying the inquiry tab for other products.
+##👉 Shortcodes:
+🚀 <code>[catalogx_enquiry_cart_button]</code> = Displays the "Add to Enquiry Cart" button.
+🚀 <code>[catalogx_enquiry_button]</code> = Displays the "Add to Enquiry" button.
+🚀 <code>[catalogx_quote_button]</code> =Displays the "Add to Quote" button.
+🚀 <code> [wholesale_products] </code> = Creates a page listing all wholesale products, enabling wholesalers to easily purchase multiple items in one transaction. [PRO]
+🚀 <code>[catalogx_request_quote] </code> = Displays a list of products for which users have requested quotes, making it easy to review all requests. 
+🚀 <code>[catalogx_enquiry_cart]</code> = Display all products in the enquiry cart and send a single inquiry email for all items in the cart.[PRO]
 
-= How can I display the enquiry button only for out-of-stock products? =
+== Installation ==
+NOTE: MultiVendorX plugin is an extension of WooCommerce, so the WooCommerce plugin must be installed and activated in your WordPress site for this plugin to work properly.
 
+1. Download and install CatalogX plugin using the built-in WordPress plugin installer.
+If you download CatalogX plugin manually, make sure it is uploaded to `/wp-content/plugins/` and activate the plugin through the `Plugins` menu in WordPress. Or follow the steps below:
+Plugins > Add new > Upload plugin > Upload catalogx.zip > Install Now > Activate Plugin.
+2. Configure as you see fit, under CatalogX/ Settings.
+3. Configure module CatalogX/ Modules.
+5. Configure Settings CatalogX / Settings.
+
+== Frequently Asked Questions ==
+=How do I enable Catalog mode on my site?=
+Answer: Simply activate the 'Catalog Mode' settings, and the 'Add to Cart' button will be removed from your site.
+
+=Can I display both the Enquiry tab and the Add To Cart button simultaneously?=
+Answer: Yes, you can achieve this with our Pro version, WooCommerce Product Catalog Mode Pro - Quote Request, which allows you to keep both the 'Add to Cart' button and the Enquiry Tab.
+
+=How can I show the 'Quote' tab on the product page?=
+Answer: You can customize the button text through the Button Appearance Settings.
+
+=How do I respond to customer inquiries once they've been submitted?=
+Answer: Administrators receive email notifications for each inquiry, allowing them to respond directly from their mailbox.
+
+=Can I display the inquiry tab for specific products only?=
+Answer: Yes, you can achieve this by using the exclusion settings to exclude products from catalog mode, thereby displaying the inquiry tab for other products.
+
+=How can I display the enquiry button only for out-of-stock products?=
 Answer: Simply enable the 'Product Enquiry Button When Product is Out Of Stock' option to activate the enquiry button for out-of-stock products.
-   
 == Screenshots ==
-1. Enquiry Form Builder
-2. Exclusion Rules
-3. Enquiry Email Templates
-4. Enquiry Button Settings
-5. Catalog General Settings
-6. Enquiry Admin Dashboard
-7. Single Product Enquiry Option 
-8. Enquiry Form
-9. Enquiry Cart
-10. Catalog Enquiry with MultiVendorX - Vendor Catalog Settings
+
+1. Catalog Mode in action
+2. Enquiry Module interface
+3. Quotation Module dashboard
+4. Wholesale pricing setup
+5. Dynamic Rule-Based Pricing configuration
+6. Real-Time Page Builder interface
+7. Enquiry Dashbaord
 
 == Changelog ==
+= 6.0.0 - 2025-03-25 =
+* Added     - Compatibility of WordPress 6.7.2.
+* Added     - Compatibility of WooCommerce 9.7.1.
+* Added     - CatalogX released.
+* Added     - Revamped Settings Panel for a more streamlined and intuitive interface.
+* Added     - Introduced Module-wise Structure for better organization and management..
+* Added     - Implemented Wholesale Flow for efficient bulk ordering.
+* Enhanced  - Enhanced Structure for improved navigation and usability.
+* Enhanced  - Optimized Coding for better performance and stability.
+* Updated   - Language file.
 
-= 5.0.12 - 2025-01-17 =
-* Added: Banner can be closed.
-
-= 5.0.11 - 2025-01-15 =
-* Added: Compatibility of WordPress 6.7.1.
-* Added: Compatibility of WooCommerce 9.5.2.
-* Added: Banner added.
-
-= 5.0.10 - 2024-11-05 =
-* Added: Compatibility of WordPress 6.6.2.
-* Added: Compatibility of WooCommerce 9.3.3.
-* Fixed: Resolved fatal error issue.
-
-= 5.0.9 - 2024-09-10 =
-* Added: Compatibility of WordPress 6.6.1.
-* Added: Compatibility of WooCommerce 9.2.3.
-* Fixed: The "Enquiry" button was missing for variable products when the "Remove Product Price" option was enabled
-
-= 5.0.8 - 2024-06-18 =
-* Added: Compatibility of WordPress 6.5.4.
-* Added: Compatibility of WooCommerce 8.9.3.
-* Fixed: Issue with redirect option #40.
-* Fixed: Issue with Enquiry button for variable products #33.
-
-= 5.0.7 - 2024-02-13 =
-* Added: Compatibility of WordPress 6.4.3.
-* Added: Compatibility of WooCommerce 8.5.2.
-* Fixed: Few deprecated code #32.
-* Fixed: Role wise exclusion not working #13.
-
-= 5.0.6 - 2024-01-24 =
-* Fixed: Rest API related Vulnerability issue.
-
-= 5.0.5 - 2024-01-11 =
-* Fixed: The enquiry submit button was not working. We have added a fix for that and now the button is working accordingly.
-
-= 5.0.4 - 2024-01-10 =
-* Added: Compatibility of WordPress 6.4.2.
-* Added: Compatibility of WooCommerce 8.4.0.
-* Fixed: Enhanced PHP warning compatibility.
-* Fixed: Improved Enquiry Form security by implementing a key verification mechanism. Now, the form can only be submitted if the correct security key is provided, preventing submission with an incorrect key.
-* Updated: Language file.
-
-= 5.0.3 - 2023-11-03 =
-* Added: Compatibility of WordPress 6.3.2.
-* Added: Compatibility of WooCommerce 8.2.1.
-* Added: Variation product catalog tamplate override compatibility.
-* Fixed: Vulnerability issue.
-* Updated: Language file.
-
-= 5.0.2 - 2023-06-19 =
-* Added: Compatibility of WordPress 6.2.2.
-* Added: Compatibility of WooCommerce 7.8.0.
-* Fixed: Custom button color not working #7.
-* Fixed: Warning in frontend #6.
-* Updated: Language file.
-
-= 5.0.1 - 2023-03-20 =
-* Added: Compatibility of WooCommerce 7.5.0.
-* Fixed: Email Issue #2.
-* Updated: Language file.
-
-= 5.0.0 - 2023-03-14 =
-* Added: Compatibility of WordPress 6.1.1
-* Added: Compatibility of WooCommerce 7.4.1.
-* Added: Compatibility of PHP 8.0.7.
-* Added: Product Catalog Enquiry released.
-* Updated: Language file.
-
-= 4.0.9 - 2022-07-07 =
-* Added: Compatibility of WordPress 6.1.
-* Added: Compatibility of WooCommerce 7.1.0.
-* Added: Compatibility with MultiVendorX.
-* Updated: Language file.
-
-= 4.0.8 - 2022-07-07 =
-* Added: Compatibility of WordPress 6.0.
-* Added: Compatibility of WooCommerce 6.6.1.
-* Enhancement: Coding structure enhancement.
-* Fixed: WordPress screen checking update.
-* Fixed: Securing (escaping) Output.
-* Fixed: Live preview link update.
-* Updated: Language file.
-
-= 4.0.7 - 2022-03-24 =
-* Added: Compatibility of WordPress 5.9.2.
-* Added: Compatibility of WooCommerce 6.3.1.
-* Fixed: Filter added for slow admin backend loading.
-* Fixed: Manage stock issue
-* Updated: Language file.
-
-= 4.0.6 - 2022-01-22 =
-* Added: Compatibility of WordPress 5.9.
-* Added: Compatibility of WooCommerce 6.1.1.
-* Added: Setting in the admin where the admin can decide to add the product enquiry button when the product is not in stock.
-* Updated: Language file.
-
-= 4.0.5 - 2021-06-15 =
-* Added: Compatibility of WordPress 5.7.2.
-* Added: Compatibility of WooCommerce 5.4.1.
-* Added: Compatibility of PHP 8.0.6.
-* Fixed: Dynamic title not working #35.
-* Fixed: Translation issue #33.
-* Updated: Language file.
-
-= 4.0.4 - 2021-01-12 =
-* Fixed: Redirect page not working #28.
-* Fixed: Enquiry tab under product showing blank #26.
-
-= 4.0.3 - 2020-12-21 =
-* Added: Compatibility of WordPress 5.6.
-* Added: PHP 7.4.3 compatibility.
-* Fixed: Remove admin email issue #25.
-* Fixed: Additional email send issue #23.
-* Fixed: Error display at cart.
-
-= 4.0.2 - 2020-12-02 =
-* Fixed: Enquiry from submit if enquiry about checkbox is enabled.
-* Fixed: Dynamic names of from fields is not showing.
-* Fixed: User roles exclution issue fixed.
-
-= 4.0.1 - 2020-12-01 =
-* Fixed: File structure fixed.
-
-= 4.0 - 2020-11-26 =
-* Added: New UI Added.
-* Added: PHP 7.4 compatibility.
-* Fixed: Enquiry from loading issue.
-* Fixed: Ternary operator error fixed.
-* Updated: Language file.
-
-= 3.2.2 =
-* Added: Exclusion settings for user roles.
-* Tweak: Backend settings dropdown UI.
-* Tweak: Calatog data session storing replaced with transients.
-* Fixed: Remove catalog orderby price dropdown option based on settings.
-* Fixed: Duplicate button click issue.
-* Fixed: Rest API critical site health issue.
-* Updated: Language file.
-
-= 3.2.1 =
-* Added: WooCommerce 3.6+ compatibility.
-* Added: Emquiry button shortcode [wce_enquiry_button].
-
-= 3.2.0 =
-* Added: Wordpress 5.0+ compatibility.
-* Fixed: Inline settings css issue with W3 validation.
-* Fixed: Custom button classes issue.
-* Updated: Language file.
-
-= 3.1.9 =
-* Added: Woocommerce 3.5.1 compatibility.
-* Added: Catalog button position filter.
-* Fixed: Minor script issue.
-
-= 3.1.8 =
-* Fixed: Archive page add to cart link filter params.
-* Fixed: Minor script issue.
-
-= 3.1.7 =
-* Fixed: Post permalink issue.
-* Tweak: 'redirect_cart_checkout_on_conditions' functionality.
-* Updated - Language file.
-
-= 3.1.6 =
-* Enhancement: Enquiry pop-up styling and responsive.
-* Fixed: Jquery window load issue.
-* Fixed: Widget post url issue.
-
-= 3.1.5 =
-* Added: Enquiry mail failed mail server messages added.
-* Fixed: Some minor css issues.
-
-= 3.1.4 =
-* Fixed: Product variations data issue.
-* Added: Some hooks/filters for third party development.
-
-= 3.1.3 =
-* Added: WC Catalog Enquiry admin Email heading and subject customization.
-* Added: Product variation info in enquiry admin email.
-
-= 3.1.2 =
-* Added: Woocommerce 3.1.1 compatibility.
-
-= 3.1.1 =
-* Fix: Fixed remotely called scripts issue and used wordpress defined scripts.
-
-= 3.1.0 =
-* Major Fix: Fixed the vulnerability issue related with File upload. We have changed the File Save logic. Changed the file save location from wp_upload to temp directory to avoid any exploits.
-
-= 3.0.5 =
-* Fixed - Fixed minor issues
-
-= 3.0.4 =
-* Added: Support for Loco Translate plugin.
-* Added: POT file in language folder
-* Updated: Plugin text domain from Woocommerce_Catalog_Enquiry to woocommerce-catalog-enquiry
-* Updated: Language files.
-* Fixed - Fixed minor issues
-
-= 3.0.3 =
-* Fix - Fixed minor issues
-
-= 3.0.2 =
-* Added - WC Email Template added
-* Fix - Fixed some data issues
-
-= 3.0.1 =
-* Woocommerce 3.0.4 compatibility added
-* Fix - Fixed PopUp issue
-
-= 2.3.8 =
-* WooCOmmerce 3.0.0 compatibility added
-* Fix - Excluded Product variation add to cart issue fixed
-
-= 2.3.7 =
-* Launched - WC Catalog Enquiry Pro (MultiVendorX)
-
-= 2.3.6 =
-* Added – Product single variation section (Description, Price, and Availability) added. 
-* Fix – Enquiry Success message issue fixed.
-
-= 2.3.5 =
-* Added – Popup Backdrop enable/disable settings added. 
-* Fix – Minor css issues fixed.
-
-= 2.3.4 =
-* Fix – Removed Bootstrap from plugins. 
-* Fix – Minor css/js issues fixed. 
-
-= 2.3.3 =
-* Fix - Variable product Image in product single page.
-* Added - FileUpload features in enquiry form.
-
-= 2.3.2 =
-* Fix - Enquiry button in the product listing page.
-
-= 2.3.1 =
-* Fix - Blank text issue of enquiry button.
-* Added - Support latest WooCommerce 2.4.4.
-
-= 2.3.0 =
-* Feature - Simple and variable product SKU is added in enquiry email.
-* Feature - Default attributes selection of variable products.
-* Feature - Settings option added for override admin email with other email.
-* Feature - Settings option added for override the form headings with custom headings.
-* Feature - Settings option added for remove enquiry popup with same page enquiry form.
-* Feature - Settings option added for redirect the page after enquiry.
-* Fix - Variable word removed from the variable products details page.
-* Fix - Email validation added in enquiry form.
-* Fix - Many small CSS fixing.
-
-= 2.2.1 =
-* Removed the mandatory field from disable/enable settings (Name and Email). 
-* New captcha enable/disable settings added.
-* New settings section introduce Form Fields Label settings. where admin can put his/her own custom label for enquiry form fields.
-
-= 2.2.0 =
-* Fix - Some notice message is fixed in this version.
-* Feature - "Variation product" support added in this version.
-
-= 2.1.0 =
-* Multiple admin email address can be added for getting enquiry mail
-* Settings panel is added to customize catalog enquiry button
-
-= 2.0.3 =
-* Minor changes in form content
-
-= 2.0.2 =
-* Minor changes to support latest WooCommerce 2.3.10
-
-= 2.0.1 =
-* Price display in single page issue fixed.
-
-= 2.0.0 =
-* Settings menu moved under the WooCommerce section.
-* Restricted store features added in this version.
-* New exclusion settings panel introduce in this version.
-* Cart and catalog both working at the same time as per the admin configuration 
-
-= 1.0.1 =
-* Minor changes to make it compatible with other major plugins.
-
-= 1.0.0 =
-* Initial version release.
+Initial release
 
 == Upgrade Notice ==
-= 3.1.7 =
-* Fixed: Post permalink issue.
-* Tweak: 'redirect_cart_checkout_on_conditions' functionality.
-* Updated - Language file.
-
-= 3.1.6 =
-* Enhancement: Enquiry pop-up styling and responsive.
-* Fixed: Jquery window load issue.
-* Fixed: Widget post url issue.
-
-= 3.1.5 =
-* Added: Enquiry mail failed mail server messages added.
-* Fixed: Some minor css issues.
-
-= 3.1.4 =
-* Fixed: Product variations data issue.
-* Added: Some hooks/filters for third party development.
-
-= 3.1.3 =
-* Added: WC Catalog Enquiry admin Email heading and subject customization.
-* Added: Product variation info in enquiry admin email.
-
-= 3.1.2 =
-* Added: Woocommerce 3.1.1 compatibility.
-
-= 3.1.1 =
-* Fix: Fixed remotely called scripts issue and used wordpress defined scripts.
-
-= 3.1.0 =
-* Major Fix : Fixed the vulnerability issue related with File upload. We have changed the File Save logic. Changed the file save location from wp_upload to temp directory to avoid any exploits.
-
-= 3.0.5 =
-* Fixed - Fixed minor issues
-
-= 3.0.4 =
-* Added: Support for Loco Translate plugin.
-* Added: POT file in language folder
-* Updated: Plugin text domain from Woocommerce_Catalog_Enquiry to woocommerce-catalog-enquiry
-* Updated: Language files.
-* Fixed - Fixed minor issues
-
-= 3.0.3 =
-* Fix - Fixed minor issues
-
-= 3.0.2 =
-* Added - WC Email Template added
-* Fix - Fixed some data issues
-
-= 3.0.1 =
-* Woocommerce 3.0.4 compatibility added
-* Fix - Fixed PopUp issue
-
-= 2.3.8 =
-* WooCOmmerce 3.0.0 compatibility added
-* Fix - Excluded Product variation add to cart issue fixed
-
-= 2.3.7 =
-* Launched - WC Catalog Enquiry Pro (MultiVendorX)
-
-= 2.3.6 =
-* Added – Product single variation section (Description, Price and Availability) added. 
-* Fix – Enquiry Success message issue fixed.
-
-= 2.3.5 =
-* Added – Popup Backdrop enable/disable settings added. 
-* Fix – Minor css issues fixed.
-
-= 2.3.4 =
-* Fix – Removed Bootstrap from plugins. 
-* Fix – Minor css/js issues fixed. 
-
-= 2.3.3 =
-* Fix - Variable product Image in product single page.
-* Added - FileUpload features in enquiry form.
-
-= 2.3.2 =
-* Fix - Enquiry button in the product listing page.
-
-= 2.3.1 =
-* Fix - Blank text issue of enquiry button.
-* Added - Support latest WooCommerce 2.4.4.
-
-= 2.3.0 =
-* Feature - Simple and variable product SKU is added in enquiry email.
-* Feature - Default attributes selection of variable products are added.
-* Feature - Settings option added to override admin email with other email.
-* Feature - Settings option added to override the form headings with custom headings.
-* Feature - Settings option added to remove enquiry popup with same page enquiry form.
-* Feature - Settings option added to redirect the page after enquiry.
-* Fix - Variable word removed from the variable products' details page.
-* Fix - Email validation added in enquiry form.
-* Fix - Many small css fixing.
-
-= 2.3.0 =
-* variable product text removed from product single product.
-
-= 2.2.1 =
-* Removed the mandatory field from disable/enable settings (Name and Email). 
-* New captcha enable/disable settings added.
-* New settings section introduce Form Fields Label settings. where admin can put his/her own custom label for enquiry form fields.
-
-= 2.2.0 =
-* Fix - Some notice message is fixed in this version.
-* Feature - "Variation product" support added in this version.
-
-= 2.1.0 =
-* Multiple admin email address can be added for getting enquiry mail
-* Settings panel is added to customize catalog enquiry button
-
-= 2.0.3 =
-* Minor changes in form content
-
-= 2.0.2 =
-* Minor changes to support latest WooCommerce 2.3.10
-
-= 2.0.1 =
-* Price display in single page issue fixed.
-
-= 2.0.0 =
-* Settings menu moved under the WooCommerce section.
-* Restricted store features added in this version.
-* New exclusion settings panel introduce in this version.
-* Cart and catalog both working at the same time as per the admin configuration 
-
-= 1.0.1 =
-* Minor changes to make it compatible with other major plugins.
-
-= 1.0.0 =
-* Initial version release.
-
-== Upgrade Notice ==
-
-= 5.0.0 =
-5.0.0+ is a major update. Make a full site backup and [review latest release](https://multivendorx.com/docs/knowladgebase/wc-catalogue-enquiry/) before upgrading your marketplace to avoid any undesirable situations.
+= 1.0 =
+This is the initial release of CatalogX.

@@ -1,9 +1,15 @@
 import { render } from '@wordpress/element';
-import Catalog from './admin/catalog';
+import { BrowserRouter } from 'react-router-dom';
+import App from './app.js';
 
-/**
- * Import the stylesheet for the plugin.
- */
-//import './style/main.scss';
-// Render the App component into the DOM
-render( <Catalog />, document.getElementById( 'mvx-admin-catalog' ) );
+
+import './style/common.scss';
+
+const MainApp = () => (
+
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+);
+
+render(<MainApp />, document.getElementById('admin-main-wrapper'));
