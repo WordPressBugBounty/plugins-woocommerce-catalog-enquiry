@@ -1,22 +1,20 @@
 === CatalogX - Product Catalog Mode For WooCommerce ===
 Contributors: wcmp
-Tags: product enquiry, woocommerce catalog ,request a quote, Product Catalog, wordpress catalog
+Tags: product catalog, b2b , dynamic pricing, wholesale pricing, request a quote
 Donate link: https://multivendorx.com/donate
-Requires at least: 5.0
+Requires at least: 6.4
 Tested up to: 6.7.2
-Requires PHP: 7.4
-Stable tag: 6.0.0
+Requires PHP: 8.0
+Stable tag: 6.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-CatalogX: Powerful WooCommerce catalog plugin with integrated inquiry based quotation system and dynamic wholesale pricing for B2B eCommerce success.
+CatalogX: Integrated Enquiry Based Quotation System & Advanced Wholesale/B2B Pricing Management.
 ## Description
-Transform Your WooCommerce Store with CatalogX: Integrated Enquiry Based Quotation System & Advanced Wholesale/B2B Pricing Management.
 
-Elevate your WooCommerce store with CatalogX, featuring a fully integrated enquiry system for seamless quote requests and advanced wholesale/B2B pricing management. Enhance your catalog experience by allowing customers to easily submit inquiries for each product via custom enquiry forms.
+Elevate your WooCommerce store with CatalogX, featuring a fully integrated enquiry system for seamless quote requests and advanced wholesale/B2B pricing management. With Catalog Mode, you can showcase your products without displaying prices and remove the 'Add to Cart' button, encouraging customers to submit enquiries for each item via custom enquiry forms.
 
 CatalogX streamlines the quotation process, enabling customers to request quotes directly from your site. Perfect for wholesale and B2B businesses, it simplifies the management of wholesale and role-based pricing. With extensive customization options, you can tailor the shopping experience to fit your unique business needs.
-
 = Features =
 🚫 Disable Purchase Options
 🛒 Replace Add-to-Cart button with a Custom Button.
@@ -53,7 +51,7 @@ The Catalog module 🛒 helps you create a tailored shopping experience by offer
 🗂️ Collect inquiries for each variation of variable products to cater to specific customer needs.
 📈 Manage price visibility strategically to boost lead generation.
 
-##✌️ [Enquiry]
+##✌️Enquiry
 The Enquiry Module is essential 📨 for businesses that want to engage with potential customers who have questions or are interested in bulk or high-value orders. By placing inquiry and quote request buttons strategically across your site, you make it easy for users to reach out, even for out-of-stock items. This module helps you capture leads, respond efficiently, and better understand product demand, all of which contribute to higher conversion rates and customer satisfaction.
 
 #Key Features:
@@ -66,7 +64,7 @@ The Enquiry Module is essential 📨 for businesses that want to engage with pot
 ✏️ Customize your inquiry form to match your brand and gather the most relevant information [PRO].
 📊 Monitor and manage all inquiries efficiently via an Inquiry Cart [PRO].
 
-##✌️ [Quotation]
+##✌️Quotation
 The Quote Module is designed 💬 to help businesses that regularly deal with custom orders, bulk purchases, or high-value transactions. By allowing customers to request quotes directly from your product catalog, you open up new sales opportunities and streamline the buying process. This module is particularly useful for businesses in B2B, wholesale, or custom manufacturing, where personalized pricing and quick response times are critical for closing deals 💼.
 
 #Key Features:
@@ -76,7 +74,7 @@ The Quote Module is designed 💬 to help businesses that regularly deal with cu
 🔐 Restrict quote requests to registered users to ensure qualified leads.
 📲 Receive instant notifications via Google Chat and SMS when a customer places a quote request, keeping you informed and responsive [Coming Soon].
 
-##✌️ [Wholesale]
+##✌️Wholesale [PRO]
 The Wholesale Module is perfect for businesses 🛒 that serve both retail and wholesale customers. This module helps you create distinct pricing structures, manage customer segments, and protect your retail pricing strategies. By offering exclusive wholesale pricing and preventing coupon use for wholesale customers, you can better manage your profit margins while still offering competitive deals to your business clients 💼.
 
 #Key Features:
@@ -86,8 +84,8 @@ The Wholesale Module is perfect for businesses 🛒 that serve both retail and w
 💸 Configure fixed amount or percentage discounts to suit different customer segments[PRO].
 🏷️ Set up different prices for each user or product to tailor your offerings [PRO].
 
-##✌️ [Dynamic Rule-Based Pricing] [PRO]
-The Dynamic Rule-Based Pricing module is a powerful tool 💪 for businesses looking to maximize sales through targeted pricing strategies. By creating custom discount rules based on user roles, product categories, and more, you can attract specific customer groups, encourage larger purchases, and optimize your pricing for different scenarios. This module is essential for businesses aiming to increase conversions, customer loyalty, and overall revenue through smart pricing techniques 💰.
+##✌️Dynamic Rule-Based Pricing [PRO]
+The Dynamic Rule-Based Pricing module is a powerful tool 💪 for businesses looking to maximize sales through targeted pricing strategies. By creating custom discount rules based on user roles, product categories, and more, you can attract specific customer groups, encourage larger purchases, and optimize your pricing for different scenarios. This module is essential for businesses aiming to increase conversions, customer loyalty, and overall revenue through smart pricing techniques💰.
 
 #Key Features:
 ⚙️ Implement flexible pricing strategies to adapt to different customer needs and market conditions[PRO].
@@ -98,8 +96,8 @@ The Dynamic Rule-Based Pricing module is a powerful tool 💪 for businesses loo
 🔄 Apply discounts to individual products or entire categories, depending on your promotional strategy [PRO].
 📋 Prioritize pricing rules easily with a drag-and-drop interface, ensuring the most effective discounts are applied first [PRO].
 
-##✌️ [Real-Time Page Builder] [PRO]
-Description: The Real-Time Page Builder module empowers businesses ✨ to design and customize their WooCommerce shop pages without needing technical skills. This module is perfect for store owners who want to create a visually appealing and highly functional shop page that aligns with their brand. By offering real-time previews, drag-and-drop customization, and mobile-friendly design checks, this module helps you create a professional, conversion-optimized shopping experience that drives sales and enhances customer satisfaction 📈.
+##✌️Real-Time Page Builder [PRO]
+The Real-Time Page Builder module empowers businesses ✨ to design and customize their WooCommerce shop pages without needing technical skills. This module is perfect for store owners who want to create a visually appealing and highly functional shop page that aligns with their brand. By offering real-time previews, drag-and-drop customization, and mobile-friendly design checks, this module helps you create a professional, conversion-optimized shopping experience that drives sales and enhances customer satisfaction 📈.
 
 #Key Features:
 🛠️ Transform your shop page in real-time with visual customization, seeing changes as you make them.
@@ -136,12 +134,12 @@ In the competitive world of e-commerce, differentiation is key. Our ingenious Wo
 
 🚀Enquiry List [PRO]: Admins have a dedicated Enquiry List page to view, sort, and manage inquiries by customer, product, or enquiry number.
 
-#👉 Try Our [Free & Pro Demo]
+#👉 Try Our [Free & Pro Demo](https://multivendordemo.com/catalogx/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
 
-##➡️ Upgrade to [CatalogX Pro]
+##➡️ Upgrade to CatalogX Pro
 
-Unlock even more possibilities with CatalogXPro :
+Unlock even more possibilities with CatalogX Pro :
 
 🚀Activate Catalog and Sales Modes Simultaneously [PRO]: Boost Sales with Combined Catalog and Sales Modes. Let Customers Inquire Before Making a Purchase Decision. To Know More, [Click Here](https://catalogx.com/docs/catalog/#3-toc-title).
 🚀Control Price Display [PRO]: Easily toggle price visibility for catalog items. Admins can choose to hide or show product prices, and even replace them with informative messages like 'contact vendor' or 'coming soon.'
@@ -159,16 +157,16 @@ Unlock even more possibilities with CatalogXPro :
 #👉 Learn More About Pro: [CatalogX Pro](https://catalogx.com/pricing/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
 #👉 Who Can Benefit from [CatalogX](https://catalogx.com/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
-Online Retailers
-Small Business Owners
-Manufacturers and Wholesalers
-Local Businesses
-Startups
-The Real Estate
-Artists & Photographers
-Service Oriented Businesses
-Consultants
-Non-Profit Organisers displaying Initiative and Fund Raisers.
+* Online Retailers
+* Small Business Owners
+* Manufacturers and Wholesalers
+* Local Businesses
+* Startups
+* The Real Estate
+* Artists & Photographers
+* Service Oriented Businesses
+* Consultants
+* Non-Profit Organisers displaying Initiative and Fund Raisers.
 
 ##👉 Shortcodes:
 🚀 <code>[catalogx_enquiry_cart_button]</code> = Displays the "Add to Enquiry Cart" button.
@@ -217,6 +215,10 @@ Answer: Simply enable the 'Product Enquiry Button When Product is Out Of Stock' 
 7. Enquiry Dashbaord
 
 == Changelog ==
+= 6.0.1 - 2025-03-27 =
+* Fixed     - Translation issue fixed.
+* Updated   - Language file.
+
 = 6.0.0 - 2025-03-25 =
 * Added     - Compatibility of WordPress 6.7.2.
 * Added     - Compatibility of WooCommerce 9.7.1.

@@ -39,6 +39,14 @@ final class CatalogX {
         add_action( 'plugins_loaded', [ $this, 'is_woocommerce_loaded'] );
         add_filter( 'woocommerce_email_classes', [ $this, 'load_emails' ] );
 
+        add_action( 'init', [ $this, 'migrate_from_previous' ] );
+        // Major update notice
+		add_action( 'in_plugin_update_message-woocommerce-catalog-enquiry/Woocommerce_Catalog_Enquiry.php', [ $this, 'catalogx_plugin_update_message' ] );
+    }
+
+    public function catalogx_plugin_update_message() {
+        echo '<p><strong>Heads up!</strong> 6.0.0 is a major update. Make a full site backup and before upgrading your marketplace to avoid any undesirable situations.</p>';
+        exit;
     }
 
     /**
@@ -47,6 +55,12 @@ final class CatalogX {
      */
     public function declare_compatibility() {
         FeaturesUtil::declare_compatibility ( 'custom_order_tables', WP_CONTENT_DIR.'/plugins/woocommerce-catalog-enquiry/Woocommerce_Catalog_Enquiry.php', true );
+    }
+
+    public function migrate_from_previous() {
+        if ( version_compare( get_option( 'catalogx_plugin_version' ), '6.0.0', '<' ) ) {
+            new Install();
+        }
     }
     
     public function init_plugin() {
@@ -177,13 +191,22 @@ final class CatalogX {
     public function woocommerce_admin_notice() {
         ?>
         <div class="error">
-            <p><?php printf( __( '%sCatalogX is inactive.%s The %sWooCommerce plugin%s must be active for the CatalogX to work. Please %sinstall & activate WooCommerce%s', 'catalogx' ), '<strong>', '</strong>', '<a target="_blank" href="http://wordpress.org/extend/plugins/woocommerce/">', '</a>', '<a href="' . admin_url( 'plugins.php' ) . '">', '&nbsp;&raquo;</a>' ); ?></p>
+            <p>
+                <?php 
+                printf(
+                    /* translators: 1. Opening <strong> tag, 2. Closing </strong> tag, 3. Opening <a> tag for WooCommerce plugin link, 4. Closing </a> tag, 5. Opening <a> tag for plugin activation link, 6. Closing </a> tag */
+                    __('%1$sCatalogX is inactive.%2$s The %3$sWooCommerce plugin%4$s must be active for CatalogX to work. Please %5$sinstall & activate WooCommerce%6$s', 'catalogx'),
+                    '<strong>', '</strong>',
+                    '<a target="_blank" href="http://wordpress.org/extend/plugins/woocommerce/">', '</a>',
+                    '<a href="' . esc_url(admin_url('plugins.php')) . '">', ' &raquo;</a>'
+                ); 
+                ?>
+            </p>
         </div>
         <?php
-    }
+    }    
 
-
-      /**
+    /**
      * CatalogX emails
      * @param array $emails
      * @return array
