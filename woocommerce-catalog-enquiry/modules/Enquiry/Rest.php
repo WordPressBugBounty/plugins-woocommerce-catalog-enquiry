@@ -108,6 +108,7 @@ class Rest {
         ];
 
         $product_variations = ( get_transient( 'variation_list' ) ) ? get_transient( 'variation_list' ) : [];
+
         $result = $wpdb->insert("{$wpdb->prefix}" . Utill::TABLES[ 'enquiry' ], $data );
 
         if ( $result ) {

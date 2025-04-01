@@ -17,10 +17,6 @@ class Frontend {
     public function __construct() {
         add_action( 'init', [ $this, 'display_button_group' ] );
         add_action( 'wp', [ $this, 'display_price_and_description' ] );
-
-        add_action('woocommerce_cart_calculate_fees', [$this, 'calculate_discount']);
-        add_action('woocommerce_review_order_before_shipping', [$this, 'calculate_discount']);
-
     }
 
     /**
@@ -99,23 +95,6 @@ class Frontend {
             // for block support
             add_filter('woocommerce_short_description', '__return_empty_string');
             add_filter('render_block_core/post-excerpt', '__return_empty_string');
-        }
-    }
-
-    /**
-     * Calculate discount on cart and checkout page.
-     * @return void
-     */
-    public function calculate_discount() {
-        /**
-         * Filter for cart and checkout discount
-         * @var int discount amount
-         */
-        $discount = apply_filters( 'catalogx_calculate_discount_in_cart_and_checkout', 0 );
-
-        if ($discount != 0) {
-            // Apply the discount as a fee
-            WC()->cart->add_fee( __('Discount', 'catalogx'), $discount, true );
         }
     }
 

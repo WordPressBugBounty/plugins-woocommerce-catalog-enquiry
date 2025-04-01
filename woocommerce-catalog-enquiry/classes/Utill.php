@@ -71,6 +71,7 @@ class Utill {
      * @return void
      */
     public static function get_template( $template_name, $args = [] ) {
+        
         if ( $args && is_array( $args ) ) {
             extract( $args );
         }

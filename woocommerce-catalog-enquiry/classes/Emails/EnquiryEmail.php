@@ -163,7 +163,11 @@ class EnquiryEmail extends \WC_Email {
      */
     public function get_content_html() {
         ob_start();
-        wc_get_template($this->template_html, $this->get_template_args(), '', $this->template_base);
+        if (Utill::is_khali_dabba() && !empty(CatalogX()->setting->get_setting('selected_email_tpl'))) {
+            CatalogX_Pro()->utill->get_template($this->template_html, $this->get_template_args());
+        } else {
+            CatalogX()->util->get_template($this->template_html, $this->get_template_args());
+        }
         return ob_get_clean();
     }
 
@@ -172,7 +176,11 @@ class EnquiryEmail extends \WC_Email {
      */
     public function get_content_plain() {
         ob_start();
-        wc_get_template($this->template_plain, $this->get_template_args(), '', $this->template_base);
+        if (Utill::is_khali_dabba() && !empty(CatalogX()->setting->get_setting('selected_email_tpl'))) {
+            CatalogX_Pro()->utill->get_template($this->template_plain, $this->get_template_args());
+        } else {
+            CatalogX()->util->get_template($this->template_plain, $this->get_template_args());
+        }
         return ob_get_clean();
     }
 

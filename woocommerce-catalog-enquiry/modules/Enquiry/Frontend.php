@@ -27,7 +27,7 @@ class Frontend{
             add_action( 'woocommerce_after_shop_loop_item', [$this, 'add_button_in_shop_page'] );
         }
 
-        add_action( 'display_shop_page_button', [ $this, 'add_enquiry_button' ] );
+        add_action( 'display_shop_page_button', [ $this, 'catalogx_add_enquiry_button' ] );
 
         //Hook for exclusion
         add_action( 'woocommerce_single_product_summary', [ $this, 'enquiry_button_exclusion' ], 5);
@@ -36,7 +36,14 @@ class Frontend{
 
         // Enquiry button shortcode
         add_shortcode( 'catalogx_enquiry_button', [ $this, 'catalogx_enquiry_button_shortcode' ] );
+    }
 
+    public function catalogx_add_enquiry_button() {
+        global $product;
+        if (empty(trim(CatalogX()->render_enquiry_btn_via))) {
+            CatalogX()->render_enquiry_btn_via = 'hook';
+            $this->add_enquiry_button($product->get_id());
+        }
     }
 
     /**
@@ -116,9 +123,9 @@ class Frontend{
         global $post;
         
         if ( ! Util::is_available_for_product( $post->ID ) ) {
-            remove_action( 'display_shop_page_button', [ $this, 'add_enquiry_button' ] );
+            remove_action( 'display_shop_page_button', [ $this, 'catalogx_add_enquiry_button' ] );
         } else {
-            add_action( 'display_shop_page_button', [ $this, 'add_enquiry_button' ] );
+            add_action( 'display_shop_page_button', [ $this, 'catalogx_add_enquiry_button' ] );
         }
     }
 
@@ -131,6 +138,10 @@ class Frontend{
 
         wp_register_style( 'catalogx-enquiry-form-style', CatalogX()->plugin_url . 'build/blocks/enquiryForm/index.css' );
         wp_register_script( 'catalogx-enquiry-frontend-script', CatalogX()->plugin_url . 'modules/Enquiry/assets/js/frontend.js', [ 'jquery', 'jquery-blockui' ], CatalogX()->version, true );
+        wp_localize_script(
+            'catalogx-enquiry-frontend-script', 'enquiryFrontend', [
+                'ajaxurl' => admin_url('admin-ajax.php'),
+        ]);
         wp_register_script('enquiry-form-script', CatalogX()->plugin_url . 'build/blocks/enquiryForm/index.js', [ 'jquery', 'jquery-blockui', 'wp-element', 'wp-i18n', 'wp-blocks', 'wp-hooks' ], CatalogX()->version, true );
         wp_localize_script(
             'enquiry-form-script', 'enquiryFormData', [
@@ -204,13 +215,14 @@ class Frontend{
      * @return void
      */
     public function catalogx_enquiry_button_shortcode($attr) {
-        ob_start();
-        $product_id = isset( $attr['product_id'] ) ? (int)$attr['product_id'] : 0;
-
-        remove_action('display_shop_page_button', [ $this, 'add_enquiry_button' ]);
-
-        $this->add_enquiry_button($product_id);
-        return ob_get_clean();
+        global $product;
+        if (empty(trim(CatalogX()->render_enquiry_btn_via))) {
+            CatalogX()->render_enquiry_btn_via = 'shortcode';
+            ob_start();
+            $product_id = isset( $attr['product_id'] ) ? (int)$attr['product_id'] : $product->get_id();
+            $this->add_enquiry_button($product_id);
+            return ob_get_clean();
+        }
     }
 
     /**

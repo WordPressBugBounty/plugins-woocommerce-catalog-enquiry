@@ -6,6 +6,7 @@
  * @version  6.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+$enquiry_data = $args['enquiry_data'];
 
 echo $email_heading . "\n\n";
 
@@ -14,7 +15,7 @@ echo sprintf( __( "Please find the product enquiry, details are given below", 'c
 
 echo "\n****************************************************\n\n";
 
-$product_obj = wc_get_product( key($product_id) );
+$product_obj = wc_get_product( key($args['product_id']) );
 
 echo "\n Product Name : ".$product_obj->get_name();
 

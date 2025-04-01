@@ -2,7 +2,7 @@
 /**
  * CatalogX Email Request quote
  * 
- * Override this template by copying it to yourtheme/woocommerce-catalog-enquiry/request-quote.php
+ * Override this template by copying it to yourtheme/woocommerce-catalog-enquiry/emails/request-quote.php
  *
  * @author    MultiVendorX
  * @package   woocommerce-catalog-enquiry/templates
@@ -10,8 +10,9 @@
  */
 defined( 'ABSPATH'  ) || exit; // Exit if accessed directly
 
-do_action( 'catalogx_email_header', $email_heading  ); ?>
-
+do_action( 'catalogx_email_header', $email_heading  ); 
+$customer_data = $args['customer_data'];
+?>
 <body>
     <div style="width:600px; margin: 0 auto; ">
 
@@ -40,7 +41,7 @@ do_action( 'catalogx_email_header', $email_heading  ); ?>
 
             <tbody>
             <?php
-                foreach ( $products as $item  ) {
+                foreach ( $args['products'] as $item  ) {
                     $_product = wc_get_product( $item['product_id'] );
                 ?>
                 <tr>

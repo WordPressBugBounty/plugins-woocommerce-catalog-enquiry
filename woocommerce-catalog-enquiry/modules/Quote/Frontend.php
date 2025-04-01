@@ -21,7 +21,7 @@ class Frontend {
         if (!empty($display_quote_button) && !is_user_logged_in()) {
             return;
         }
-        add_action( 'display_shop_page_button', [ $this, 'add_button_for_quote'] );
+        add_action( 'display_shop_page_button', [ $this, 'catalogx_add_quote_button'] );
         add_action( 'woocommerce_after_shop_loop_item', [$this, 'add_button_for_quote'], 11 );
         add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
 
@@ -49,6 +49,15 @@ class Frontend {
             );
         if (is_shop() || is_product()) {
             wp_enqueue_script('add-to-quote-cart-script');
+        }
+    }
+
+    public function catalogx_add_quote_button() {
+        global $product;
+        $render_button = CatalogX()->render_quote_btn_via;
+        if (empty(trim(CatalogX()->render_quote_btn_via))) {
+            CatalogX()->render_quote_btn_via = 'hook';
+            $this->add_button_for_quote($product->get_id());
         }
     }
 
@@ -98,11 +107,14 @@ class Frontend {
     }
 
     public function catalogx_quote_button_shortcode($attr) {
-        ob_start();
-        $product_id = isset( $attr['product_id'] ) ? (int)$attr['product_id'] : 0;
-        remove_action('display_shop_page_button', [ $this, 'add_button_for_quote' ]);
-        $this->add_button_for_quote($product_id);
-        return ob_get_clean();
+        global $product;
+        if (empty(trim(CatalogX()->render_quote_btn_via))) {
+            CatalogX()->render_quote_btn_via = 'shortcode';
+            ob_start();
+            $product_id = isset( $attr['product_id'] ) ? (int)$attr['product_id'] : $product->get_id();
+            $this->add_button_for_quote($product_id);
+            return ob_get_clean();
+        }
     }
 
 }

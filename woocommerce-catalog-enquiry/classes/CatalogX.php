@@ -30,6 +30,8 @@ final class CatalogX {
         $this->container[ 'rest_namespace' ] = 'catalogx/v1';
         $this->container[ 'block_paths' ]    = [];
         $this->container[ 'admin_email' ]    = get_option( 'admin_email' );
+        $this->container[ 'render_enquiry_btn_via' ]    = '';
+        $this->container[ 'render_quote_btn_via' ]    = '';
 
         register_activation_hook( $file, [ $this, 'activate' ] );
         register_deactivation_hook( $file, [ $this, 'deactivate' ] );
@@ -45,8 +47,10 @@ final class CatalogX {
     }
 
     public function catalogx_plugin_update_message() {
-        echo '<p><strong>Heads up!</strong> 6.0.0 is a major update. Make a full site backup and before upgrading your marketplace to avoid any undesirable situations.</p>';
-        exit;
+        if ( version_compare( get_option( 'catalogx_plugin_version' ), '6.0.0', '<' ) ) {
+            echo '<p><strong>Heads up!</strong> 6.0.0 is a major update. Make a full site backup and before upgrading your marketplace to avoid any undesirable situations.</p>';
+            exit;
+        }
     }
 
     /**

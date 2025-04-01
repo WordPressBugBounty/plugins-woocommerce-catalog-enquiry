@@ -98,16 +98,7 @@ if ( ! class_exists( 'RequestQuoteSendEmail' ) ) {
      */
     function get_content_html() {
         ob_start();
-        wc_get_template( $this->template_html, [ 
-            'email_heading'     => $this->get_heading(),
-            'products'           => $this->products,
-            'customer_email'    => $this->recipient,
-            'customer_data'     => $this->customer_data,
-            'admin'             => $this->admin,
-            'sent_to_admin'     => false,
-            'plain_text'        => false,
-            'email'             => $this,
-        ], '', $this->template_base );
+        CatalogX()->util->get_template($this->template_html, $this->get_template_args());
         return ob_get_clean();
     }
 
@@ -119,7 +110,15 @@ if ( ! class_exists( 'RequestQuoteSendEmail' ) ) {
      */
     function get_content_plain() {
         ob_start();
-        wc_get_template( $this->template_plain, [ 
+        CatalogX()->util->get_template($this->template_plain, $this->get_template_args());
+        return ob_get_clean();
+    }
+
+    /**
+     * Get template arguments.
+     */
+    protected function get_template_args() {
+        return [ 
             'email_heading'     => $this->get_heading(),
             'products'           => $this->products,
             'customer_email'    => $this->recipient,
@@ -128,8 +127,7 @@ if ( ! class_exists( 'RequestQuoteSendEmail' ) ) {
             'sent_to_admin'     => false,
             'plain_text'        => true,
             'email'             => $this,
-        ],'', $this->template_base );
-        return ob_get_clean();
+        ];
     }
 }
 }

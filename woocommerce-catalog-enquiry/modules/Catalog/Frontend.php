@@ -129,7 +129,7 @@ class Frontend{
 
         if ( Util::is_available_for_product( $post->ID ) && is_product() ) {
             if ( empty(CatalogX()->setting->get_setting( 'enable_cart_checkout' )) ) {
-                remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+                // remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
                 remove_action( 'woocommerce_single_variation', 'woocommerce_single_variation_add_to_cart_button', 20 );
                 // for block support
                 remove_action('woocommerce_simple_add_to_cart', 'woocommerce_simple_add_to_cart', 30);

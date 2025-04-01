@@ -2,14 +2,17 @@
 /**
  * CatalogX Enquiry Email
  *
- * Override this template by copying it to yourtheme/woocommerce-catalog-enquiry/enquiry-email.php
+ * Override this template by copying it to yourtheme/woocommerce-catalog-enquiry/emails/enquiry-email.php
  *
  * @author    MultiVendorX
  * @package   woocommerce-catalog-enquiry/templates
  * @version   6.0.0
  */
+
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-do_action( 'catalogx_email_header', $email_heading ); ?>
+do_action( 'catalogx_email_header', $args['email_heading'] ); 
+$enquiry_data = $args['enquiry_data'];
+?>
 <body>
     <div style="width:600px; margin: 0 auto; ">
         <div class="email-container">
@@ -32,8 +35,8 @@ do_action( 'catalogx_email_header', $email_heading ); ?>
                     </thead>
                     <tbody>
                         <?php
-                        if (is_array($product_id) && count($product_id) > 1) {
-                            foreach ($product_id as $id => $value) {
+                        if (is_array($args['product_id']) && count($args['product_id']) > 1) {
+                            foreach ($args['product_id'] as $id => $value) {
                                 $product_obj = wc_get_product( $id ); ?>
                                 <tr>
                                 <td scope="col"><?php echo $product_obj->get_name(); ?>
@@ -64,7 +67,7 @@ do_action( 'catalogx_email_header', $email_heading ); ?>
                             <?php
                             }
                         } else {
-                            $product_obj = wc_get_product( key($product_id) ); ?>
+                            $product_obj = wc_get_product( key($args['product_id']) ); ?>
                             <tr>
                             <td scope="col"><?php echo $product_obj->get_name(); ?>
                             <?php

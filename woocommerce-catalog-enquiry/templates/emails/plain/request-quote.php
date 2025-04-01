@@ -9,9 +9,10 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 /* translators: %s: Show the admin name. */
 echo "= " . sprintf( __( 'Dear %s', 'catalogx' ), $admin ) . " =\n\n";
 echo __( 'You have received a new quote request from a customer for the following product:', 'catalogx' ) . "\n\n";
+$customer_data = $args['customer_data'];
 
 // Products Table
-foreach ( $products as $item ) {
+foreach ( $args['products'] as $item ) {
     $_product = wc_get_product( $item['product_id'] );
     /* translators: %s: Show the product name. */
     echo sprintf( __( 'Product: %s', 'catalogx' ), $_product->get_title() ) . "\n";

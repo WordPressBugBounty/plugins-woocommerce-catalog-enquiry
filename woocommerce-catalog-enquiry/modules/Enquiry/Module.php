@@ -1,7 +1,6 @@
 <?php 
 
 namespace CatalogX\Enquiry;
-use CatalogX\Utill;
 
 /**
  * CatalogX Enquiry Module class
@@ -43,6 +42,7 @@ class Module {
         $this->container[ 'util' ]      = new Util();
         $this->container[ 'frontend' ]  = new Frontend();
         $this->container[ 'rest' ]      = new Rest();
+        $this->container[ 'ajax' ]      = new Ajax();
     }
 
     /**
