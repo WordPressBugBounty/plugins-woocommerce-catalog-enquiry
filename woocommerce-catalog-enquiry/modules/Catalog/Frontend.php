@@ -41,7 +41,14 @@ class Frontend{
      * @return void
      */
     public static function catalogx_redirect_page() {
-
+        // For exclusion
+        foreach ( WC()->cart->get_cart() as $cart_item ) {
+            $product_id = $cart_item['product_id'];
+            if ( ! Util::is_available_for_product( $product_id  ) ) {
+                return;
+            }
+        }
+       
         // Get setting for sales enabled
         $sales_enabled = CatalogX()->setting->get_setting( 'enable_cart_checkout' );
 

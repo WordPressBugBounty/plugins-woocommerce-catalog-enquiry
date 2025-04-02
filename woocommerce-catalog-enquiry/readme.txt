@@ -5,7 +5,7 @@ Donate link: https://multivendorx.com/donate
 Requires at least: 6.4
 Tested up to: 6.7.2
 Requires PHP: 8.0
-Stable tag: 6.0.2
+Stable tag: 6.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -215,6 +215,9 @@ Answer: Simply enable the 'Product Enquiry Button When Product is Out Of Stock' 
 7. Enquiry Dashbaord
 
 == Changelog ==
+= 6.0.3 - 2025-04-02 =
+* Fixed     - Product exclusion fixed.
+
 = 6.0.2 - 2025-04-01 =
 * Added     - Support for Elementor.
 * Fixed     - Email overriding functionality was not working, now resolved.

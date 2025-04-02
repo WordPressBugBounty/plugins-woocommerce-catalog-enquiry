@@ -77,11 +77,35 @@ export default {
             moduleEnabled: 'wholesale',
         },
         {
+            key: "enable_global_wholasale",
+            type: "checkbox",
+            label: __("Global wholesale discount", "catalogx"),
+            desc: sprintf(
+                /* translators: %s will be replaced with a link to wholeslale document */
+                __('Automatically mark all products on your site as wholesale items, making them available for bulk purchases. You can configure the wholesale rates below to apply site-wide or set specific wholesale prices for individual products as needed. To know more %s.', 'catalogx'),
+                '<a href="https://catalogx.com/docs/wholesale-pricing/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=catalogx" target="_blank">click here</a>'
+            ),
+            options: [
+                {
+                    key: "enable_global_wholasale",
+                    label: __('', 'catalogx'),
+                    value: "enable_global_wholasale"
+                }
+            ],
+            proSetting: true,
+            look: "toggle",
+            moduleEnabled: 'wholesale',
+        },
+        {
             key: "wholesale_discount",
             type: "mergeComponent",
             label: __("Discount rule", "catalogx"),
             desc: __('<b>Bulk Discount Configuration: </b> Set discount type (percentage/fixed), discount amount, and minimum quantity for wholesellers', 'catalogx'),
             proSetting: true,
+            dependent: {
+                key: "enable_global_wholasale",
+                set: true
+            },
             fields: [
                 {
                     name: 'wholesale_discount_type',
