@@ -17,6 +17,19 @@ class Frontend {
     public function __construct() {
         add_action( 'init', [ $this, 'display_button_group' ] );
         add_action( 'wp', [ $this, 'display_price_and_description' ] );
+        // Enqueue frontend scripts
+        add_action( 'wp_enqueue_scripts', [ $this, 'frontend_scripts' ] );
+    }
+
+    /**
+     * Enqueue script
+     * @return void
+     */
+    public function frontend_scripts() {
+        FrontendScripts::load_scripts();
+        if (is_product() || is_shop()) {
+            FrontendScripts::enqueue_style( 'catalogx-frontend-style' );
+        }
     }
 
     /**

@@ -61,6 +61,8 @@ class Module {
             return;
         }
 
+        $default_slug = function_exists( 'pll__' ) ? pll__( 'my-quote' ) : 'my-quote';
+
         $page_found = get_posts([
             'name' => 'my-quote',
             'post_status' => 'publish',
@@ -78,13 +80,47 @@ class Module {
             'post_status' => 'publish',
             'post_type' => 'page',
             'post_author' => 1,
-            'post_name' => 'my-quote',
+            'post_name' => $default_slug,
             'post_title' => __('My Quote', 'catalogx'),
             'post_content' => $this->request_quote_block() ? $this->request_quote_block() : '[catalogx_request_quote]',
             'comment_status' => 'closed'
         ];
         $page_id = wp_insert_post($page_data);
         update_option('catalogx_request_quote_page', $page_id);
+
+        // Assign language using Polylang
+        if ( function_exists( 'pll_get_languages' ) && function_exists( 'pll_set_post_language' ) ) {
+            $languages = pll_get_languages( [ 'fields' => [] ] );
+            $translations = [];
+    
+            foreach ( $languages as $lang_code => $lang_data ) {
+                if ( $lang_code === pll_default_language() ) {
+                    $translations[ $lang_code ] = $page_id;
+                    pll_set_post_language( $page_id, $lang_code );
+                    continue;
+                }
+    
+                $translated_id = wp_insert_post( [
+                    'post_status'       => 'publish',
+                    'post_type'         => 'page',
+                    'post_author'       => 1,
+                    'post_name'         => pll_translate_string( 'my-quote', lang: $lang_code ),
+                    'post_title'        => pll_translate_string( 'My Quote', $lang_code ),
+                    'post_content'      => $this->request_quote_block() ? $this->request_quote_block() : '[catalogx_request_quote]',
+                    'comment_status'    => 'closed'
+                ] );
+    
+                if ( $translated_id ) {
+                    pll_set_post_language( $translated_id, $lang_code );
+                    $translations[ $lang_code ] = $translated_id;
+                }
+            }
+    
+            // Link translations together
+            if ( function_exists( 'pll_save_post_translations' ) ) {
+                pll_save_post_translations( $translations );
+            }
+        }
     }
 
     public function request_quote_block() {

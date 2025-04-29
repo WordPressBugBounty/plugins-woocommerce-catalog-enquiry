@@ -12,14 +12,20 @@
   "editorScript": [
     "file:./index.js",
     "catalogx-enquiry-frontend-script",
-    "enquiry-form-script"
+    "catalogx-enquiry-form-script"
   ],
   "script": [
     "file:./index.js",
     "catalogx-enquiry-frontend-script",
-    "enquiry-form-script"
+    "catalogx-enquiry-form-script"
   ],
-  "editorStyle": "catalogx-enquiry-form-style",
-  "style": "catalogx-enquiry-form-style",
+  "editorStyle": [
+    "catalogx-enquiry-form-style",
+    "catalogx-frontend-style"
+  ],
+  "style": [
+    "catalogx-enquiry-form-style",
+    "catalogx-frontend-style"
+  ],
   "render": "file:./render.php"
 }

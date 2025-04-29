@@ -33,7 +33,6 @@ class Frontend{
         //register description box
         $this->register_description_box();
 
-        add_action( 'wp_enqueue_scripts', [ $this, 'frontend_scripts' ] );
     }
     
     /**
@@ -63,16 +62,6 @@ class Frontend{
         if ( is_page( $cart_page_id ) || is_page( $checkout_page_id ) ) {
             wp_redirect( home_url() );
             exit;
-        }
-    }
-
-    /**
-     * Enqueue script
-     * @return void
-     */
-    public function frontend_scripts() {
-        if (is_product() || is_shop()) {
-            wp_enqueue_style( 'catalogx-frontend-style', CatalogX()->plugin_url . 'modules/Catalog/assets/css/frontend.css' );
         }
     }
 

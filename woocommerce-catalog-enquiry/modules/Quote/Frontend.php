@@ -2,6 +2,7 @@
 
 namespace CatalogX\Quote;
 use CatalogX\Utill;
+use CatalogX\FrontendScripts;
 
 /**
  * CatalogX Quote Module Frontend class
@@ -34,21 +35,10 @@ class Frontend {
      * @return void
      */
     public function enqueue_scripts() {
-        $frontend_script_path = CatalogX()->plugin_url . 'modules/Quote/js/';
-        $frontend_script_path = str_replace( [ 'http:', 'https:' ], '', $frontend_script_path );
-        
-        wp_register_script('add-to-quote-cart-script', $frontend_script_path . 'frontend.js', ['jquery'], CatalogX()->version, true);
-        wp_localize_script(
-            'add-to-quote-cart-script',
-            'addToQuoteCart',
-            [
-                'ajaxurl' => admin_url('admin-ajax.php'),
-                'loader' => admin_url('images/wpspin_light.gif'),
-                'no_more_product' => __('No more product in Quote list!', 'catalogx'),
-                ]
-            );
+        FrontendScripts::load_scripts();
+        FrontendScripts::localize_scripts('catalogx-add-to-quote-cart-script');
         if (is_shop() || is_product()) {
-            wp_enqueue_script('add-to-quote-cart-script');
+            FrontendScripts::enqueue_script('catalogx-add-to-quote-cart-script');
         }
     }
 

@@ -10,11 +10,11 @@
   },
   "editorScript": [
     "file:./index.js",
-    "add-to-quote-cart-script"
+    "catalogx-add-to-quote-cart-script"
   ],
   "script": [
     "file:./index.js",
-    "add-to-quote-cart-script"
+    "catalogx-add-to-quote-cart-script"
   ],
   "render": "file:./render.php"
 }

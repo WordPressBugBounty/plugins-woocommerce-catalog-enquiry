@@ -1,19 +1,25 @@
-=== CatalogX - Product Catalog Mode For WooCommerce ===
+=== CatalogX - Product Catalog Mode & Enquiry Based Quotation Module for WooCommerce, Wholesale Prices, B2B, Wholesale User Roles, Dynamic Pricing, Tired Pricing & More ===
 Contributors: wcmp
 Tags: product catalog, b2b , dynamic pricing, wholesale pricing, request a quote
 Donate link: https://multivendorx.com/donate
 Requires at least: 6.4
-Tested up to: 6.7.2
+Tested up to: 6.8.0
 Requires PHP: 8.0
-Stable tag: 6.0.3
+Stable tag: 6.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-CatalogX: Integrated Enquiry Based Quotation System & Advanced Wholesale/B2B Pricing Management.
+CatalogX: WooCommerce catalog mode, ecommerce product catalog, enquiry based quotation system, B2B or B2B + B2C wholesale pricing, and quote management for WooCommerce.
 ## Description
 
-Elevate your WooCommerce store with CatalogX, featuring a fully integrated enquiry system for seamless quote requests and advanced wholesale/B2B pricing management. With Catalog Mode, you can showcase your products without displaying prices and remove the 'Add to Cart' button, encouraging customers to submit enquiries for each item via custom enquiry forms.
+🥇 Most advanced WooCommerce catalog mode, wholesale, and request quote plugin.
+🎁 Feature-packed solution to create powerful **B2B, B2C,** and hybrid ecommerce stores.
+📞 **Dedicated support** team with **95%** customer satisfaction
 
+CatalogX turns your WooCommerce site into a flexible ecommerce product catalog with catalog mode to show products without prices and remove the “Add to Cart” button.
+Enable an enquiry-based shopping experience where customers can easily request quotes through custom enquiry forms — perfect for B2B, wholesale, and catalog WordPress businesses.
+
+Simplify your woocommerce catalog management, offer wholesale pricing, set role-based discounts, and streamline the quote woocommerce process — all from a single powerful plugin.
 CatalogX streamlines the quotation process, enabling customers to request quotes directly from your site. Perfect for wholesale and B2B businesses, it simplifies the management of wholesale and role-based pricing. With extensive customization options, you can tailor the shopping experience to fit your unique business needs.
 = Features =
 🚫 Disable Purchase Options
@@ -40,7 +46,7 @@ CatalogX streamlines the quotation process, enabling customers to request quotes
  👉 Try CatalogX [Free & Pro Demo](https://multivendordemo.com/catalogx/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
 
-##✌️Catalog 
+[**Catalog**](https://catalogx.com/product-catalog/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
 The Catalog module 🛒 helps you create a tailored shopping experience by offering a private or catalog-only mode for your WooCommerce store. This feature is perfect for businesses that want to manage price visibility, attract specific customer segments, or operate a members-only store. By controlling how and when prices are displayed, you can increase lead generation and encourage customer inquiries, which can then be converted into sales 💬.
 
@@ -51,7 +57,7 @@ The Catalog module 🛒 helps you create a tailored shopping experience by offer
 🗂️ Collect inquiries for each variation of variable products to cater to specific customer needs.
 📈 Manage price visibility strategically to boost lead generation.
 
-##✌️Enquiry
+[**Enquiry**](https://catalogx.com/enquiry/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 The Enquiry Module is essential 📨 for businesses that want to engage with potential customers who have questions or are interested in bulk or high-value orders. By placing inquiry and quote request buttons strategically across your site, you make it easy for users to reach out, even for out-of-stock items. This module helps you capture leads, respond efficiently, and better understand product demand, all of which contribute to higher conversion rates and customer satisfaction.
 
 #Key Features:
@@ -64,17 +70,17 @@ The Enquiry Module is essential 📨 for businesses that want to engage with pot
 ✏️ Customize your inquiry form to match your brand and gather the most relevant information [PRO].
 📊 Monitor and manage all inquiries efficiently via an Inquiry Cart [PRO].
 
-##✌️Quotation
-The Quote Module is designed 💬 to help businesses that regularly deal with custom orders, bulk purchases, or high-value transactions. By allowing customers to request quotes directly from your product catalog, you open up new sales opportunities and streamline the buying process. This module is particularly useful for businesses in B2B, wholesale, or custom manufacturing, where personalized pricing and quick response times are critical for closing deals 💼.
+[**Quotation**](https://catalogx.com/quotation/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
+The Quote WooCommerce is designed 💬 to help businesses that regularly deal with custom orders, bulk purchases, or high-value transactions. By allowing customers to request quotes directly from your ecommerce product catalog, you open up new sales opportunities and streamline the buying process. This module is particularly useful for businesses in B2B, wholesale, or custom manufacturing, where personalized pricing and quick response times are critical for closing deals 💼
 
 #Key Features:
-🔍 Quickly find customer quotations with the Quick Search feature [PRO].
-🤝 Ensure compatibility with MultiVendor plugins like [MultiVendorX](https://wordpress.org/plugin/dc-woocommerce-multi-vendor/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg) for a seamless experience [PRO].
-🛒 Enable visitors to request a quote for all or selected products, catering to different customer needs.
-🔐 Restrict quote requests to registered users to ensure qualified leads.
-📲 Receive instant notifications via Google Chat and SMS when a customer places a quote request, keeping you informed and responsive [Coming Soon].
+🔍 Quickly find customer quote with the Quick Search feature [PRO].
+🤝 Ensure your quote WooCommerce workflow is compatible with MultiVendor plugins like [MultiVendorX](https://wordpress.org/plugin/dc-woocommerce-multi-vendor/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg) for a seamless experience [PRO].
+🛒 Allow visitors to request a quote for individual or multiple products from your WooCommerce catalog, depending on your sales strategy.
+🔐 Restrict quote requests to registered users, ensuring only qualified leads submit a quote in your B2B or wholesale store.
+📲 Instantly get notified via Google Chat and SMS when a customer submits a quote request, helping you follow up faster. [Coming Soon].
 
-##✌️Wholesale [PRO]
+[**Wholesale-PRO**](https://catalogx.com/wholesale/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 The Wholesale Module is perfect for businesses 🛒 that serve both retail and wholesale customers. This module helps you create distinct pricing structures, manage customer segments, and protect your retail pricing strategies. By offering exclusive wholesale pricing and preventing coupon use for wholesale customers, you can better manage your profit margins while still offering competitive deals to your business clients 💼.
 
 #Key Features:
@@ -84,11 +90,11 @@ The Wholesale Module is perfect for businesses 🛒 that serve both retail and w
 💸 Configure fixed amount or percentage discounts to suit different customer segments[PRO].
 🏷️ Set up different prices for each user or product to tailor your offerings [PRO].
 
-##✌️Dynamic Rule-Based Pricing [PRO]
+[**Dynamic Rule-Based Pricing-PRO**](https://catalogx.com/dynamic-role-based-pricing/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 The Dynamic Rule-Based Pricing module is a powerful tool 💪 for businesses looking to maximize sales through targeted pricing strategies. By creating custom discount rules based on user roles, product categories, and more, you can attract specific customer groups, encourage larger purchases, and optimize your pricing for different scenarios. This module is essential for businesses aiming to increase conversions, customer loyalty, and overall revenue through smart pricing techniques💰.
 
 #Key Features:
-⚙️ Implement flexible pricing strategies to adapt to different customer needs and market conditions[PRO].
+⚙️ Implement tired pricing strategies to adapt to different customer needs and market conditions[PRO].
 🎯 Create custom discount rules that offer exclusive deals to specific user roles like subscribers or wholesale buyers[PRO].
 🏷️ Target promotions based on products, categories, or user roles to maximize sales potential [PRO].
 📊 Add multiple user role levels with corresponding pricing rules for greater pricing flexibility [PRO].
@@ -96,7 +102,7 @@ The Dynamic Rule-Based Pricing module is a powerful tool 💪 for businesses loo
 🔄 Apply discounts to individual products or entire categories, depending on your promotional strategy [PRO].
 📋 Prioritize pricing rules easily with a drag-and-drop interface, ensuring the most effective discounts are applied first [PRO].
 
-##✌️Real-Time Page Builder [PRO]
+[**Real-Time Page Builder**](https://catalogx.com/real-time-page-builder/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 The Real-Time Page Builder module empowers businesses ✨ to design and customize their WooCommerce shop pages without needing technical skills. This module is perfect for store owners who want to create a visually appealing and highly functional shop page that aligns with their brand. By offering real-time previews, drag-and-drop customization, and mobile-friendly design checks, this module helps you create a professional, conversion-optimized shopping experience that drives sales and enhances customer satisfaction 📈.
 
 #Key Features:
@@ -114,25 +120,25 @@ The Real-Time Page Builder module empowers businesses ✨ to design and customiz
 
 In the competitive world of e-commerce, differentiation is key. Our ingenious WordPress WooCommere Product Catalog plugin allows you to effortlessly transform your website into a captivating, user-friendly catalog. Whether you're building a dedicated catalog site or adding catalog mode to your existing online store, we've got you covered!
 
-🚀 Switch to Catalog Mode in a Snap: Easily switch catalog mode on/off, display products attractively, encourage inquiries, and personalize pricing messages. To Know More, [Click Here](https://catalogx.com/docs/catalog/#0-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
+✔️ Switch to Catalog Mode in a Snap: Easily switch catalog mode on/off, display products attractively, encourage inquiries, and personalize pricing messages. To Know More, [Click Here](https://catalogx.com/docs/catalog/#0-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-🚀Hide Add to Cart: Enable catalog mode to conceal the "Add to Cart" option, allowing you to display products even when you're unavailable. To Know More, [Click Here](https://catalogx.com/docs/catalog/#3-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
+✔️ Hide Add to Cart: Enable catalog mode to conceal the "Add to Cart" option, allowing you to display products even when you're unavailable. To Know More, [Click Here](https://catalogx.com/docs/catalog/#3-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-🚀Out of Stock Product Enquiry: Activate catalog mode for out-of-stock products, allowing inquiries and tracking customer interest effortlessly. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#3-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
+✔️ Out of Stock Product Enquiry: Activate catalog mode for out-of-stock products, allowing inquiries and tracking customer interest effortlessly. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#3-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-🚀Hide Product Price: Hide product prices and add to cart buttons effortlessly with this WordPress catalog plugin. Upgrade for personalized messages. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#3-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
+✔️ Hide Product Price: Hide product prices and add to cart buttons effortlessly with this WordPress catalog plugin. Upgrade for personalized messages. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#3-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-🚀Personalise Enquiry Form [PRO]: You can simply add, remove, or change fields in your enquiry form with the help of drag and drop enquiry form builder. Personalized inquiry forms provide administrators with tailored information, streamlining responses and improving user engagement. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#5-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
+✔️ Personalise Enquiry Form [PRO]: You can simply add, remove, or change fields in your enquiry form with the help of drag and drop enquiry form builder. Personalized inquiry forms provide administrators with tailored information, streamlining responses and improving user engagement. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#5-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-🚀Choose Catalog Product Selection: Tailor your catalog by selecting products to include or exclude, simplifying category-based listings without complex display filtering. To Know More, [Click Here](https://catalogx.com/docs/exclusion/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
+✔️ Choose Catalog Product Selection: Tailor your catalog by selecting products to include or exclude, simplifying category-based listings without complex display filtering. To Know More, [Click Here](https://catalogx.com/docs/exclusion/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-🚀Customize the Enquiry Button: Easily customize your enquiry cart button, including color, font size, radius, and CSS class options. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#4-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
+✔️ Customize the Enquiry Button: Easily customize your enquiry cart button, including color, font size, radius, and CSS class options. To Know More, [Click Here](https://catalogx.com/docs/enquiry-communication/#4-toc-title/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-🚀Role-Based Catalog Mode: Activate catalog mode selectively by user login status and restrict access based on user roles like authors, vendors, etc. To Know More, [Click Here](https://catalogx.com/docs/dynamic-pricing-rules/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
+✔️ Role-Based Catalog Mode: Activate catalog mode selectively by user login status and restrict access based on user roles like authors, vendors, etc. To Know More, [Click Here](https://catalogx.com/docs/dynamic-pricing-rules/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg).
 
-🚀Enquiry Cart [PRO]: Get a bird’s eye view of all inquiries made by the customers using the benefit of enquiry cart. 
+✔️ Enquiry Cart [PRO]: Get a bird’s eye view of all inquiries made by the customers using the benefit of enquiry cart. 
 
-🚀Enquiry List [PRO]: Admins have a dedicated Enquiry List page to view, sort, and manage inquiries by customer, product, or enquiry number.
+✔️ Enquiry List [PRO]: Admins have a dedicated Enquiry List page to view, sort, and manage inquiries by customer, product, or enquiry number.
 
 #👉 Try Our [Free & Pro Demo](https://multivendordemo.com/catalogx/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
@@ -172,7 +178,7 @@ Unlock even more possibilities with CatalogX Pro :
 🚀 <code>[catalogx_enquiry_cart_button]</code> = Displays the "Add to Enquiry Cart" button.
 🚀 <code>[catalogx_enquiry_button]</code> = Displays the "Add to Enquiry" button.
 🚀 <code>[catalogx_quote_button]</code> =Displays the "Add to Quote" button.
-🚀 <code> [wholesale_products] </code> = Creates a page listing all wholesale products, enabling wholesalers to easily purchase multiple items in one transaction. [PRO]
+🚀 <code> [catalogx_wholesale_products] </code> = Creates a page listing all wholesale products, enabling wholesalers to easily purchase multiple items in one transaction. [PRO]
 🚀 <code>[catalogx_request_quote] </code> = Displays a list of products for which users have requested quotes, making it easy to review all requests. 
 🚀 <code>[catalogx_enquiry_cart]</code> = Display all products in the enquiry cart and send a single inquiry email for all items in the cart.[PRO]
 
@@ -215,7 +221,12 @@ Answer: Simply enable the 'Product Enquiry Button When Product is Out Of Stock' 
 7. Enquiry Dashbaord
 
 == Changelog ==
-= 6.0.3 - 2025-04-02 =
+= 6.0.4 - 2025-04-29 =
+* Added     - Compatibility of WordPress 6.8.0.
+* Added     - Compatibility of WooCommerce 9.8.2.
+* Fixed     - Required email field issue for non-logged-in users #27.
+
+= 6.0.3 - 2025-04-01 =
 * Fixed     - Product exclusion fixed.
 
 = 6.0.2 - 2025-04-01 =

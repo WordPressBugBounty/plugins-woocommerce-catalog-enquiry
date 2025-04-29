@@ -19,21 +19,11 @@ class Shortcode {
     }
 
     public function frontend_scripts() {
-
-        $current_user = wp_get_current_user();
         if (CatalogX()->modules->is_active('quote')) {
-            wp_enqueue_script('quote-cart', CatalogX()->plugin_url . 'build/blocks/quote-cart/index.js', [ 'jquery', 'jquery-blockui', 'wp-element', 'wp-i18n', 'wp-blocks' ], CatalogX()->version, true);
-            wp_set_script_translations( 'quote-cart', 'catalogx' );
-            wp_localize_script(
-                'quote-cart', 'quoteCart', [
-                'apiUrl' => untrailingslashit(get_rest_url()),
-                'nonce' => wp_create_nonce( 'wp_rest' ),
-                'restUrl' => CatalogX()->rest_namespace,
-                'name'  => $current_user->display_name,
-                'email' => $current_user->user_email
-            ]);
-            wp_register_style('quote-cart-style', CatalogX()->plugin_url . 'build/blocks/quote-cart/index.css');
-            wp_enqueue_style('quote-cart-style');
+            FrontendScripts::load_scripts();
+            FrontendScripts::localize_scripts('catalogx-quote-cart-script');
+            FrontendScripts::enqueue_script('catalogx-quote-cart-script' );
+            FrontendScripts::enqueue_style('catalogx-quote-cart-style');
         }
     }
 

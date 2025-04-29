@@ -7,7 +7,7 @@
  */
 defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 /* translators: %s: Show the admin name. */
-echo "= " . sprintf( __( 'Dear %s', 'catalogx' ), $admin ) . " =\n\n";
+echo "= " . sprintf( __( 'Dear %s', 'catalogx' ), $args['admin'] ) . " =\n\n";
 echo __( 'You have received a new quote request from a customer for the following product:', 'catalogx' ) . "\n\n";
 $customer_data = $args['customer_data'];
 

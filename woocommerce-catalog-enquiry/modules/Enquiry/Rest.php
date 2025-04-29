@@ -163,14 +163,8 @@ class Rest {
             return true;
         }
 
-        $user = get_userdata($user_id);
-    
         // Check if user is admin or customer
-        if ($user && array_intersect(['administrator', 'customer'], $user->roles)) {
-            return true;
-        }
-    
-        return new \WP_Error('woocommerce_rest_cannot_edit', __('Sorry, you are not allowed to edit this resource.', 'catalogx'), array('status' => rest_authorization_required_code()));
+        return current_user_can('customer') || current_user_can( 'manage_options' );
     }
 
 }

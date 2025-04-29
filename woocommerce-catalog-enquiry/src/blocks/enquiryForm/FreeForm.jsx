@@ -65,14 +65,19 @@ const FreeForm = (props) => {
         // Basic validation checks
         let errors = {};
         formFields.forEach((field) => {
-            if (field.active) {
-                const value = inputs[field.key] || ""; // Ensure it does not return undefined
-
-                // Validate email format
+            if (field.active && (field.key === "name" || field.key === "email")) {
+                const value = inputs[field.key] || "";
+    
+                // Check if the field is empty
+                if (!value.trim()) {
+                    errors[field.key] = enquiryFormData.error_strings.required;
+                }
+    
+                // Email format validation
                 if (field.key === "email" && value) {
                     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                     if (!emailRegex.test(value)) {
-                        errors[field.key] = "Invalid email format";
+                        errors[field.key] = enquiryFormData.error_strings.invalid;
                     }
                 }
             }
@@ -106,13 +111,16 @@ const FreeForm = (props) => {
                             return (
                                 <div className='catalogx-form-free-sections'>
                                     <label>{field.label}</label>
-                                    <input
-                                        type="text"
-                                        name={field.key}
-                                        value={enquiryFormData.default_placeholder.name || inputs[field.key]}
-                                        onChange={handleChange}
-                                        required
-                                    />
+                                    <div className="field-wrapper">
+                                        <input
+                                            type="text"
+                                            name={field.key}
+                                            value={enquiryFormData.default_placeholder.name || inputs[field.key]}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                        {validationErrors[field.key] && <p className="error-message">{validationErrors[field.key]}</p>}
+                                    </div>
                                 </div>
                             );
                         case "email":

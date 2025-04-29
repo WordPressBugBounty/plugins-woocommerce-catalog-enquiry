@@ -1,6 +1,7 @@
 <?php 
 
 namespace CatalogX\Enquiry;
+use CatalogX\FrontendScripts;
 use CatalogX\Utill;
 
 /**
@@ -134,33 +135,14 @@ class Frontend{
      * @return void
      */
     public function frontend_scripts() {
-        $current_user = wp_get_current_user();
-
-        wp_register_style( 'catalogx-enquiry-form-style', CatalogX()->plugin_url . 'build/blocks/enquiryForm/index.css' );
-        wp_register_script( 'catalogx-enquiry-frontend-script', CatalogX()->plugin_url . 'modules/Enquiry/assets/js/frontend.js', [ 'jquery', 'jquery-blockui' ], CatalogX()->version, true );
-        wp_localize_script(
-            'catalogx-enquiry-frontend-script', 'enquiryFrontend', [
-                'ajaxurl' => admin_url('admin-ajax.php'),
-        ]);
-        wp_register_script('enquiry-form-script', CatalogX()->plugin_url . 'build/blocks/enquiryForm/index.js', [ 'jquery', 'jquery-blockui', 'wp-element', 'wp-i18n', 'wp-blocks', 'wp-hooks' ], CatalogX()->version, true );
-        wp_localize_script(
-            'enquiry-form-script', 'enquiryFormData', [
-            'apiurl'        => untrailingslashit(get_rest_url()),
-            'nonce'         => wp_create_nonce( 'wp_rest' ),
-            'settings_free' => $this->catalogx_free_form_settings(),
-            'settings_pro'  => $this->catalogx_pro_form_settings(),
-            'khali_dabba'    => \CatalogX\Utill::is_khali_dabba(),
-            'product_data'  => (\CatalogX\Utill::is_khali_dabba() && !empty(CatalogX_Pro()->cart->get_cart_data())) ? CatalogX_Pro()->cart->get_cart_data() : '',
-            'default_placeholder'  => [
-                'name'  => $current_user->display_name,
-                'email' => $current_user->user_email
-            ],
-            'content_before_form' => apply_filters('catalogx_add_content_before_form', ''),
-            'content_after_form'  => apply_filters('catalogx_add_content_after_form', ''),
-        ]);
-
+        FrontendScripts::load_scripts();
+        FrontendScripts::localize_scripts('catalogx-enquiry-frontend-script');
+        FrontendScripts::localize_scripts('catalogx-enquiry-form-script');
+        
         if (is_product()) {
-            wp_enqueue_style( 'catalogx-enquiry-form-style' );
+            FrontendScripts::enqueue_style( 'catalogx-enquiry-form-style' );
+            FrontendScripts::enqueue_script( 'catalogx-enquiry-frontend-script' );
+            FrontendScripts::enqueue_script( 'catalogx-enquiry-form-script' );
 
             // additional css
             $additional_css_settings = CatalogX()->setting->get_setting( 'custom_css_product_page' );
@@ -168,13 +150,11 @@ class Frontend{
                 wp_add_inline_style('catalogx-enquiry-form-style', $additional_css_settings);
             }
             
-            wp_enqueue_script( 'catalogx-enquiry-frontend-script' );
-            wp_enqueue_script( 'enquiry-form-script' );
-            wp_set_script_translations( 'enquiry-form-script', 'catalogx' );
         }
+        
     }
 
-    public function catalogx_free_form_settings() {
+    public static function catalogx_free_form_settings() {
         $form_settings = CatalogX()->setting->get_option( 'catalogx_enquiry-form-customization_settings', [] );
     
         if ( function_exists( 'icl_t' ) ) {
@@ -188,7 +168,7 @@ class Frontend{
         return $form_settings['freefromsetting'];
     }
 
-    public function catalogx_pro_form_settings() {
+    public static function catalogx_pro_form_settings() {
         $form_settings = CatalogX()->setting->get_option( 'catalogx_enquiry-form-customization_settings', [] );
     
         if ( function_exists( 'icl_t' ) ) {

@@ -209,7 +209,8 @@ class QuoteCart {
 
     public function get_request_quote_page_url() {
         $catalogx_quote_page_id = get_option( 'catalogx_request_quote_page' );
-        $base_url     = get_the_permalink( $catalogx_quote_page_id );
+        $translated_id = function_exists( 'pll_get_post' ) ? pll_get_post( $catalogx_quote_page_id ) : $catalogx_quote_page_id;
+        $base_url     = get_the_permalink( $translated_id );
 
         return apply_filters( 'catalogx_request_quote_page_url', $base_url );
     }

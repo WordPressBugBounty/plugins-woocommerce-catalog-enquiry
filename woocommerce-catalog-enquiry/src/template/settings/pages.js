@@ -28,7 +28,7 @@ export default {
             key: 'set_wholesale_products_page',
             type: 'select',
             label: __("Set Wholesale Products Page", "catalogx"),
-            desc: __("Select the page on which you have inserted <code>[wholesale_products]</code> shortcode.", "catalogx"),
+            desc: __("Select the page on which you have inserted <code>[catalogx_wholesale_products]</code> shortcode.", "catalogx"),
             options: appLocalizer.all_pages,
             proSetting: true,
         },
@@ -59,7 +59,7 @@ export default {
                 },
                 {
                     key: '',
-                    label: '[wholesale_products]',
+                    label: '[catalogx_wholesale_products]',
                     desc: 'Creates a page listing all wholesale products, enabling wholesalers to easily purchase multiple items in one transaction.',
                 },
                 {
