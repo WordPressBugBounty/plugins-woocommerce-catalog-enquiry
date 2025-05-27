@@ -78,7 +78,9 @@ class Frontend{
 
         ?>
         <div class="desc-box">
-            <?php $input_box = CatalogX()->setting->get_setting( 'additional_input' );
+            <?php 
+            $catalog_per_product_desc = get_post_meta( $post->ID, 'catalog_per_product_desc', true );
+            $input_box = !empty($catalog_per_product_desc) ? $catalog_per_product_desc : CatalogX()->setting->get_setting( 'additional_input' );
             if ($input_box) { ?>
                 <div class="desc">
                     <?php echo $input_box; ?>
