@@ -146,6 +146,7 @@ const FromViewer = (props) => {
     const buttonSetting = formFields.butttonsetting || {}
     const [captchaToken, setCaptchaToken] = useState(null);
     const [captchaError, setCaptchaError] = useState(false);
+    const [errors, setErrors] = useState({});
     const [fileName, setFileName] = useState("");
     const [file, setFile] = useState(null); 
 
@@ -209,6 +210,55 @@ const FromViewer = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        const error = {};
+
+        formList.forEach(field => {
+            if (!field.required || field.disabled) return;
+            // Skip validation for 'name' and 'email'
+            if (field.name === 'name' || field.name === 'email') return;
+
+            const value = inputs[field.name];
+
+            switch (field.type) {
+                case 'text':
+                case 'email':
+                case 'textarea':
+                case 'datepicker':
+                case 'timepicker':
+                    if (!value || value.trim() === '') {
+                        error[field.name] = `${field.label} is required.`;
+                    }
+                    break;
+
+                case 'checkboxes':
+                case 'multiselect':
+                    if (!Array.isArray(value) || value.length === 0) {
+                        error[field.name] = `${field.label} is required.`;
+                    }
+                    break;
+
+                case 'dropdown':
+                case 'radio':
+                    if (!value) {
+                        error[field.name] = `${field.label} is required.`;
+                    }
+                    break;
+
+                case 'attachment':
+                    if (!value) {
+                        error[field.name] = `${field.label} is required.`;
+                    }
+                    break;
+            }
+        });
+
+        if (Object.keys(error).length > 0) {
+            setErrors(error);
+            return;
+        }
+
+        setErrors({});
+
         const data = new FormData();
 
         for (const key in inputs) {
@@ -253,6 +303,7 @@ const FromViewer = (props) => {
                                         required={field.required}
                                         maxLength={field.charlimit}
                                     />
+                                    {errors[field.name] && <span className="error-text">{errors[field.name]}</span>}
                                 </section>
                             );
                         case "email":
@@ -290,6 +341,7 @@ const FromViewer = (props) => {
                                         rows={field.row}
                                         cols={field.col}
                                     />
+                                    {errors[field.name] && <span className="error-text">{errors[field.name]}</span>}
                                 </section>
                             );
                         case "checkboxes":
@@ -300,6 +352,7 @@ const FromViewer = (props) => {
                                         options={field.options}
                                         onChange={(data) => handleChange(field.name, data)}
                                     />
+                                    {errors[field.name] && <span className="error-text">{errors[field.name]}</span>}
                                 </section>
                             );
                         case "multiselect":
@@ -313,6 +366,7 @@ const FromViewer = (props) => {
                                             isMulti
                                         />
                                     </div>
+                                    {errors[field.name] && <span className="error-text">{errors[field.name]}</span>}
                                 </section>
                             );
                         case "dropdown":
@@ -325,6 +379,7 @@ const FromViewer = (props) => {
                                             onChange={(data) => handleChange(field.name, data)}
                                         />
                                     </div>
+                                    {errors[field.name] && <span className="error-text">{errors[field.name]}</span>}
                                 </section>
                             );
                         case "radio":
@@ -335,6 +390,7 @@ const FromViewer = (props) => {
                                         options={field.options}
                                         onChange={(data) => handleChange(field.name, data)}
                                     />
+                                    {errors[field.name] && <span className="error-text">{errors[field.name]}</span>}
                                 </section>
                             );
                         case "recaptcha":
@@ -369,6 +425,7 @@ const FromViewer = (props) => {
                                              />
                                         </label>
                                     </div>
+                                    {errors[field.name] && <span className="error-text">{errors[field.name]}</span>}
                                 </section>
                             );
                         case "datepicker":
@@ -382,6 +439,7 @@ const FromViewer = (props) => {
                                             onChange={(e) => { handleChange(field.name, e.target.value) }}
                                         />
                                     </div>
+                                    {errors[field.name] && <span className="error-text">{errors[field.name]}</span>}
                                 </section>
                             );
                         case "timepicker":
@@ -393,6 +451,7 @@ const FromViewer = (props) => {
                                         value={inputs[field.name]}
                                         onChange={(e) => { handleChange(field.name, e.target.value) }}
                                     />
+                                    {errors[field.name] && <span className="error-text">{errors[field.name]}</span>}
                                 </section>
                             );
                         case "section":
