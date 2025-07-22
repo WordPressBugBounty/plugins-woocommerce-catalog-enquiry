@@ -206,6 +206,18 @@ class Admin {
             }
         }
 
+        $brands = get_terms('product_brand', [ 'hide_empty' => false ]);
+        $all_product_brand = [];
+        if ($brands) {
+            foreach ($brands as $brand) {
+                $all_product_brand[] = [
+                    'value' => $brand->term_id,
+                    'label' => $brand->name,
+                    'key'   => $brand->term_id,
+                ];
+            }
+        }
+
         // Get current user role
         $current_user      = wp_get_current_user();
         $current_user_role = '';
@@ -217,7 +229,7 @@ class Admin {
         $settings_value = [];
         $tabs_names     = [ 'enquiry-catalog-customization', 'all-settings', 'enquiry-form-customization', 'enquiry-quote-exclusion', 'tools', 'enquiry-email-temp', 'wholesale', 'wholesale-registration', 'pages' ];
         foreach ( $tabs_names as $tab_name ) {
-            $settings_value[ $tab_name ] = CatalogX()->setting->get_option( 'catalogx_' . $tab_name . '_settings' );
+            $settings_value[ $tab_name ] = CatalogX()->setting->get_option(  str_replace( '-', '_', 'catalogx_' . $tab_name . '_settings' ) );
         }
 
         if ($current_user_role === 'administrator') {
@@ -244,6 +256,7 @@ class Admin {
             'all_users'                 => $all_users,
             'all_products'              => $all_products,
             'all_product_cat'           => $product_cat,
+            'all_product_brand'         => $all_product_brand,
             'all_product_tag'           => $product_tags,
             'settings_databases_value'  => $settings_value,
             'active_modules'            => CatalogX()->modules->get_active_modules(),

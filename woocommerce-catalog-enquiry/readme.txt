@@ -3,9 +3,9 @@ Contributors: wcmp
 Tags: product enquiry for woocommerce, request a quote, b2b , dynamic pricing, wholesale pricing, 
 Donate link: https://multivendorx.com/donate
 Requires at least: 6.4
-Tested up to: 6.8.1
+Tested up to: 6.8.2
 Requires PHP: 8.0
-Stable tag: 6.0.6
+Stable tag: 6.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -220,7 +220,12 @@ Answer: Simply enable the 'Product Enquiry Button When Product is Out Of Stock' 
 6. Real-Time Page Builder interface
 7. Enquiry Dashbaord
 
-== Changelog ==
+== Changelog ==.
+= 6.0.7 - 2025-07-22 =
+* Added     - Compatibility of WordPress 6.8.2.
+* Added     - Compatibility of WooCommerce 10.0.2.
+* Added     - Brand-wise exclusion feature for Product Brands.
+
 = 6.0.6 - 2025-06-10 =
 * Fixed     - Issue related to form field functionality.
 

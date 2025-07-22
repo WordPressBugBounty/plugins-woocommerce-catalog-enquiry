@@ -70,15 +70,15 @@ class Setting {
          */
         $this->settings_keys = apply_filters( 'catalogx_register_settings_keys', [
             'catalogx_extra_settings',
-            'catalogx_enquiry-catalog-customization_settings',
-            'catalogx_all-settings_settings',
+            'catalogx_enquiry_catalog_customization_settings',
+            'catalogx_all_settings_settings',
             'catalogx_tools_settings',
             'catalogx_pages_settings',
-            'catalogx_enquiry-quote-exclusion_settings',
-            'catalogx_enquiry-form-customization_settings',
-            'catalogx_enquiry-email-temp_settings',
+            'catalogx_enquiry_quote_exclusion_settings',
+            'catalogx_enquiry_form_customization_settings',
+            'catalogx_enquiry_email_temp_settings',
             'catalogx_wholesale_settings',
-            'catalogx_wholesale-registration_settings'
+            'catalogx_wholesale_registration_settings'
         ]);
 
         return $this->settings_keys;

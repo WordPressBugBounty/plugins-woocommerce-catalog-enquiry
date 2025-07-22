@@ -62,7 +62,7 @@ final class CatalogX {
     }
 
     public function migrate_from_previous() {
-        if ( version_compare( get_option( 'catalogx_plugin_version' ), '6.0.0', '<' ) ) {
+        if ( version_compare( get_option( 'catalogx_plugin_version' ), '6.0.7', '<' ) ) {
             new Install();
         }
     }
@@ -109,7 +109,7 @@ final class CatalogX {
             icl_register_string( 'catalogx', $key, $value );
         }
 
-        $form_settings =  CatalogX()->setting->get_option('catalogx_enquiry-form-customization_settings');
+        $form_settings =  CatalogX()->setting->get_option('catalogx_enquiry_form_customization_settings');
 
         if ( function_exists( 'icl_register_string' ) ) {
             foreach ( $form_settings['formsettings']['formfieldlist'] as $field ) {
@@ -138,7 +138,7 @@ final class CatalogX {
         }
 
         // Save the form settings to the options table
-        update_option( 'catalogx_enquiry-form-customization_settings', $form_settings );
+        update_option( 'catalogx_enquiry_form_customization_settings', $form_settings );
     }
 
     //load all classes

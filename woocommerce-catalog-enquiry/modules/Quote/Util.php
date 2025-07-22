@@ -20,7 +20,7 @@ class Util {
         $current_user = wp_get_current_user();
 
         // Get exclusion setting
-        $quote_exclusion_setting = CatalogX()->setting->get_option( 'catalogx_enquiry-quote-exclusion_settings', [] );
+        $quote_exclusion_setting = CatalogX()->setting->get_option( 'catalogx_enquiry_quote_exclusion_settings', [] );
 
         // Get userroll exclusion settings
         $userroles_exclusion_settings = isset($quote_exclusion_setting[ 'quote_exclusion_userroles_list' ]) ? $quote_exclusion_setting[ 'quote_exclusion_userroles_list' ] : [];
@@ -57,7 +57,7 @@ class Util {
      */
     public static function is_available_for_product($product_id) {
         // Get exclusion setting
-        $quote_exclusion_setting = CatalogX()->setting->get_option( 'catalogx_enquiry-quote-exclusion_settings', [] );
+        $quote_exclusion_setting = CatalogX()->setting->get_option( 'catalogx_enquiry_quote_exclusion_settings', [] );
 
         // Get product exclusion settings
         $product_exclusion_settings = isset($quote_exclusion_setting['quote_exclusion_product_list']) ? $quote_exclusion_setting['quote_exclusion_product_list'] : [];
@@ -96,6 +96,20 @@ class Util {
 
         // Check current product id is in exclude tags
         if ( in_array( $product_id, $exclude_tags ) ) {
+            return false;
+        }
+
+        // Get brand exclusion settings
+        $brand_exclusion_settings = isset($quote_exclusion_setting['quote_exclusion_brand_list']) ? $quote_exclusion_setting['quote_exclusion_brand_list'] : [];
+        
+        // Get excluded brand
+        $exclude_brands = array_filter(array_map( function( $tag ) use ($product_id) {
+            $brand_term_list = wp_get_post_terms($product_id,'product_brand',['fields'=>'ids']);
+            return (!empty($brand_term_list) && in_array($tag['key'], $brand_term_list)) ? $product_id : null;
+        }, $brand_exclusion_settings ));
+
+        // Check current product id is in exclude brands
+        if ( in_array( $product_id, $exclude_brands ) ) {
             return false;
         }
         return true;
