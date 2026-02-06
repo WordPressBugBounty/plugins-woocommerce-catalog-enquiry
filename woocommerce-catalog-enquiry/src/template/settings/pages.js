@@ -20,7 +20,7 @@ export default {
             key: 'set_request_quote_page',
             type: 'select',
             label: __("Set Request Quote Page", "catalogx"),
-            desc: __("Select the page on which you have inserted <code>[request_quote]</code> shortcode.", "catalogx"),
+            desc: __("Select the page on which you have inserted <code>[catalogx_request_quote]</code> shortcode.", "catalogx"),
             options: appLocalizer.all_pages,
             proSetting: true,
         },

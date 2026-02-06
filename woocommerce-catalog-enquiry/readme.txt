@@ -1,26 +1,31 @@
-=== CatalogX - Product Catalog Mode & product Enquiry, Request Quote for WooCommerce, Wholesale Prices, B2B, Wholesale User Roles, Dynamic Pricing, Tired Pricing & More ===
+=== CatalogX - Catalog Mode, Enquiry & Quotes for WooCommerce ===
 Contributors: wcmp
-Tags: product enquiry for woocommerce, request a quote, b2b , dynamic pricing, wholesale pricing, 
+Tags: product catalog mode , product enquiry for woocommerce, request a quote, b2b ,  wholesale pricing
 Donate link: https://multivendorx.com/donate
 Requires at least: 6.4
-Tested up to: 6.8.2
+Tested up to: 6.9.0
 Requires PHP: 8.0
-Stable tag: 6.0.7
+Stable tag: 6.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-CatalogX: WooCommerce catalog mode, product enquiry, Request a quote, B2B or B2B + B2C wholesale pricing, 
-## Description
+WooCommerce Catalog Mode, product enquiry, and request a quote plugin. Hide prices, disable cart, and collect enquiries easily.
+== Description ==
+= WOOCOMMERCE CATALOG MODE PLUGIN FOR WORDPRESS – WITH PRODUCT ENQUIRY & REQUEST A QUOTE =
+Easily switch your WooCommerce store to catalog mode and enable product enquiry and quote request functionality - no coding required.
 
-🥇 Most advanced WooCommerce catalog mode, wholesale, and request quote plugin.
-🎁 Feature-packed solution to create powerful **B2B, B2C,** and hybrid ecommerce stores.
-📞 **Dedicated support** team with **95%** customer satisfaction
+CatalogX allows you to turn your WooCommerce store into a product catalog with enquiry and quotation features. You can hide prices, remove the “Add to Cart” button, and add customizable enquiry or request-a-quote buttons anywhere on your site. This is useful for B2B, wholesale, or catalog-only stores.
 
-CatalogX turns your WooCommerce site into a flexible ecommerce product catalog with catalog mode to show products without prices and remove the “Add to Cart” button.
-Enable a seamless product enquiry experience where customers can easily submit product enquiry requests and request a quote through custom enquiry forms — perfect for B2B, wholesale, and catalog WordPress businesses.
+The plugin supports role-based catalog settings, variable product enquiries, and vendor-specific quote handling. It can be used to create private stores, product showcases, or lead-generation-focused WooCommerce catalogs.
 
-Simplify your woocommerce catalog management, offer wholesale pricing, set role-based discounts, and streamline the quote woocommerce process — all from a single powerful plugin.
-CatalogX streamlines the quotation process, enabling customers to request quotes directly from your site. Perfect for wholesale and B2B businesses, it simplifies the management of wholesale and role-based pricing. With extensive customization options, you can tailor the shopping experience to fit your unique business needs.
+Key features include:
+🛒 Catalog mode to display products without prices and hide the “Add to Cart” button.
+📩 Product enquiry and request-a-quote forms for customers.
+👥 Role-based catalog and pricing settings.
+🔄 Support for variable products and vendor-specific quotes.
+⚙️ Customizable forms and buttons to suit your store needs.
+
+CatalogX provides a single, integrated solution for managing WooCommerce catalogs, wholesale pricing, and quotation requests, making it suitable for B2B, wholesale, and hybrid ecommerce stores.
 = Features =
 🚫 Disable Purchase Options
 🛒 Replace Add-to-Cart button with a Custom Button.
@@ -48,7 +53,7 @@ CatalogX streamlines the quotation process, enabling customers to request quotes
 
 [**Catalog**](https://catalogx.com/product-catalog/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
 
-The Catalog module 🛒 helps you create a tailored shopping experience with enhanced product enquiry capabilities by offering a private or catalog-only mode for your WooCommerce store. This feature is perfect for businesses that want to manage price visibility, attract specific customer segments, or operate a members-only store. By controlling how and when prices are displayed, you can increase lead generation and encourage customer inquiries, which can then be converted into sales 💬.
+The Catalog module 🛒 helps you create a tailored shopping experience with enhanced product enquiry capabilities by offering a private or catalog-only mode for your WooCommerce store. Inquiry feature is perfect for businesses that want to manage price visibility, attract specific customer segments, or operate a members-only store. By controlling how and when prices are displayed, you can increase lead generation and encourage customer inquiries, which can then be converted into sales 💬.
 
 #Key Features:
 🛍️ Enable Catalog Mode for the entire site or specific products to create a unique shopping experience.
@@ -58,7 +63,7 @@ The Catalog module 🛒 helps you create a tailored shopping experience with enh
 📈 Manage price visibility strategically to boost lead generation.
 
 [**Enquiry**](https://catalogx.com/enquiry/?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg)
-Product enquiry is essential 📨 for businesses that want to engage with potential customers who have questions or are interested in bulk or high-value orders. By placing inquiry and quote request buttons strategically across your site, you make it easy for users to reach out, even for out-of-stock items. This module helps you capture leads, respond efficiently, and better understand product demand, all of which contribute to higher conversion rates and customer satisfaction.
+Product enquiry is essential 📨 for businesses that want to engage with potential customers who have questions or are interested in bulk or high-value orders. By placing inquiry and quote request buttons strategically across your site, you make it easy for users to reach out, even for out-of-stock items. Inquiry module helps you capture leads, respond efficiently, and better understand product demand, all of which contribute to higher conversion rates and customer satisfaction.
 
 #Key Features:
 📍 Place Enquiry & Quote Request buttons anywhere using shortcode for maximum visibility.
@@ -221,6 +226,11 @@ Answer: Simply enable the 'Product Enquiry Button When Product is Out Of Stock' 
 7. Enquiry Dashbaord
 
 == Changelog ==.
+= 6.0.8 - 2025-12-05 =
+* Added     - Compatibility of WordPress 6.9.0.
+* Added     - Compatibility of WooCommerce 10.3.6.
+* Fixed     - Issue with the settings panel.
+
 = 6.0.7 - 2025-07-22 =
 * Added     - Compatibility of WordPress 6.8.2.
 * Added     - Compatibility of WooCommerce 10.0.2.
