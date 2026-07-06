@@ -1,108 +1,111 @@
-# Copyright (c) 2025 CatalogX. All Rights Reserved.
+# Copyright (c) 2026 CatalogX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: CatalogX - Product Catalog Mode For WooCommerce 6.0.0\n"
-"Report-Msgid-Bugs-To: https://catalogx.com/support/\n"
+"Project-Id-Version: CatalogX — Catalog Mode, Enquiry & Quotes for WooCommerce 6.1.0\n"
+"Report-Msgid-Bugs-To: https://catalogx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=catalogx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-03-26T12:58:01+00:00\n"
+"POT-Creation-Date: 2026-07-06T12:16:18+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: catalogx\n"
 
 #. Plugin Name of the plugin
 #: Woocommerce_Catalog_Enquiry.php
-msgid "CatalogX - Product Catalog Mode For WooCommerce"
+msgid "CatalogX — Catalog Mode, Enquiry & Quotes for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
 #: Woocommerce_Catalog_Enquiry.php
-msgid "https://catalogx.com/"
+msgid "https://catalogx.com/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=catalogx"
 msgstr ""
 
 #. Description of the plugin
 #: Woocommerce_Catalog_Enquiry.php
-msgid "Convert your WooCommerce store into a catalog website in a click"
+msgid "Convert your WooCommerce store into a catalog website in a click."
 msgstr ""
 
 #. Author of the plugin
 #: Woocommerce_Catalog_Enquiry.php
+#: assets/js/index.js:1
 msgid "MultiVendorX"
 msgstr ""
 
-#: classes/Admin.php:40
-#: classes/Admin.php:41
-msgid "Enquiry Messages"
+#. Author URI of the plugin
+#: Woocommerce_Catalog_Enquiry.php
+msgid "https://multivendorx.com/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=catalogx"
 msgstr ""
 
-#: classes/Admin.php:49
-#: classes/Admin.php:50
-msgid "Quotation Requests"
+#: classes/Admin.php:53
+#: assets/js/index.js:1
+msgid "Dashboard"
 msgstr ""
 
 #: classes/Admin.php:58
-#: classes/Admin.php:59
+#: assets/js/index.js:1
+msgid "Enquiry Messages"
+msgstr ""
+
+#: classes/Admin.php:63
+msgid "Quotation Requests"
+msgstr ""
+
+#: classes/Admin.php:68
+#: assets/js/index.js:1
 msgid "Wholesale Users"
 msgstr ""
 
-#: classes/Admin.php:67
-#: classes/Admin.php:68
-#: build/index.js:3
-#: src/template/modules/index.js:42
+#: classes/Admin.php:73
+#: assets/js/index.js:1
 msgid "Dynamic Pricing Rules"
 msgstr ""
 
-#: classes/Admin.php:76
-#: classes/Admin.php:77
-#: classes/CatalogX.php:156
+#: classes/Admin.php:78
+#: classes/Promotions.php:70
+#: assets/js/index.js:1
 msgid "Settings"
 msgstr ""
 
-#: classes/Admin.php:85
-#: classes/Admin.php:86
+#: classes/Admin.php:83
+#: assets/js/index.js:1
 msgid "Modules"
 msgstr ""
 
-#: classes/Admin.php:100
-msgid "Upgrade to pro"
-msgstr ""
-
-#: classes/CatalogX.php:157
-msgid "Support"
-msgstr ""
-
-#: classes/CatalogX.php:161
-#: classes/CatalogX.php:169
-#: build/index.js:3
+#: classes/Admin.php:115
+#: classes/Promotions.php:81
+#: classes/Promotions.php:117
+#: classes/Promotions.php:118
 msgid "Upgrade to Pro"
 msgstr ""
 
-#. translators: 1. Opening <strong> tag, 2. Closing </strong> tag, 3. Opening <a> tag for WooCommerce plugin link, 4. Closing </a> tag, 5. Opening <a> tag for plugin activation link, 6. Closing </a> tag
-#: classes/CatalogX.php:198
-msgid "%1$sCatalogX is inactive.%2$s The %3$sWooCommerce plugin%4$s must be active for CatalogX to work. Please %5$sinstall & activate WooCommerce%6$s"
+#: classes/Admin.php:123
+msgid "Upgrade to pro"
 msgstr ""
 
-#: classes/Core/QuoteCart.php:200
-msgid "Product already in Cart."
+#: classes/Core/QuoteCart.php:229
+msgid "Product added to quote cart."
 msgstr ""
 
-#: classes/Emails/EnquiryEmail.php:28
+#: classes/Core/QuoteCart.php:234
+msgid "Product already added to quote cart."
+msgstr ""
+
+#: classes/Emails/EnquiryEmail.php:30
 msgid "Enquiry sent"
 msgstr ""
 
-#: classes/Emails/EnquiryEmail.php:29
+#: classes/Emails/EnquiryEmail.php:31
 msgid "Admin will get an email when a customer enquires about a product."
 msgstr ""
 
-#: classes/Emails/EnquiryEmail.php:135
+#: classes/Emails/EnquiryEmail.php:95
 msgid "Product Enquiry for {PRODUCT_NAME} by {USER_NAME}"
 msgstr ""
 
-#: classes/Emails/EnquiryEmail.php:142
+#: classes/Emails/EnquiryEmail.php:102
 msgid "Enquiry for {PRODUCT_NAME}"
 msgstr ""
 
@@ -122,908 +125,2162 @@ msgstr ""
 msgid "New Quote Submitted by {customer_name} - Please Review"
 msgstr ""
 
-#: classes/Frontend.php:118
-msgid "Discount"
+#: classes/FrontendScripts.php:488
+msgid "This field is required"
 msgstr ""
 
-#: classes/Rest.php:105
+#: classes/FrontendScripts.php:489
+msgid "Invalid email format"
+msgstr ""
+
+#: classes/FrontendScripts.php:500
+msgid "No more product in Quote list!"
+msgstr ""
+
+#: classes/Promotions.php:52
+msgid "Heads up!"
+msgstr ""
+
+#: classes/Promotions.php:53
+msgid "6.0.0 is a major update. Make a full site backup before upgrading your marketplace to avoid any undesirable situations."
+msgstr ""
+
+#: classes/Promotions.php:104
+msgid "Docs"
+msgstr ""
+
+#: classes/Promotions.php:109
+#: assets/js/index.js:1
+msgid "Support"
+msgstr ""
+
+#: classes/RestAPI/Controllers/Logs.php:140
+msgid "Logs cleared successfully."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Logs.php:163
+msgid "Log file not found."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Logs.php:177
+msgid "Invalid log file."
+msgstr ""
+
+#: classes/RestAPI/Controllers/Settings.php:122
+#: classes/RestAPI/Controllers/Settings.php:140
 msgid "Settings Saved"
 msgstr ""
 
-#: modules/Enquiry/Rest.php:146
+#: classes/Utill.php:350
+msgid "Invalid nonce."
+msgstr ""
+
+#: classes/Utill.php:438
+msgid "Unexpected server error."
+msgstr ""
+
+#: modules/Catalog/Admin.php:44
+#: assets/js/index.js:1
+msgid "Catalog"
+msgstr ""
+
+#: modules/Catalog/Admin.php:71
+msgid "Additional Product Details"
+msgstr ""
+
+#: modules/Catalog/Admin.php:72
+msgid "Enter extra information about the product to display on the single product page. Useful for highlighting unique features, usage tips, or care instructions."
+msgstr ""
+
+#: modules/Enquiry/Rest.php:220
 msgid "Enquiry sent successfully"
 msgstr ""
 
-#: modules/Enquiry/Rest.php:172
-#: modules/Quote/Rest.php:266
-msgid "Sorry, you are not allowed to edit this resource."
-msgstr ""
-
-#: modules/Quote/Admin.php:29
-#: modules/Quote/Admin.php:96
+#: modules/Quote/Admin.php:34
+#: modules/Quote/Admin.php:104
 msgctxt "Order status"
 msgid "New Quote Request"
 msgstr ""
 
 #. translators: %s: Number of order status as new quote.
-#: modules/Quote/Admin.php:35
+#: modules/Quote/Admin.php:40
+#, php-format
 msgid "New Quote Request <span class=\"count\">(%s)</span>"
 msgid_plural "New Quote Requests <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/Quote/Admin.php:42
-#: modules/Quote/Admin.php:97
+#: modules/Quote/Admin.php:47
+#: modules/Quote/Admin.php:105
 msgctxt "Order status"
 msgid "Pending Quote"
 msgstr ""
 
 #. translators: %s: Number of order status as pending quote.
-#: modules/Quote/Admin.php:48
+#: modules/Quote/Admin.php:53
+#, php-format
 msgid "Pending Quote <span class=\"count\">(%s)</span>"
 msgid_plural "Pending Quote <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/Quote/Admin.php:55
-#: modules/Quote/Admin.php:98
+#: modules/Quote/Admin.php:60
+#: modules/Quote/Admin.php:106
 msgctxt "Order status"
 msgid "Expired Quote"
 msgstr ""
 
 #. translators: %s: Number of order status as expired quote.
-#: modules/Quote/Admin.php:61
+#: modules/Quote/Admin.php:66
+#, php-format
 msgid "Expired Quote <span class=\"count\">(%s)</span>"
 msgid_plural "Expired Quotes <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/Quote/Admin.php:68
-#: modules/Quote/Admin.php:99
+#: modules/Quote/Admin.php:73
+#: modules/Quote/Admin.php:107
 msgctxt "Order status"
 msgid "Accepted Quote"
 msgstr ""
 
 #. translators: %s: Number of order status as accepted quote.
-#: modules/Quote/Admin.php:74
+#: modules/Quote/Admin.php:79
+#, php-format
 msgid "Accepted Quote <span class=\"count\">(%s)</span>"
 msgid_plural "Accepted Quote <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/Quote/Admin.php:81
-#: modules/Quote/Admin.php:100
+#: modules/Quote/Admin.php:86
+#: modules/Quote/Admin.php:108
 msgctxt "Order status"
 msgid "Rejected Quote"
 msgstr ""
 
 #. translators: %s: Number of order status as rejected quote.
-#: modules/Quote/Admin.php:87
+#: modules/Quote/Admin.php:92
+#, php-format
 msgid "Rejected Quote <span class=\"count\">(%s)</span>"
 msgid_plural "Rejected Quote <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#: modules/Quote/Ajax.php:37
-msgid "Error occurred while adding product to Request a Quote list."
-msgstr ""
-
-#: modules/Quote/Ajax.php:43
-msgid "Product added to quote list."
-msgstr ""
-
-#: modules/Quote/Ajax.php:45
-msgid "Product already in your quote list."
-msgstr ""
-
-#: modules/Quote/Frontend.php:47
-msgid "No more product in Quote list!"
-msgstr ""
-
-#: modules/Quote/Module.php:82
+#: modules/Quote/Module.php:92
 msgid "My Quote"
 msgstr ""
 
-#: modules/Quote/Rest.php:120
+#: modules/Quote/QuoteAdd.php:99
+msgid "Error occurred while adding product to Request a Quote list."
+msgstr ""
+
+#: modules/Quote/QuoteAdd.php:108
+msgid "Product added to quote list."
+msgstr ""
+
+#: modules/Quote/QuoteAdd.php:113
+msgid "Product already in your quote list."
+msgstr ""
+
+#: modules/Quote/QuoteCart.php:200
 msgid "Quote cart updated!"
 msgstr ""
 
+#: modules/Quote/QuoteCart.php:205
+msgid "Invalid products payload. Expected a non-empty array."
+msgstr ""
+
+#: modules/Quote/QuoteCart.php:214
+msgid "Each product must contain key and quantity."
+msgstr ""
+
+#: modules/Quote/QuoteCart.php:225
+msgid "Quantity must be a positive integer."
+msgstr ""
+
+#: modules/Quote/QuoteCart.php:260
+msgid "Missing required parameter: key."
+msgstr ""
+
 #. translators: %s: reject quotation number.
-#: modules/Quote/Rest.php:165
+#: modules/Quote/Quotes.php:91
+#, php-format
 msgid "You have confirmed rejection of the quotation No: %d"
 msgstr ""
 
-#: modules/Quote/Rest.php:170
+#: modules/Quote/Quotes.php:96
 msgid "Missing form data."
 msgstr ""
 
-#: modules/Quote/Rest.php:192
+#: modules/Quote/Quotes.php:118
 msgid "Failed to create order."
 msgstr ""
 
-#: templates/emails/enquiry-email.php:17
+#: templates/emails/enquiry-email.php:22
 msgid "New Product Enquiry"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:21
-#: templates/emails/plain/enquiry-email.php:12
+#: templates/emails/enquiry-email.php:26
+#: templates/emails/plain/enquiry-email.php:15
 msgid "Dear Admin"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:22
-#: templates/emails/plain/enquiry-email.php:13
+#: templates/emails/enquiry-email.php:27
+#: templates/emails/plain/enquiry-email.php:16
 msgid "Please find the product enquiry, details are given below"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:23
+#: templates/emails/enquiry-email.php:28
 msgid "Product Details"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:28
-#: templates/emails/request-quote.php:30
-#: build/blocks/quote-cart/index.js:383
-#: build/index.js:3
+#: templates/emails/enquiry-email.php:33
+#: templates/emails/request-quote.php:31
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+#: assets/js/index.js:1
 msgid "Product"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:29
+#: templates/emails/enquiry-email.php:34
 msgid "Product Url"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:30
+#: templates/emails/enquiry-email.php:35
 msgid "Product SKU"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:100
+#: templates/emails/enquiry-email.php:105
 msgid "Customer Details"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:102
+#: templates/emails/enquiry-email.php:107
+#: assets/js/index.js:1
 msgid "Name"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:106
+#: templates/emails/enquiry-email.php:111
+#: assets/js/index.js:1
 msgid "Email"
 msgstr ""
 
-#: templates/emails/enquiry-email.php:114
+#: templates/emails/enquiry-email.php:120
 msgid "User Phone : "
 msgstr ""
 
-#: templates/emails/enquiry-email.php:120
+#: templates/emails/enquiry-email.php:128
 msgid "User Address : "
 msgstr ""
 
-#: templates/emails/enquiry-email.php:126
+#: templates/emails/enquiry-email.php:136
 msgid "User Subject : "
 msgstr ""
 
-#: templates/emails/enquiry-email.php:132
+#: templates/emails/enquiry-email.php:144
 msgid "User Comments : "
 msgstr ""
 
 #. translators: %s: email footer which display the site name.
-#: templates/emails/enquiry-email.php:146
-#: templates/emails/plain/enquiry-email.php:59
+#: templates/emails/enquiry-email.php:159
+#: templates/emails/plain/enquiry-email.php:65
+#, php-format
 msgid "%s - Powered by CatalogX"
 msgstr ""
 
 #. translators: %s: Show the admin name.
-#: templates/emails/plain/request-quote.php:10
-#: templates/emails/request-quote.php:20
+#: templates/emails/plain/request-quote.php:12
+#: templates/emails/request-quote.php:21
+#, php-format
 msgid "Dear %s"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:11
-#: templates/emails/request-quote.php:21
+#: templates/emails/plain/request-quote.php:13
+#: templates/emails/request-quote.php:22
 msgid "You have received a new quote request from a customer for the following product:"
 msgstr ""
 
 #. translators: %s: Show the product name.
-#: templates/emails/plain/request-quote.php:17
+#: templates/emails/plain/request-quote.php:21
+#: templates/emails/plain/request-quote.php:29
+#, php-format
 msgid "Product: %s"
 msgstr ""
 
 #. translators: %s: Show the quantity of the product.
-#: templates/emails/plain/request-quote.php:19
+#: templates/emails/plain/request-quote.php:23
+#: templates/emails/plain/request-quote.php:31
+#, php-format
 msgid "Qty: %s"
 msgstr ""
 
 #. translators: %s: Show the price of the product.
-#: templates/emails/plain/request-quote.php:21
+#: templates/emails/plain/request-quote.php:25
+#: templates/emails/plain/request-quote.php:33
+#, php-format
 msgid "Price: %s"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:24
+#: templates/emails/plain/request-quote.php:36
 msgid "Customer Details:"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:25
-#: templates/emails/request-quote.php:64
+#: templates/emails/plain/request-quote.php:37
+#: templates/emails/request-quote.php:92
 msgid "Customer Name:"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:26
-#: templates/emails/request-quote.php:65
-#: build/blocks/quote-cart/index.js:383
+#: templates/emails/plain/request-quote.php:38
+#: templates/emails/request-quote.php:93
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
 msgid "Email:"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:29
-#: templates/emails/request-quote.php:70
-msgid "Additional Details:"
-msgstr ""
-
-#: templates/emails/request-quote.php:33
-msgid "Qty"
-msgstr ""
-
-#: templates/emails/request-quote.php:36
-msgid "Price"
-msgstr ""
-
-#: build/blocks/enquiry-button/index.js:1
-#: build/blocks/quote-button/index.js:1
-msgid "Loading ..."
-msgstr ""
-
-#: build/blocks/enquiry-button/index.js:1
-#: build/blocks/quote-button/index.js:1
-msgid "Failed to load."
-msgstr ""
-
-#: build/blocks/enquiry-button/index.js:1
-#: build/blocks/quote-button/index.js:1
-msgid "No product selected."
-msgstr ""
-
-#: build/blocks/enquiryForm/index.js:1
-msgid "Your security code is:"
-msgstr ""
-
-#: build/blocks/enquiryForm/index.js:1
-msgid "Invalid security code, please try again."
-msgstr ""
-
-#: build/blocks/enquiryForm/index.js:1
-#: build/index.js:4
-msgid "Click to upload"
-msgstr ""
-
-#: build/blocks/enquiryForm/index.js:1
-#: build/index.js:4
-msgid "or drag and drop"
-msgstr ""
-
-#: build/blocks/enquiryForm/index.js:1
-msgid "Submit"
-msgstr ""
-
-#: build/blocks/enquiryForm/index.js:1
-msgid "Close"
-msgstr ""
-
-#: build/blocks/quote-cart/index.js:383
-msgid "You are about to reject the quote"
-msgstr ""
-
-#: build/blocks/quote-cart/index.js:383
-msgid "Please feel free to enter here your reason or provide us your feedback:"
-msgstr ""
-
-#: build/blocks/quote-cart/index.js:383
-msgid "Reject the quote"
-msgstr ""
-
-#: build/blocks/quote-cart/index.js:383
-msgid "Our team is reviewing your details and will get back to you shortly with a personalized quote. We appreciate your patience and look forward to serving you!"
-msgstr ""
-
-#: build/blocks/quote-cart/index.js:383
-msgid "Quantity"
-msgstr ""
-
-#: build/blocks/quote-cart/index.js:383
-msgid "Subtotal"
-msgstr ""
-
-#: build/blocks/quote-cart/index.js:383
-msgid "Update Cart"
-msgstr ""
-
-#: build/blocks/quote-cart/index.js:383
-msgid "Name:"
-msgstr ""
-
-#: build/blocks/quote-cart/index.js:383
+#: templates/emails/plain/request-quote.php:39
+#: templates/emails/request-quote.php:98
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
 msgid "Phone:"
 msgstr ""
 
-#: build/blocks/quote-cart/index.js:383
+#: templates/emails/plain/request-quote.php:42
+#: templates/emails/request-quote.php:102
+msgid "Additional Details:"
+msgstr ""
+
+#: templates/emails/request-quote.php:21
+msgid "Store Admin"
+msgstr ""
+
+#: templates/emails/request-quote.php:34
+msgid "Qty"
+msgstr ""
+
+#: templates/emails/request-quote.php:37
+msgid "Price"
+msgstr ""
+
+#: templates/emails/request-quote.php:74
+msgid "Sample Product"
+msgstr ""
+
+#: templates/emails/request-quote.php:92
+msgid "John Doe"
+msgstr ""
+
+#: templates/emails/request-quote.php:99
+msgid "8797639205"
+msgstr ""
+
+#: assets/js/block/enquiry-button/index.js:1
+msgid "Loading"
+msgstr ""
+
+#: assets/js/block/enquiry-button/index.js:1
+#: assets/js/block/quote-button/index.js:1
+msgid "Failed to load."
+msgstr ""
+
+#: assets/js/block/enquiry-button/index.js:1
+msgid "Send an enquiry"
+msgstr ""
+
+#. translators: %s: Field label.
+#: assets/js/block/enquiry-form/index.js:3
+#: assets/js/block/enquiry-form/index.js:5
+#, js-format
+msgid "%s is required."
+msgstr ""
+
+#: assets/js/block/enquiry-form/index.js:3
+#: assets/js/block/enquiry-form/index.js:5
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: assets/js/block/enquiry-form/index.js:3
+#: assets/js/block/enquiry-form/index.js:5
+msgid "Please accept the Terms & Conditions."
+msgstr ""
+
+#: assets/js/block/quote-button/index.js:1
+msgid "Add to Quote"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "You are about to reject the quote"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Please feel free to enter here your reason or provide us your feedback:"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Reject the quote"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Thank you for your quote request"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Our team is reviewing your details and will get back to you shortly with a personalized quote. We appreciate your patience and look forward to serving you!"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "View Quote "
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Update Cart"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Quantity"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Subtotal"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Username"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Something went wrong! Please try again."
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Quote request sent successfully!"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Request a Quote"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
+msgid "Name:"
+msgstr ""
+
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
 msgid "Message:"
 msgstr ""
 
-#: build/blocks/quote-cart/index.js:383
+#: assets/js/block/quote-cart/index.js:1
+#: assets/js/block/quote-cart/view.js:1
 msgid "Send Quote"
 msgstr ""
 
-#: build/blocks/quote-cart/index.js:383
-msgid "Something went wrong! Try Again"
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Set up product enquiries"
 msgstr ""
 
-#: build/blocks/quote-cart/index.js:383
-msgid "Form submitted successfully"
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Choose how customers can submit enquiries for your products."
 msgstr ""
 
-#: build/index.js:1
-msgid "Enquiry Email "
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Restrict product enquiries for logged-in users only"
 msgstr ""
 
-#: build/index.js:1
-msgid "Select your preferred enquiry details email template"
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Only authenticated customers can send enquiries."
 msgstr ""
 
-#: build/index.js:1
-msgid "Common Settings"
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+#: assets/js/index.js:1
+msgid "Logged in only"
 msgstr ""
 
-#: build/index.js:1
-msgid "Set the email address to receive notifications when a user submits enquiry of a product. You can add multiple comma-separated emails.<br/> Default: The admin's email is set as the receiver. Exclude the admin's email from the list to exclude admin from receiving these notifications."
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+#: assets/js/index.js:1
+msgid "Everyone"
 msgstr ""
 
-#: build/index.js:1
-msgid "Recipient email for new subscriber"
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Enquiry for out-of-stock products only"
 msgstr ""
 
-#: build/index.js:1
-msgid "Shopping Journey"
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+#: assets/js/index.js:1
+msgid "Limit enquiries to products currently unavailable for purchase."
 msgstr ""
 
-#: build/index.js:1
-msgid "Set up sales flow and catalog mode with integrated enquiry and quotation management."
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+#: assets/js/index.js:1
+msgid "All products"
 msgstr ""
 
-#: build/index.js:1
-msgid "Sitewide buy mode"
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+#: assets/js/index.js:1
+msgid "Out-of-stock products only"
 msgstr ""
 
-#. translators: %s will be replaced with a link to CatalogX Pro
-#: build/index.js:2
-msgid "Enabling this setting with CatalogX activates the catalog-only mode on your site, preventing customers from making purchases. To allow purchasing functionality, upgrade to %s and enable this setting to activate the buying mode."
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Next"
 msgstr ""
 
-#: build/index.js:2
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Set up quotation requests"
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Allow customers to request quotations and define how long quotes remain valid."
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+#: assets/js/index.js:1
+msgid "Who can request quotations"
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+#: assets/js/index.js:1
+msgid "Control whether quotation requests are available to all visitors or only logged-in users."
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Back"
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Build your enquiry form"
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Customize the information customers provide when submitting enquiries and quote requests."
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Setup"
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Finish"
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "Welcome to the CatalogX family!"
+msgstr ""
+
+#: assets/js/block/setup-wizard/index.js:1
+#: assets/js/block/setup-wizard/view.js:1
+msgid "This quick setup wizard will help you configure enquiries and quotations for your products. It shouldn't take longer than two minutes."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Catalog Showcase"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry & Communication"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quotation"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Personalized quote requests"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Let customers request custom quotes and negotiate pricing to convert high-intent visitors."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale pricing & order forms"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Offer bulk pricing and dedicated order forms to attract B2B buyers and grow large-volume sales."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Multi-product enquiries"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Let customers enquire about multiple products in a single request for better engagement."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Advanced enquiry management"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Use file attachments, internal tagging, and organized workflows for a smoother sales process."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Role-based pricing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Show different prices to wholesalers, members, or VIP customers with personalized offers."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Category-based pricing rules"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Set custom pricing at the category level to run targeted promotions across your catalog."
+msgstr ""
+
+#: assets/js/index.js:1
+#, js-format
+msgid "Activate %s"
+msgstr ""
+
+#: assets/js/index.js:1
+#, js-format
+msgid "This feature is currently unavailable. To activate it, please enable the %s"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enable Now"
+msgstr ""
+
+#: assets/js/index.js:1
+#, js-format
+msgid "Install %s"
+msgstr ""
+
+#: assets/js/index.js:1
+#, js-format
+msgid "This feature requires the %s plugin. Please install and activate it to continue."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Install Plugin"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Upgrade to CatalogX Pro & turn product interest into more sales"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Unlock powerful tools that help you generate more enquiries, close deals faster, and increase revenue with flexible pricing and quotation features."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "For website with"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "site license"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Yes, Upgrade Me!"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Why should you upgrade?"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Outer Space"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "New product enquiry"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Admin notification"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Hello Admin,"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "A customer has submitted a product enquiry. Here are the full details below."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry Details"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "User Name"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "[{name_enter_your_name}]"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "User Email"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "[{email_enter_your_email}]"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Green Lagoon"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "New Enquiry Submitted"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Dear Admin,"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "A customer has submitted a new product enquiry. Please review the details below and respond at your earliest convenience."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customer information and enquiry details"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customer Name"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customer Email"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Crimson Valley"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product Enquiry"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Received: {date_time}"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<small style=\"color: #9ca3af; font-size: 0.75rem;\">This is an automated notification. Please do not reply directly to this email.</small>"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Sunset Orange"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "New Enquiry Alert"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "A new product enquiry has been submitted. Please find the customer details below."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customer & Product Details"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Full Name"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Please respond to this enquiry promptly."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Royal Indigo"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "New Enquiry Received"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "A customer has submitted a new product enquiry. Please review the details below."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Email Address"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "This is an automated notification."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customize the email template used for enquiry notifications."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Use personalization tags to make your emails more engaging - for example, use <b>{user_name}</b> to display the subscriber's name and <b>{email_tag}</b> to display their email address automatically."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quote"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customize the email template used for quote notifications."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quote email templates are coming soon."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customize the email template used for wholesale notifications."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale email templates are coming soon."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Design a personalized enquiry form with built-in form builder."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Free"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Free Form Content"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Simple textarea for free users."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Write something..."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Pro"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customise personalised enquiry form."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Drag-and-drop interface to tailor the wholesale registration form."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Loading..."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry & Quote"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Purchase experience"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Define how customers move from product browsing to purchasing across your store."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Store experience"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Choose whether customers can browse products as a catalog or purchase them through your store."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<ul><li>Browse products only - Hide the Add to Cart button and disable purchasing across your store.</li><li>Browse & purchase products - Display the Add to Cart button and allow customers to add products to cart and complete purchases.</li></ul>"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Browse products only"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Browse & purchase products"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Cart / Checkout Redirect Page"
 msgstr ""
 
 #. translators: %s will be replaced with a link to CatalogX Pro
-#: build/index.js:3
-msgid "Redirect users to the homepage when they click on the cart or checkout page. To customize the redirection to a different page, an upgrade to %s is required."
+#: assets/js/index.js:1
+#, js-format
+msgid "By default, customers are redirected to the homepage when they access the cart or checkout pages. Select a different page to customize this behavior. An upgrade to %s is required."
 msgstr ""
 
-#: build/index.js:3
-msgid "Enquiry"
+#: assets/js/index.js:1
+msgid "Enquiry journey"
 msgstr ""
 
-#: build/index.js:3
-msgid "Restrict product enquiries for logged-in users only"
+#: assets/js/index.js:1
+msgid "Define the customer experience from enquiry initiation to submission."
 msgstr ""
 
-#: build/index.js:3
-msgid "If enabled, non-logged-in users can't access the enquiry flow."
+#: assets/js/index.js:1
+msgid "Who can submit enquiries"
 msgstr ""
 
-#: build/index.js:3
-msgid "Enquiry for out-of-stock products only"
+#: assets/js/index.js:1
+msgid "Control whether enquiries are available to all visitors or only logged-in customers."
 msgstr ""
 
-#: build/index.js:3
-msgid "Enquiry button is shown exclusively for products that are out of stock. For items that are in stock, the Add-to-Cart button will be displayed instead."
+#: assets/js/index.js:1
+msgid "<ul><li>Everyone - Any visitor can submit product enquiries.</li><li>Logged-in Customers - Only authenticated customers can submit enquiries.</li></ul>"
 msgstr ""
 
-#: build/index.js:3
-msgid "In-Stock notify me button "
+#: assets/js/index.js:1
+msgid "Show enquiry button for"
 msgstr ""
 
-#: build/index.js:3
-msgid "This option allows customers to subscribe for automatic stock notifications."
+#: assets/js/index.js:1
+msgid "<ul><li>All Products - Display the enquiry button on every product, regardless of stock status.</li><li>Out-of-Stock Products Only - Display the enquiry button only for products that are currently unavailable or out of stock.</li></ul>"
 msgstr ""
 
-#: build/index.js:3
+#: assets/js/index.js:1
+msgid "In-Stock notify me button"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Allow customers to receive notifications when out-of-stock products become available."
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Display enquiry form as"
 msgstr ""
 
-#: build/index.js:3
-msgid "Select whether the form is displayed directly on the page or in a pop-up window."
+#: assets/js/index.js:1
+msgid "Choose how the enquiry form is presented to customers."
 msgstr ""
 
-#: build/index.js:3
-msgid "Redirect after enquiry form Submission"
+#: assets/js/index.js:1
+msgid "<ul><li>Popup Window - Open the enquiry form in a modal popup.</li><li>Inline on Product Page - Display the enquiry form directly within the product page.</li></ul>"
 msgstr ""
 
-#: build/index.js:3
-msgid "Enable this to redirect user to another page after successful enquiry submission."
+#: assets/js/index.js:1
+msgid "What happens after enquiry submission?"
 msgstr ""
 
-#: build/index.js:3
+#: assets/js/index.js:1
+msgid "<ul><li>Stay on Current Page - Customers remain on the same page after submitting their enquiry.</li><li>Redirect to Another Page - Customers are redirected to a page of your choice, such as a thank-you page or contact page, after their enquiry is submitted.</li></ul>"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Choose whether customers remain on the current page or are redirected to another page after submitting an enquiry."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Stay on current page"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Redirect to another page"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Post enquiry submission redirect page"
 msgstr ""
 
-#: build/index.js:3
+#: assets/js/index.js:1
 msgid "Select page where user will be redirected after successful enquiry."
 msgstr ""
 
-#: build/index.js:3
-#: src/template/modules/index.js:24
-msgid "Quotation"
+#: assets/js/index.js:1
+msgid "When a customer submits an enquiry for a product, the enquiry details will be sent to the email address(es) entered here. Add multiple email addresses separated by commas.<br/> <b>Default:</b> The site administrator's email is included by default. To stop the admin from receiving enquiry notifications, remove the admin email address from this list."
 msgstr ""
 
-#: build/index.js:3
-msgid "Limit quotation requests to logged-in users only"
+#: assets/js/index.js:1
+msgid "Recipient email for product enquiries"
 msgstr ""
 
-#: build/index.js:3
-msgid "If enabled, non-logged-in users cannot submit quotation requests."
+#: assets/js/index.js:1
+msgid "Control who can request quotations and how long quotations remain available."
 msgstr ""
 
-#: build/index.js:3
-msgid "Quotation expiry duration"
+#: assets/js/index.js:1
+msgid "Quotation journey"
 msgstr ""
 
-#: build/index.js:3
-msgid "Set the period after which a quotation will expire and no longer be valid for purchase."
+#: assets/js/index.js:1
+msgid "<ul><li>Everyone - Any visitor can submit quotation requests.</li><li>Logged-in users - Only authenticated customers can request quotations.</li></ul>"
 msgstr ""
 
-#: build/index.js:3
+#: assets/js/index.js:1
+msgid "Logged-in users"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quotation validity period"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Choose how long quotations remain valid before they expire."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<ul><li><strong>Lifetime</strong> – Quotations never expire automatically.</li><li><strong>Fixed duration</strong> – Quotations expire after the specified number of days.</li></ul>"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Lifetime"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Fixed duration"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Duration"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Specify the number of days a quotation remains valid."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "The quotation will automatically expire after the specified number of days from its creation."
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "days"
 msgstr ""
 
-#: build/index.js:3
-msgid "PDF Manager"
+#: assets/js/index.js:1
+msgid "When a customer submits an enquiry or receives a quotation, choose whether a PDF should be available for download, attached to the email sent to them, or both."
 msgstr ""
 
-#: build/index.js:3
-msgid "Attachment"
+#: assets/js/index.js:1
+msgid "How customers receives PDF documents?"
 msgstr ""
 
-#: build/index.js:3
-msgid "Download as PDF"
+#: assets/js/index.js:1
+msgid "PDF delivery mode"
 msgstr ""
 
-#: build/index.js:3
-msgid "Attach with Email"
+#: assets/js/index.js:1
+msgid "Available as download"
 msgstr ""
 
-#: build/index.js:3
-msgid "Quote"
+#: assets/js/index.js:1
+msgid "Attached to customer email"
 msgstr ""
 
-#: build/index.js:3
-msgid "Tools"
+#: assets/js/index.js:1
+msgid "Access Rules"
 msgstr ""
 
-#: build/index.js:3
-msgid "Review all system logs and errors"
-msgstr ""
-
-#: build/index.js:3
-msgid "Put your custom css here, to customize the enquiry form."
-msgstr ""
-
-#: build/index.js:3
-msgid "Addional CSS"
-msgstr ""
-
-#: build/index.js:3
-msgid "Product Page Builder"
-msgstr ""
-
-#: build/index.js:3
-msgid "Drag-and-drop to create and customize single product page elements."
-msgstr ""
-
-#: build/index.js:3
-msgid "Catalog Customizer"
-msgstr ""
-
-#: build/index.js:3
-msgid "Wholesale"
-msgstr ""
-
-#: build/index.js:3
-msgid "Wholesale sign up and registration management."
-msgstr ""
-
-#: build/index.js:3
-msgid "Approval of wholesale users through registration form"
-msgstr ""
-
-#: build/index.js:3
-msgid "Manual - Admin approves new wholesalers manually from 'Wholeseller Users' page. <br>  Automatic - Instant wholesaler approval upon sign-up"
-msgstr ""
-
-#: build/index.js:3
-msgid "Manual"
-msgstr ""
-
-#: build/index.js:3
-msgid "Automatic"
-msgstr ""
-
-#: build/index.js:3
-msgid "Coupon restriction for wholesalers"
-msgstr ""
-
-#: build/index.js:3
-msgid "Prevent wholesale users from applying any coupon and get addional discount on their orders."
-msgstr ""
-
-#: build/index.js:3
-msgid "Promote wholesale discounts to non-wholesale users"
-msgstr ""
-
-#: build/index.js:3
-msgid "Display discounted prices on product pages to entice regular customers into becoming wholesalers."
-msgstr ""
-
-#: build/index.js:3
-msgid "Dedicated wholesale-only product list"
-msgstr ""
-
-#: build/index.js:3
-msgid "Enables a dedicated wholesale-only page displaying all wholesale products for easy browsing and single-click checkout by logged-in wholesalers."
-msgstr ""
-
-#: build/index.js:3
-msgid "Discount rule"
-msgstr ""
-
-#: build/index.js:3
-msgid "<b>Bulk Discount Configuration: </b> Set discount type (percentage/fixed), discount amount, and minimum quantity for wholesellers"
-msgstr ""
-
-#: build/index.js:3
-msgid "Exclusion"
-msgstr ""
-
-#: build/index.js:3
+#: assets/js/index.js:1
 msgid "Exclude catalog viewing, enquiries, and quotes by user roles and product attributes."
 msgstr ""
 
-#: build/index.js:3
-msgid "Grid Table"
-msgstr ""
-
-#: build/index.js:3
+#: assets/js/index.js:1
 msgid "User Role"
 msgstr ""
 
-#: build/index.js:3
-msgid "User Name"
+#: assets/js/index.js:1
+msgid "Select..."
 msgstr ""
 
-#: build/index.js:3
+#: assets/js/index.js:1
+msgid "Selected user role"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Selected user name"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Category"
 msgstr ""
 
-#: build/index.js:3
+#: assets/js/index.js:1
+msgid "Selected Category"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Tag"
 msgstr ""
 
-#: build/index.js:3
-msgid "Catalog"
+#: assets/js/index.js:1
+msgid "Selected Tag"
 msgstr ""
 
-#: build/index.js:3
-#: src/template/modules/index.js:6
-msgid "Catalog Showcase"
+#: assets/js/index.js:1
+msgid "Brand"
 msgstr ""
 
-#: build/index.js:3
-#: src/template/modules/index.js:15
-msgid "Enquiry & Communication"
+#: assets/js/index.js:1
+msgid "Selected brand"
 msgstr ""
 
-#: build/index.js:3
-msgid "Enquiry Form Builder"
+#: assets/js/index.js:1
+msgid "Pages & Shortcodes"
 msgstr ""
 
-#: build/index.js:3
-msgid "Design a personalized enquiry form with built-in form builder. "
-msgstr ""
-
-#: build/index.js:3
-msgid "Form Customizer"
-msgstr ""
-
-#: build/index.js:3
-msgid "Page Endpoint"
-msgstr ""
-
-#: build/index.js:3
+#: assets/js/index.js:1
 msgid "Manage the endpoints for all pages on the site, ensuring proper routing and access."
 msgstr ""
 
-#: build/index.js:3
-msgid "Set Enquiry Cart Page"
+#: assets/js/index.js:1
+msgid "Set enquiry cart page"
 msgstr ""
 
-#: build/index.js:3
+#: assets/js/index.js:1
 msgid "Select the page on which you have inserted <code>[catalogx_enquiry_cart]</code> shortcode."
 msgstr ""
 
-#: build/index.js:3
-msgid "Set Request Quote Page"
+#: assets/js/index.js:1
+msgid "Set request quote page"
 msgstr ""
 
-#: build/index.js:3
-msgid "Select the page on which you have inserted <code>[request_quote]</code> shortcode."
+#: assets/js/index.js:1
+msgid "Select the page on which you have inserted <code>[catalogx_request_quote]</code> shortcode."
 msgstr ""
 
-#: build/index.js:3
+#: assets/js/index.js:1
 msgid "Set Wholesale Products Page"
 msgstr ""
 
-#: build/index.js:3
-msgid "Select the page on which you have inserted <code>[wholesale_products]</code> shortcode."
+#: assets/js/index.js:1
+msgid "Select the page on which you have inserted <code>[catalogx_wholesale_products]</code> shortcode."
 msgstr ""
 
-#: build/index.js:3
-msgid "Available Shortcodes"
+#: assets/js/index.js:1
+msgid "Shortcode library"
 msgstr ""
 
-#: build/index.js:3
-msgid "Custom Wholesale Form Builder"
+#: assets/js/index.js:1
+msgid "Available shortcodes"
 msgstr ""
 
-#: build/index.js:3
-msgid "Drag-and-drop interface to tailor the wholesale registration form."
+#: assets/js/index.js:1
+msgid "Shortcodes and block"
 msgstr ""
 
-#: build/index.js:3
-msgid "Background Color"
+#: assets/js/index.js:1
+msgid "Description"
 msgstr ""
 
-#: build/index.js:3
-msgid "Font Color"
+#: assets/js/index.js:1
+msgid "Arguments"
 msgstr ""
 
-#: build/index.js:3
-msgid "Background Color On Hover"
+#: assets/js/index.js:1
+msgid "Example usage"
 msgstr ""
 
-#: build/index.js:3
-msgid "Font Color On Hover"
+#: assets/js/index.js:1
+msgid "Let users review all enquiry cart items and send a single enquiry for multiple products."
 msgstr ""
 
-#: build/index.js:3
-msgid "Border Color"
+#: assets/js/index.js:1
+msgid "Let users review their selected products and submit a quotation request."
 msgstr ""
 
-#: build/index.js:3
-msgid "Border Size"
+#: assets/js/index.js:1
+msgid "Provide approved wholesale users with a dedicated page to browse and purchase wholesale products."
 msgstr ""
 
-#: build/index.js:3
-msgid "Border Radious"
+#: assets/js/index.js:1
+msgid "Allow users to add products to an enquiry cart and send a combined enquiry."
 msgstr ""
 
-#: build/index.js:3
-msgid "Border Color On Hover"
+#: assets/js/index.js:1
+msgid "Displays the \"Send an Enquiry\" button for specific products"
 msgstr ""
 
-#: build/index.js:3
-msgid "Button text"
+#: assets/js/index.js:1
+msgid "Specify the product ID for which the enquiry button should be displayed."
 msgstr ""
 
-#: build/index.js:3
-msgid "Font Size"
+#: assets/js/index.js:1
+msgid "Displays the \"Add to Quote\" button for specific products."
 msgstr ""
 
-#: build/index.js:3
-msgid "Font Width"
+#: assets/js/index.js:1
+msgid "Specify the product ID for which the quote button should be displayed."
 msgstr ""
 
-#: build/index.js:3
-msgid "Padding"
+#: assets/js/index.js:1
+msgid "System"
 msgstr ""
 
-#: build/index.js:3
-msgid "Margin"
+#: assets/js/index.js:1
+msgid "Review all system logs and errors"
 msgstr ""
 
-#: build/index.js:3
-msgid "System settings"
+#: assets/js/index.js:1
+msgid "Additional CSS"
 msgstr ""
 
-#: build/index.js:3
-msgid "Unlock revenue-boosting features with CatalogX Pro today!"
+#: assets/js/index.js:1
+msgid "Add custom CSS to customize the appearance of the enquiry form."
 msgstr ""
 
-#: build/index.js:3
-msgid "1. Speed up sales with personalized quotes."
+#: assets/js/index.js:1
+msgid "Custom CSS"
 msgstr ""
 
-#: build/index.js:3
-msgid "2. Boost bulk sales with exclusive pricing and wholesale order forms."
+#: assets/js/index.js:1
+msgid "Enter your custom CSS here to customize the enquiry form."
 msgstr ""
 
-#: build/index.js:3
-msgid "3. Enable multiple product enquiries at once to boost customer engagement."
+#: assets/js/index.js:1
+msgid "Wholesale sign up and registration management."
 msgstr ""
 
-#: build/index.js:3
-msgid "4. Advanced enquiry messaging with file uploads, tagging, etc."
+#: assets/js/index.js:1
+msgid "Approval of wholesale users"
 msgstr ""
 
-#: build/index.js:3
-msgid "5. Increase revenue with tailored pricing for different user roles."
+#: assets/js/index.js:1
+msgid "Choose how new wholesale users should be approved after registration."
 msgstr ""
 
-#: build/index.js:3
-msgid "6. Drive higher sales with customized pricing for product categories."
+#: assets/js/index.js:1
+msgid "Manual - Admin approves new wholesalers manually from 'Wholesaler Users' page. <br> Automatic - Instant wholesaler approval upon sign-up."
 msgstr ""
 
-#. translators: %s will be replaced with the module name
-#: build/index.js:4
-msgid "To activate please enable the %s module first"
+#: assets/js/index.js:1
+msgid "Manual"
 msgstr ""
 
-#: build/index.js:4
-msgid "Enable Now"
+#: assets/js/index.js:1
+msgid "Automatic"
 msgstr ""
 
-#: build/index.js:4
-msgid "Activate Sitewide Buy Mode"
+#: assets/js/index.js:1
+msgid "How should coupons work with wholesale"
 msgstr ""
 
-#: build/index.js:4
-msgid "The \"Sitewide Buy Mode\" is required to unlock purchase functionality across the site. Make sure it's activated to proceed."
+#: assets/js/index.js:1
+msgid "Choose how coupons work for wholesale customers."
 msgstr ""
 
-#: build/index.js:4
-msgid "Download and install \"Notifima\""
+#: assets/js/index.js:1
+msgid "<ul><li>Wholesale discount only - Wholesale discounts cannot be combined with coupons.</li><li>Wholesale discount + Coupons - Wholesale customers can apply coupons during checkout.</li></ul>"
 msgstr ""
 
-#: build/index.js:4
-msgid "\"Notifima\" is a necessary product to enable notifications and other related settings. Download and install it to complete the setup."
+#: assets/js/index.js:1
+msgid "Wholesale discount only"
 msgstr ""
 
-#: build/index.js:4
-msgid "Download now"
+#: assets/js/index.js:1
+msgid "Wholesale discount + Coupons"
 msgstr ""
 
-#: build/index.js:4
-msgid "reCAPTCHA has been successfully added to the form."
+#: assets/js/index.js:1
+msgid "Wholesale offer visibility"
 msgstr ""
 
-#: build/index.js:4
-msgid "Section Divider"
+#: assets/js/index.js:1
+msgid "Choose how wholesale pricing is presented to regular customers."
 msgstr ""
 
-#: build/index.js:4
-msgid "Form fields"
+#: assets/js/index.js:1
+msgid "<ul><li>Keep wholesale offers private - Display retail pricing without wholesale discounts.</li><li>Promote wholesale savings - Show potential wholesale pricing to encourage wholesale registrations.</li></ul>"
 msgstr ""
 
-#: build/index.js:4
-msgid "Click to add next text field"
+#: assets/js/index.js:1
+msgid "Keep wholesale offers private"
 msgstr ""
 
-#: build/index.js:4
-msgid "Field Name"
+#: assets/js/index.js:1
+msgid "Promote wholesale savings"
 msgstr ""
 
-#: build/index.js:4
-msgid "Set new field name"
+#: assets/js/index.js:1
+msgid "Product browsing experience"
 msgstr ""
 
-#: build/index.js:4
-msgid "Test connection failed. Check further details in"
+#: assets/js/index.js:1
+msgid "Choose how wholesale customers discover wholesale products."
 msgstr ""
 
-#: build/index.js:4
-msgid "error log"
+#: assets/js/index.js:1
+msgid "<ul><li>Shared Product Catalog - Wholesale products appear within the regular catalog.</li><li>Dedicated Wholesale Catalog - Display all wholesale products on a dedicated page for wholesale customers.</li></ul>"
 msgstr ""
 
-#: build/index.js:4
-msgid "Test connection successful"
+#: assets/js/index.js:1
+msgid "Shared Product Catalog"
 msgstr ""
 
-#: build/index.js:4
-msgid "Generate"
+#: assets/js/index.js:1
+msgid "Dedicated Wholesale Catalog"
 msgstr ""
 
-#: build/index.js:4
-msgid "Get in touch with Support"
+#: assets/js/index.js:1
+msgid "How wholesale pricing is managed"
 msgstr ""
 
-#: build/index.js:4
-msgid "Reach out to the support team for assistance or guidance."
+#: assets/js/index.js:1
+msgid "Choose whether to set wholesale pricing for individual products or apply the same discount across all products."
 msgstr ""
 
-#: build/index.js:4
-msgid "Explore Documentation"
+#: assets/js/index.js:1
+msgid "<ul><li>Set prices for each product - Configure wholesale pricing separately for individual products.</li><li>Apply one discount to all products - Use a single discount rule for every wholesale product in your catalog.</li></ul>"
 msgstr ""
 
-#: build/index.js:4
-msgid "Understand the plugin and its settings."
+#: assets/js/index.js:1
+msgid "Set prices for each product"
 msgstr ""
 
-#: build/index.js:4
-msgid "Contribute Here"
+#: assets/js/index.js:1
+msgid "Apply one discount to all products"
 msgstr ""
 
-#: build/index.js:4
-msgid "To participate in product enhancement."
+#: assets/js/index.js:1
+msgid "Discount rule"
 msgstr ""
 
-#: build/index.js:4
-msgid "Advanced Enquiries"
+#: assets/js/index.js:1
+msgid "Manage marketplace features by enabling or disabling modules. Turning a module on activates its settings and workflows, while turning it off hides them from admin and stores."
 msgstr ""
 
-#: build/index.js:4
-msgid "Rich customer-admin messaging system"
+#: assets/js/index.js:1
+msgid "This is sample Data"
 msgstr ""
 
-#: build/index.js:4
-msgid "View Pricing"
+#: assets/js/index.js:1
+msgid "admin"
 msgstr ""
 
-#: build/index.js:4
-msgid "Dynamic Pricing"
+#: assets/js/index.js:1
+msgid "Enquiry ID"
 msgstr ""
 
-#: build/index.js:4
-msgid "Automated multi-tier price rules"
+#: assets/js/index.js:1
+msgid "#3"
 msgstr ""
 
-#: build/index.js:4
-msgid "Wholesale Sales"
+#: assets/js/index.js:1
+msgid "Reply"
 msgstr ""
 
-#: build/index.js:4
-msgid "B2B ordering with bulk discounts"
+#: assets/js/index.js:1
+msgid "Copy"
 msgstr ""
 
-#: build/index.js:4
-msgid "Custom Quotes"
+#: assets/js/index.js:1
+msgid "Pin"
 msgstr ""
 
-#: build/index.js:4
-msgid "Speed up sales with personalized quotes."
+#: assets/js/index.js:1
+msgid "Star"
 msgstr ""
 
-#: build/block.json
-msgctxt "block title"
-msgid "Catalogx"
+#: assets/js/index.js:1
+msgid "React"
 msgstr ""
 
-#: build/blocks/enquiry-button/block.json
+#: assets/js/index.js:1
+msgid "Add File"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Emoji"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "User"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Status"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Date"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Action"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "View"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Approve"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Reject"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Date Range"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Pending"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Search..."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale users are displayed with account details and statuses to help manage approvals and customer access."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Looks like wholesale pricing isn’t set up yet!"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enable the Wholesale module to create wholesale pricing and offer special rates to your business customers."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Applicable For"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product:"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Category:"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Brand:"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "For Whom"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "User:"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Role:"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Rule"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Active"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Suspended"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Suspend"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Activate"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Edit"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Delete"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "All"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Role"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Create and manage rules to control product visibility, pricing behavior, and catalog conditions."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Rules"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Add New Rule"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Looks like product rules aren’t set up yet!"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enable the Rules module to create and manage custom catalog rules for your products."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Core features"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry management"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Catalog mode"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quotation management"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale pricing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Dynamic pricing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Live page builder"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Form builder"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Blocks & shortcodes"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry button"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quote button"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry cart"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quote cart"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Multi enquiry button"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale pricing block"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Dynamic pricing block"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry features"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Flexible enquiry form display"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product links in enquiry emails"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "WPML compatibility"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Custom enquiry form position"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Multi enquiry support"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry email templates"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiry management dashboard"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Combined selling and enquiry mode"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quotation features"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Add to quote button"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Variable product support"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Universal quote access"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Cart to quote conversion"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customizable quote button"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "PDF quote viewing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Custom thank you page"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Custom quote creation"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quote acceptance and rejection"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Admin quote notifications"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "User quote management"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quote expiration"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale customer role"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Show or hide retail prices"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale pricing fields"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Coupon restrictions for wholesalers"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Hide products without wholesale pricing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Global wholesale pricing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Minimum cart quantity"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Per-product minimum quantity"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale order form"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Percentage discounts"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Fixed amount discounts"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Per-user wholesale pricing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Role-based pricing rules"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customer-specific pricing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Fixed pricing adjustments"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Discounts and markups"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Bulk pricing adjustments"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quantity-based pricing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Replace product prices with markups"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Custom user roles"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Drag-and-drop rule priority"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Product-level pricing rules"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Multi-tier pricing"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Free vs Pro comparison"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "See what you get with catalogx Pro"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Get Pro Access Today!"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Join 5,000+ stores closing more deals with CatalogX"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Capture leads, manage enquiries, and grow your sales with confidence. Trusted by thousands of businesses worldwide."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Flexible selling models"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Effortless inventory control"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Intelligent alert system"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Secure seller onboarding"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Recurring revenue tools"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Upgrade Now"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Launch Setup Wizard"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Redirecting..."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Plugin already installed. Redirecting to activate..."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Error!"
+msgstr ""
+
+#. translators: %s: Plugin slug or plugin name.
+#: assets/js/index.js:1
+#, js-format
+msgid "Could not install \"%s\"."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Documentation"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Explore our resources and connect with our team to get the most out of CatalogX."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Explore Docs"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Expert consultation"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Get personalized guidance from our WooCommerce specialists for your store setup and growth strategy."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Book Consultation"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Turbocharge Your Catalog"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enable catalog mode site-wide or per product, hide prices and 'Add to Cart' until login, and pair it with 'Send Enquiry' to turn visitors into leads."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enquiries That Convert"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Let customers send enquiries — even on out-of-stock items — with a customizable form, page-builder-ready button, and role-based routing to the right team."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Bulk Enquiries, Bigger Sales"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Process multiple bulk or high-value enquiries at once with the Enquiry Cart, so you can gauge demand and respond faster across the board."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quote Like a Pro"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Let customers request quotes on any product with a page-builder-ready button, restrict it to registered users, and send branded, easy-to-find quotations."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Smart Pricing, Smarter Profits"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Create custom roles without coding and apply dynamic, quantity-based pricing and category-wide discounts for each one."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Wholesale Made Simple"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Set a dedicated wholesale role with separate pricing, hide or show retail prices as needed, block coupon use, and apply flexible amount or percentage discounts."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Welcome to CatalogX"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Transform your WooCommerce store into a powerful product catalog with enquiries, quotations, and wholesale pricing."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Build a smarter catalog"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Unlock advanced features and premium modules to turn your store into a lead-generating, quote-ready sales engine."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "15-day money-back guarantee"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Extend your website"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "MultiVendorX Pro"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Advanced product catalog with enhanced enquiry features and premium templates"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Get Pro"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Turn your store into a product catalog with enquiry-based sales"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Installing..."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Install"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Notifima Pro"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Advanced stock alerts, wishlist features, and premium notification system"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Notifima"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Advanced stock alerts and wishlist features for WooCommerce"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Need help getting started?"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Free vs Pro"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Get an overview of your CatalogX modules, settings, and recent activity from one place."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enable the Enquiry & Communication module to let customers submit product enquiries directly from your store."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Customer Engagement Settings"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Configure who can submit product enquiries and customize the enquiry experience for your customers."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enable the Quotation module to let customers request custom quotations for products and manage quote requests from your store."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quotation Settings"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Configure who can request quotations and customize how quotation requests are handled in your store."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Order ID"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "By"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Total"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Download CSV"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Select"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quote requests are displayed with customer details, totals, and statuses to support sales and order management workflows."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Quote Requests"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Add Quote"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Looks like the Quote module isn’t enabled yet!"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Enable the Quote module to start receiving and managing customer quote requests."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<b>Advanced enquiry management:</b> Organize, track, and respond to every enquiry from one powerful dashboard."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<b>Multi-product enquiries:</b> Let customers enquire about multiple products in a single request to generate more qualified leads."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<b>Professional quotations:</b> Create, send, approve, and manage quotations with expiry dates and PDF downloads."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<b>Wholesale selling:</b> Unlock B2B sales with wholesale pricing, customer roles, and bulk ordering tools."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<b>Dynamic pricing rules:</b> Create advanced pricing strategies based on customer roles, quantities, products, and categories."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<b>Visual page builder:</b> Build enquiry, quotation, and wholesale pages without writing a single line of code."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<b>Custom form builder:</b> Design enquiry and quotation forms that collect exactly the information your business needs."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "<b>Higher conversions:</b> Show both purchasing and enquiry options together so customers can buy or contact you their way."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "What's New"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Get Support"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Community"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Modules & Settings"
+msgstr ""
+
+#: assets/js/modules/Quote/catalogx-frontend.min.js:1
+#: modules/Quote/assets/js/frontend.js:77
+msgid "Unable to add quote item."
+msgstr ""
+
+#: assets/js/block/enquiry-button/block.json
 msgctxt "block title"
 msgid "Enquiry Button"
 msgstr ""
 
-#: build/blocks/enquiry-button/block.json
+#: assets/js/block/enquiry-button/block.json
 msgctxt "block description"
 msgid "A block that displays enquiry button."
 msgstr ""
 
-#: build/blocks/quote-button/block.json
+#: assets/js/block/enquiry-form/block.json
+msgctxt "block title"
+msgid "Enquiry Form"
+msgstr ""
+
+#: assets/js/block/quote-button/block.json
 msgctxt "block title"
 msgid "Quote Button"
 msgstr ""
 
-#: build/blocks/quote-button/block.json
+#: assets/js/block/quote-button/block.json
 msgctxt "block description"
 msgid "A custom quote button for single product pages."
 msgstr ""
 
-#: build/blocks/quote-cart/block.json
+#: assets/js/block/quote-cart/block.json
 msgctxt "block title"
 msgid "Quote Cart"
 msgstr ""
 
-#: build/blocks/quote-cart/block.json
+#: assets/js/block/quote-cart/block.json
 msgctxt "block description"
 msgid "A block that displays quote cart using React."
+msgstr ""
+
+#: assets/js/block/setup-wizard/block.json
+msgctxt "block title"
+msgid "Setup Wizard"
+msgstr ""
+
+#: assets/js/block/setup-wizard/block.json
+msgctxt "block description"
+msgid "A block that renders the Setup Wizard using React."
 msgstr ""

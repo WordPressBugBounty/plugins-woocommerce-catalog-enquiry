@@ -1,0 +1,122 @@
+<?php
+/**
+ * CatalogX REST API Tour controller
+ *
+ * @package CatalogX
+ */
+
+namespace CatalogX\RestAPI\Controllers;
+
+use CatalogX\Utill;
+
+defined( 'ABSPATH' ) || exit;
+
+/**
+ * CatalogX REST API Tour controller.
+ *
+ * @class       Tour
+ * @version     1.0.0
+ * @author      CatalogX
+ */
+class Tour extends \WP_REST_Controller {
+
+	/**
+	 * Route base.
+	 *
+	 * @var string
+	 */
+	protected $rest_base = 'tour';
+
+	/**
+	 * Register routes.
+	 */
+	public function register_routes() {
+		register_rest_route(
+			CatalogX()->rest_namespace,
+			'/' . $this->rest_base,
+			array(
+				array(
+					'methods'             => \WP_REST_Server::READABLE,
+					'callback'            => array( $this, 'get_items' ),
+					'permission_callback' => array( $this, 'catalogx_permissions_check' ),
+				),
+				array(
+					'methods'             => \WP_REST_Server::CREATABLE,
+					'callback'            => array( $this, 'create_item' ),
+					'permission_callback' => array( $this, 'catalogx_permissions_check' ),
+				),
+			)
+		);
+	}
+
+	/**
+	 * Permissions check for GET request.
+	 *
+	 * @param mixed $request Request object.
+	 *
+	 * @return bool
+	 */
+	public function catalogx_permissions_check( $request ) {
+		return current_user_can( 'manage_options' );
+	}
+
+	/**
+	 * Get tour status.
+	 *
+	 * @param mixed $request Request object.
+	 *
+	 * @return array|\WP_Error
+	 */
+	public function get_items( $request ) {
+
+        $nonce_validation = Utill::validate_nonce( $request );
+
+        if ( is_wp_error( $nonce_validation ) ) {
+            return $nonce_validation;
+        }
+
+		try {
+			$tour_completed_status = get_option(
+				Utill::CATALOGX_OTHER_SETTINGS['tour_completed'],
+				false
+			);
+
+			return array(
+				'completed' => filter_var( $tour_completed_status, FILTER_VALIDATE_BOOLEAN ),
+			);
+		} catch ( \Exception $e ) {
+			Utill::server_error( $e );
+		}
+	}
+
+	/**
+	 * Set tour status.
+	 *
+	 * @param mixed $request Request object.
+	 *
+	 * @return array|\WP_Error
+	 */
+	public function create_item( $request ) {
+
+        $nonce_validation = Utill::validate_nonce( $request );
+
+        if ( is_wp_error( $nonce_validation ) ) {
+            return $nonce_validation;
+        }
+
+		try {
+			$is_tour_completed = $request->get_param( 'completed' );
+
+			update_option(
+				Utill::CATALOGX_OTHER_SETTINGS['tour_completed'],
+				$is_tour_completed
+			);
+
+			return array(
+				'success' => true,
+			);
+		} catch ( \Exception $e ) {
+			Utill::server_error( $e );
+		}
+	}
+}

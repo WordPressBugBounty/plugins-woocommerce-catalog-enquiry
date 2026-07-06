@@ -4,17 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8d070178755c320c69f93ee4800660ef
+class ComposerStaticInit47bc3dde97bc2da7a1a753496dad8092
 {
     public static $prefixLengthsPsr4 = array (
-        'C' => 
+        'C' =>
         array (
             'CatalogX\\' => 9,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'CatalogX\\' => 
+        'CatalogX\\' =>
         array (
             0 => __DIR__ . '/../..' . '/classes',
             1 => __DIR__ . '/../..' . '/modules',
@@ -22,15 +22,52 @@ class ComposerStaticInit8d070178755c320c69f93ee4800660ef
     );
 
     public static $classMap = array (
+        'CatalogX\\Admin' => __DIR__ . '/../..' . '/classes/Admin.php',
+        'CatalogX\\Block' => __DIR__ . '/../..' . '/classes/Block.php',
+        'CatalogX\\CatalogX' => __DIR__ . '/../..' . '/classes/CatalogX.php',
+        'CatalogX\\Catalog\\Admin' => __DIR__ . '/../..' . '/modules/Catalog/Admin.php',
+        'CatalogX\\Catalog\\Frontend' => __DIR__ . '/../..' . '/modules/Catalog/Frontend.php',
+        'CatalogX\\Catalog\\Module' => __DIR__ . '/../..' . '/modules/Catalog/Module.php',
+        'CatalogX\\Catalog\\Util' => __DIR__ . '/../..' . '/modules/Catalog/Util.php',
+        'CatalogX\\Core\\QuoteCart' => __DIR__ . '/../..' . '/classes/Core/QuoteCart.php',
+        'CatalogX\\Core\\Session' => __DIR__ . '/../..' . '/classes/Core/Session.php',
+        'CatalogX\\Emails\\EnquiryEmail' => __DIR__ . '/../..' . '/classes/Emails/EnquiryEmail.php',
+        'CatalogX\\Emails\\RequestQuoteSendEmail' => __DIR__ . '/../..' . '/classes/Emails/RequestQuoteSendEmail.php',
+        'CatalogX\\Enquiry\\Ajax' => __DIR__ . '/../..' . '/modules/Enquiry/Ajax.php',
+        'CatalogX\\Enquiry\\Frontend' => __DIR__ . '/../..' . '/modules/Enquiry/Frontend.php',
+        'CatalogX\\Enquiry\\Module' => __DIR__ . '/../..' . '/modules/Enquiry/Module.php',
+        'CatalogX\\Enquiry\\Rest' => __DIR__ . '/../..' . '/modules/Enquiry/Rest.php',
+        'CatalogX\\Enquiry\\Util' => __DIR__ . '/../..' . '/modules/Enquiry/Util.php',
+        'CatalogX\\Frontend' => __DIR__ . '/../..' . '/classes/Frontend.php',
+        'CatalogX\\FrontendScripts' => __DIR__ . '/../..' . '/classes/FrontendScripts.php',
+        'CatalogX\\Installer' => __DIR__ . '/../..' . '/classes/Installer.php',
+        'CatalogX\\Modules' => __DIR__ . '/../..' . '/classes/Modules.php',
+        'CatalogX\\Promotions' => __DIR__ . '/../..' . '/classes/Promotions.php',
+        'CatalogX\\Quote\\Admin' => __DIR__ . '/../..' . '/modules/Quote/Admin.php',
+        'CatalogX\\Quote\\Frontend' => __DIR__ . '/../..' . '/modules/Quote/Frontend.php',
+        'CatalogX\\Quote\\Module' => __DIR__ . '/../..' . '/modules/Quote/Module.php',
+        'CatalogX\\Quote\\QuoteAdd' => __DIR__ . '/../..' . '/modules/Quote/QuoteAdd.php',
+        'CatalogX\\Quote\\QuoteCart' => __DIR__ . '/../..' . '/modules/Quote/QuoteCart.php',
+        'CatalogX\\Quote\\Quotes' => __DIR__ . '/../..' . '/modules/Quote/Quotes.php',
+        'CatalogX\\Quote\\Rest' => __DIR__ . '/../..' . '/modules/Quote/Rest.php',
+        'CatalogX\\Quote\\Util' => __DIR__ . '/../..' . '/modules/Quote/Util.php',
+        'CatalogX\\RestAPI\\Controllers\\Logs' => __DIR__ . '/../..' . '/classes/RestAPI/Controllers/Logs.php',
+        'CatalogX\\RestAPI\\Controllers\\Settings' => __DIR__ . '/../..' . '/classes/RestAPI/Controllers/Settings.php',
+        'CatalogX\\RestAPI\\Controllers\\Tour' => __DIR__ . '/../..' . '/classes/RestAPI/Controllers/Tour.php',
+        'CatalogX\\RestAPI\\Rest' => __DIR__ . '/../..' . '/classes/RestAPI/Rest.php',
+        'CatalogX\\Setting' => __DIR__ . '/../..' . '/classes/Setting.php',
+        'CatalogX\\SetupWizard' => __DIR__ . '/../..' . '/classes/SetupWizard.php',
+        'CatalogX\\Shortcode' => __DIR__ . '/../..' . '/classes/Shortcode.php',
+        'CatalogX\\Utill' => __DIR__ . '/../..' . '/classes/Utill.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8d070178755c320c69f93ee4800660ef::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8d070178755c320c69f93ee4800660ef::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit8d070178755c320c69f93ee4800660ef::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit47bc3dde97bc2da7a1a753496dad8092::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit47bc3dde97bc2da7a1a753496dad8092::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit47bc3dde97bc2da7a1a753496dad8092::$classMap;
 
         }, null, ClassLoader::class);
     }
