@@ -3,7 +3,7 @@
         'name' => 'multivendorx/catalogx',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e8e2406bd5282ae97b4e173fbe2861df3a0300a2',
+        'reference' => '125b605838ff51c9c6d44f129198badae88e2d6b',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'multivendorx/catalogx' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e8e2406bd5282ae97b4e173fbe2861df3a0300a2',
+            'reference' => '125b605838ff51c9c6d44f129198badae88e2d6b',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
