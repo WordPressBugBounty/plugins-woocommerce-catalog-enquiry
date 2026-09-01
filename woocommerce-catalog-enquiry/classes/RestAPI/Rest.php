@@ -51,9 +51,10 @@ class Rest {
      * @return bool
      */
     public function grant_woocommerce_rest_permission( $permission, $context, $object_id, $post_type ) {
-        $request_method = $_SERVER['REQUEST_METHOD'] ?? '';
-
-        if ( 'GET' === $request_method && 'product' === $post_type ) {
+        // Decide on $context (the effective operation), not the raw transport verb —
+        // a client can dispatch a write through a request whose $_SERVER['REQUEST_METHOD']
+        // is GET via _method / X-HTTP-Method-Override.
+        if ( 'read' === $context && 'product' === $post_type ) {
             return true;
         }
 
@@ -79,7 +80,7 @@ class Rest {
         $prefixes = array( 'catalog', 'enquiry', 'quote' );
 
         $config = array(
-            'products' => array(
+            'products'   => array(
                 'setting' => 'product_list',
             ),
             'categories' => array(
@@ -87,12 +88,12 @@ class Rest {
                 'taxonomy' => 'product_cat',
                 'query'    => 'category',
             ),
-            'tags' => array(
+            'tags'       => array(
                 'setting'  => 'tag_list',
                 'taxonomy' => 'product_tag',
                 'query'    => 'tag',
             ),
-            'brands' => array(
+            'brands'     => array(
                 'setting'  => 'brand_list',
                 'taxonomy' => 'product_brand',
                 'query'    => 'tax_query',
@@ -102,7 +103,6 @@ class Rest {
         $product_ids = array();
 
         foreach ( $exclude_types as $type ) {
-
             if ( empty( $config[ $type ] ) ) {
                 continue;
             }
@@ -134,7 +134,6 @@ class Rest {
             );
 
             if ( 'tax_query' === $config[ $type ]['query'] ) {
-
                 $query['tax_query'] = array(
                     array(
                         'taxonomy' => $config[ $type ]['taxonomy'],
@@ -142,9 +141,7 @@ class Rest {
                         'terms'    => $ids,
                     ),
                 );
-
             } else {
-
                 $query[ $config[ $type ]['query'] ] = array_map(
                     static function ( $term_id ) use ( $config, $type ) {
                         $term = get_term( $term_id, $config[ $type ]['taxonomy'] );
