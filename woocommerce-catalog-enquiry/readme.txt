@@ -1,17 +1,17 @@
-=== CatalogX - Catalog Mode, Enquiry & Quotes for WooCommerce ===
+=== CatalogX Product Catalog, Product Enquiry & Quotes for WooCommerce ===
 Contributors: wcmp
 Tags: product catalog mode , product enquiry for woocommerce, request a quote, b2b ,  wholesale pricing
 Donate link: https://multivendorx.com/donate?utm_source=wporg&utm_medium=plugindescription&utm_campaign=catalogxwporg
 Requires at least: 6.4.0
 Tested up to: 7.1.2
 Requires PHP: 8.0
-Stable tag: 6.1.5
+Stable tag: 6.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WooCommerce Catalog Mode, product enquiry, and request a quote plugin. Hide prices, disable cart, and collect enquiries easily.
+WooCommerce Product Catalog, product enquiry, and request a quote plugin. Hide prices, disable cart, and collect enquiries easily.
 == Description ==
-= WOOCOMMERCE CATALOG MODE PLUGIN FOR WORDPRESS – WITH PRODUCT ENQUIRY & REQUEST A QUOTE =
+= WOOCOMMERCE CATALOG PLUGIN FOR WORDPRESS – WITH PRODUCT ENQUIRY & REQUEST A QUOTE =
 Easily switch your WooCommerce store to catalog mode and enable product enquiry and quote request functionality - no coding required.
 
 CatalogX allows you to turn your WooCommerce store into a product catalog with enquiry and quotation features. You can hide prices, remove the “Add to Cart” button, and add customizable enquiry or request-a-quote buttons anywhere on your site. This is useful for B2B, wholesale, or catalog-only stores.
@@ -226,6 +226,9 @@ Answer: Simply enable the 'Product Enquiry Button When Product is Out Of Stock' 
 7. Enquiry Dashboard
 
 == Changelog ==
+
+= 6.1.6 - 2026-10-06 =
+* Fixed     - Security vulnerabilities reported by a member of the WordPress community.
 
 = 6.1.5 - 2026-09-24 =
 * Added     - Compatibility of WordPress 7.1.2.

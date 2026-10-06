@@ -3,8 +3,9 @@
 		'react',
 		'react-jsx-runtime',
 		'wp-element',
+		'wp-hooks',
 		'wp-i18n',
 		'wp-polyfill'
 	),
-	'version' => 'b4489edc587f8befb49f'
+	'version' => '659063da9edd107cc02c'
 );

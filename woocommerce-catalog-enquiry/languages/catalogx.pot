@@ -1,14 +1,14 @@
 # Copyright (c) 2026 CatalogX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: CatalogX — Catalog Mode, Enquiry & Quotes for WooCommerce 6.1.5\n"
+"Project-Id-Version: CatalogX — Catalog Mode, Enquiry & Quotes for WooCommerce 6.1.6\n"
 "Report-Msgid-Bugs-To: https://catalogx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=catalogx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-24T17:23:30+00:00\n"
+"POT-Creation-Date: 2026-10-06T18:34:38+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: catalogx\n"
@@ -322,17 +322,11 @@ msgstr ""
 msgid "Missing required parameter: key."
 msgstr ""
 
-#. translators: %s: reject quotation number.
-#: modules/Quote/Quotes.php:84
-#, php-format
-msgid "You have confirmed rejection of the quotation No: %d"
-msgstr ""
-
-#: modules/Quote/Quotes.php:89
+#: modules/Quote/Quotes.php:80
 msgid "Missing form data."
 msgstr ""
 
-#: modules/Quote/Quotes.php:111
+#: modules/Quote/Quotes.php:102
 msgid "Failed to create order."
 msgstr ""
 
@@ -534,21 +528,6 @@ msgstr ""
 #: assets/js/block/setup-wizard/index.js:1
 #: assets/js/block/setup-wizard/view.js:1
 msgid "Next"
-msgstr ""
-
-#: assets/js/block/quote-cart/index.js:1
-#: assets/js/block/quote-cart/view.js:1
-msgid "You are about to reject the quote"
-msgstr ""
-
-#: assets/js/block/quote-cart/index.js:1
-#: assets/js/block/quote-cart/view.js:1
-msgid "Please feel free to enter here your reason or provide us your feedback:"
-msgstr ""
-
-#: assets/js/block/quote-cart/index.js:1
-#: assets/js/block/quote-cart/view.js:1
-msgid "Reject the quote"
 msgstr ""
 
 #: assets/js/block/quote-cart/index.js:1

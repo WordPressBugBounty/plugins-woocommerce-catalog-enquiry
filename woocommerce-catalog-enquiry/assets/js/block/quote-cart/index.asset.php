@@ -4,8 +4,9 @@
 		'react-jsx-runtime',
 		'wp-block-editor',
 		'wp-blocks',
+		'wp-hooks',
 		'wp-i18n',
 		'wp-polyfill'
 	),
-	'version' => '8dc073cd6c7644831d1f'
+	'version' => 'beaa6ece63373f56d970'
 );
