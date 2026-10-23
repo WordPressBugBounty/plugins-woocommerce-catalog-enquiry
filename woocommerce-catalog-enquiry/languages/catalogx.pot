@@ -1,14 +1,14 @@
 # Copyright (c) 2026 CatalogX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: CatalogX — Catalog Mode, Enquiry & Quotes for WooCommerce 6.1.6\n"
+"Project-Id-Version: CatalogX — Catalog Mode, Enquiry & Quotes for WooCommerce 6.1.7\n"
 "Report-Msgid-Bugs-To: https://catalogx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=catalogx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-06T18:34:38+00:00\n"
+"POT-Creation-Date: 2026-10-23T01:04:12+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: catalogx\n"
@@ -30,7 +30,6 @@ msgstr ""
 
 #. Author of the plugin
 #: Woocommerce_Catalog_Enquiry.php
-#: assets/js/index.js:1
 msgid "MultiVendorX"
 msgstr ""
 
@@ -39,49 +38,49 @@ msgstr ""
 msgid "https://multivendorx.com/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=catalogx"
 msgstr ""
 
-#: classes/Admin.php:53
+#: classes/Admin.php:71
 #: assets/js/index.js:1
 msgid "Dashboard"
 msgstr ""
 
-#: classes/Admin.php:58
+#: classes/Admin.php:76
 #: assets/js/index.js:1
 msgid "Enquiry Messages"
 msgstr ""
 
-#: classes/Admin.php:63
+#: classes/Admin.php:81
 msgid "Quotation Requests"
 msgstr ""
 
-#: classes/Admin.php:68
+#: classes/Admin.php:86
 #: assets/js/index.js:1
 msgid "Wholesale Users"
 msgstr ""
 
-#: classes/Admin.php:73
+#: classes/Admin.php:91
 #: assets/js/index.js:1
 msgid "Dynamic Pricing Rules"
 msgstr ""
 
-#: classes/Admin.php:78
+#: classes/Admin.php:96
 #: classes/Promotions.php:70
 #: assets/js/index.js:1
 msgid "Settings"
 msgstr ""
 
-#: classes/Admin.php:83
+#: classes/Admin.php:101
 #: assets/js/index.js:1
 msgid "Modules"
 msgstr ""
 
-#: classes/Admin.php:115
+#: classes/Admin.php:133
 #: classes/Promotions.php:81
 #: classes/Promotions.php:117
 #: classes/Promotions.php:118
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: classes/Admin.php:123
+#: classes/Admin.php:134
 msgid "Upgrade to pro"
 msgstr ""
 
@@ -95,61 +94,61 @@ msgid "View Quote"
 msgstr ""
 
 #: classes/CatalogX.php:124
-#: modules/Enquiry/Frontend.php:107
-#: modules/Enquiry/Frontend.php:327
+#: modules/Enquiry/Frontend.php:118
+#: modules/Enquiry/Frontend.php:338
 #: assets/js/block/enquiry-button/index.js:1
 msgid "Send an enquiry"
 msgstr ""
 
-#: classes/Core/QuoteCart.php:229
+#: classes/Core/QuoteCart.php:233
 msgid "Product added to quote cart."
 msgstr ""
 
-#: classes/Core/QuoteCart.php:234
+#: classes/Core/QuoteCart.php:238
 msgid "Product already added to quote cart."
 msgstr ""
 
-#: classes/Emails/EnquiryEmail.php:30
+#: classes/Emails/EnquiryEmail.php:64
 msgid "Enquiry sent"
 msgstr ""
 
-#: classes/Emails/EnquiryEmail.php:31
+#: classes/Emails/EnquiryEmail.php:65
 msgid "Admin will get an email when a customer enquires about a product."
 msgstr ""
 
-#: classes/Emails/EnquiryEmail.php:95
+#: classes/Emails/EnquiryEmail.php:134
 msgid "Product Enquiry for {PRODUCT_NAME} by {USER_NAME}"
 msgstr ""
 
-#: classes/Emails/EnquiryEmail.php:102
+#: classes/Emails/EnquiryEmail.php:141
 msgid "Enquiry for {PRODUCT_NAME}"
 msgstr ""
 
-#: classes/Emails/RequestQuoteSendEmail.php:33
+#: classes/Emails/RequestQuoteSendEmail.php:60
 msgid "Email to request a quote"
 msgstr ""
 
-#: classes/Emails/RequestQuoteSendEmail.php:34
+#: classes/Emails/RequestQuoteSendEmail.php:61
 msgid "This email is sent when a user clicks on \"Request a quote\" button"
 msgstr ""
 
-#: classes/Emails/RequestQuoteSendEmail.php:80
+#: classes/Emails/RequestQuoteSendEmail.php:109
 msgid "New Quote Request from {customer_name}"
 msgstr ""
 
-#: classes/Emails/RequestQuoteSendEmail.php:90
+#: classes/Emails/RequestQuoteSendEmail.php:119
 msgid "New Quote Submitted by {customer_name} - Please Review"
 msgstr ""
 
-#: classes/FrontendScripts.php:488
+#: classes/FrontendScripts.php:491
 msgid "This field is required"
 msgstr ""
 
-#: classes/FrontendScripts.php:489
+#: classes/FrontendScripts.php:492
 msgid "Invalid email format"
 msgstr ""
 
-#: classes/FrontendScripts.php:500
+#: classes/FrontendScripts.php:503
 msgid "No more product in Quote list!"
 msgstr ""
 
@@ -170,15 +169,15 @@ msgstr ""
 msgid "Support"
 msgstr ""
 
-#: classes/RestAPI/Controllers/Logs.php:140
+#: classes/RestAPI/Controllers/Logs.php:141
 msgid "Logs cleared successfully."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Logs.php:163
+#: classes/RestAPI/Controllers/Logs.php:164
 msgid "Log file not found."
 msgstr ""
 
-#: classes/RestAPI/Controllers/Logs.php:177
+#: classes/RestAPI/Controllers/Logs.php:178
 msgid "Invalid log file."
 msgstr ""
 
@@ -187,11 +186,11 @@ msgstr ""
 msgid "Settings Saved"
 msgstr ""
 
-#: classes/Utill.php:350
+#: classes/Utill.php:354
 msgid "Invalid nonce."
 msgstr ""
 
-#: classes/Utill.php:438
+#: classes/Utill.php:447
 msgid "Unexpected server error."
 msgstr ""
 
@@ -212,7 +211,7 @@ msgstr ""
 msgid "Security check failed."
 msgstr ""
 
-#: modules/Enquiry/Rest.php:216
+#: modules/Enquiry/Rest.php:217
 msgid "Enquiry sent successfully"
 msgstr ""
 
@@ -302,23 +301,23 @@ msgstr ""
 msgid "Product already in your quote list."
 msgstr ""
 
-#: modules/Quote/QuoteCart.php:200
+#: modules/Quote/QuoteCart.php:193
 msgid "Quote cart updated!"
 msgstr ""
 
-#: modules/Quote/QuoteCart.php:205
+#: modules/Quote/QuoteCart.php:198
 msgid "Invalid products payload. Expected a non-empty array."
 msgstr ""
 
-#: modules/Quote/QuoteCart.php:214
+#: modules/Quote/QuoteCart.php:207
 msgid "Each product must contain key and quantity."
 msgstr ""
 
-#: modules/Quote/QuoteCart.php:225
+#: modules/Quote/QuoteCart.php:218
 msgid "Quantity must be a positive integer."
 msgstr ""
 
-#: modules/Quote/QuoteCart.php:260
+#: modules/Quote/QuoteCart.php:252
 msgid "Missing required parameter: key."
 msgstr ""
 
@@ -335,12 +334,12 @@ msgid "New Product Enquiry"
 msgstr ""
 
 #: templates/emails/enquiry-email.php:26
-#: templates/emails/plain/enquiry-email.php:15
+#: templates/emails/plain/enquiry-email.php:18
 msgid "Dear Admin"
 msgstr ""
 
 #: templates/emails/enquiry-email.php:27
-#: templates/emails/plain/enquiry-email.php:16
+#: templates/emails/plain/enquiry-email.php:19
 msgid "Please find the product enquiry, details are given below"
 msgstr ""
 
@@ -349,7 +348,7 @@ msgid "Product Details"
 msgstr ""
 
 #: templates/emails/enquiry-email.php:33
-#: templates/emails/request-quote.php:31
+#: templates/emails/request-quote.php:37
 #: assets/js/block/quote-cart/index.js:1
 #: assets/js/block/quote-cart/view.js:1
 #: assets/js/index.js:1
@@ -395,94 +394,97 @@ msgid "User Comments : "
 msgstr ""
 
 #. translators: %s: email footer which display the site name.
+#. translators: %s: site name.
 #: templates/emails/enquiry-email.php:159
-#: templates/emails/plain/enquiry-email.php:65
+#: templates/emails/plain/enquiry-email.php:69
 #, php-format
 msgid "%s - Powered by CatalogX"
 msgstr ""
 
 #. translators: %s: Show the admin name.
-#: templates/emails/plain/request-quote.php:12
-#: templates/emails/request-quote.php:21
+#. translators: %s: admin's display name.
+#: templates/emails/plain/request-quote.php:13
+#: templates/emails/request-quote.php:25
 #, php-format
 msgid "Dear %s"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:13
-#: templates/emails/request-quote.php:22
+#: templates/emails/plain/request-quote.php:14
+#: templates/emails/request-quote.php:28
 msgid "You have received a new quote request from a customer for the following product:"
 msgstr ""
 
 #. translators: %s: Show the product name.
-#: templates/emails/plain/request-quote.php:21
-#: templates/emails/plain/request-quote.php:29
+#: templates/emails/plain/request-quote.php:22
+#: templates/emails/plain/request-quote.php:30
 #, php-format
 msgid "Product: %s"
 msgstr ""
 
 #. translators: %s: Show the quantity of the product.
-#: templates/emails/plain/request-quote.php:23
-#: templates/emails/plain/request-quote.php:31
+#: templates/emails/plain/request-quote.php:24
+#: templates/emails/plain/request-quote.php:32
 #, php-format
 msgid "Qty: %s"
 msgstr ""
 
 #. translators: %s: Show the price of the product.
-#: templates/emails/plain/request-quote.php:25
-#: templates/emails/plain/request-quote.php:33
+#: templates/emails/plain/request-quote.php:26
+#: templates/emails/plain/request-quote.php:34
 #, php-format
 msgid "Price: %s"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:36
+#: templates/emails/plain/request-quote.php:37
 msgid "Customer Details:"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:37
-#: templates/emails/request-quote.php:92
+#: templates/emails/plain/request-quote.php:38
+#: templates/emails/request-quote.php:98
 msgid "Customer Name:"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:38
-#: templates/emails/request-quote.php:93
+#: templates/emails/plain/request-quote.php:39
+#: templates/emails/request-quote.php:99
 #: assets/js/block/quote-cart/index.js:1
 #: assets/js/block/quote-cart/view.js:1
 msgid "Email:"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:39
-#: templates/emails/request-quote.php:98
+#: templates/emails/plain/request-quote.php:40
+#: templates/emails/request-quote.php:104
 #: assets/js/block/quote-cart/index.js:1
 #: assets/js/block/quote-cart/view.js:1
 msgid "Phone:"
 msgstr ""
 
-#: templates/emails/plain/request-quote.php:42
-#: templates/emails/request-quote.php:102
+#: templates/emails/plain/request-quote.php:43
+#: templates/emails/request-quote.php:108
 msgid "Additional Details:"
 msgstr ""
 
-#: templates/emails/request-quote.php:21
+#. translators: %s: admin's display name.
+#: templates/emails/request-quote.php:25
 msgid "Store Admin"
 msgstr ""
 
-#: templates/emails/request-quote.php:34
+#: templates/emails/request-quote.php:40
 msgid "Qty"
 msgstr ""
 
-#: templates/emails/request-quote.php:37
+#: templates/emails/request-quote.php:43
 msgid "Price"
 msgstr ""
 
-#: templates/emails/request-quote.php:74
+#: templates/emails/request-quote.php:80
 msgid "Sample Product"
 msgstr ""
 
-#: templates/emails/request-quote.php:92
+#: templates/emails/request-quote.php:98
 msgid "John Doe"
 msgstr ""
 
-#: templates/emails/request-quote.php:99
+#: templates/emails/request-quote.php:105
 msgid "8797639205"
 msgstr ""
 
@@ -1065,6 +1067,22 @@ msgid "By default, customers are redirected to the homepage when they access the
 msgstr ""
 
 #: assets/js/index.js:1
+msgid "Product price visibility"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Choose whether prices are displayed for products covered by the Catalog module."
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Show product prices"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Hide product prices"
+msgstr ""
+
+#: assets/js/index.js:1
 msgid "Who can submit enquiries"
 msgstr ""
 
@@ -1566,10 +1584,6 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "User"
-msgstr ""
-
-#: assets/js/index.js:1
-msgid "Date"
 msgstr ""
 
 #: assets/js/index.js:1
@@ -2135,10 +2149,6 @@ msgid "Advanced stock alerts, wishlist features, and premium notification system
 msgstr ""
 
 #: assets/js/index.js:1
-msgid "Notifima"
-msgstr ""
-
-#: assets/js/index.js:1
 msgid "Advanced stock alerts and wishlist features for WooCommerce"
 msgstr ""
 
@@ -2184,6 +2194,10 @@ msgstr ""
 
 #: assets/js/index.js:1
 msgid "By"
+msgstr ""
+
+#: assets/js/index.js:1
+msgid "Date"
 msgstr ""
 
 #: assets/js/index.js:1
