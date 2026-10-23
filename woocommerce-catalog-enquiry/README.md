@@ -1,2 +1,0 @@
-# CatalogX
-CatalogX Public Repo
