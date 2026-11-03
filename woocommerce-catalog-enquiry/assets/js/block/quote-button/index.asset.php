@@ -8,5 +8,5 @@
 		'wp-i18n',
 		'wp-polyfill'
 	),
-	'version' => '7b8da85397cba9d3365d'
+	'version' => 'b0db77432fb93a3b639c'
 );

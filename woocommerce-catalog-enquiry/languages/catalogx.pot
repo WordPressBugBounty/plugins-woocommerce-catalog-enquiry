@@ -1,14 +1,14 @@
 # Copyright (c) 2026 CatalogX Inc. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: CatalogX — Catalog Mode, Enquiry & Quotes for WooCommerce 6.1.7\n"
+"Project-Id-Version: CatalogX — Catalog Mode, Enquiry & Quotes for WooCommerce 6.1.8\n"
 "Report-Msgid-Bugs-To: https://catalogx.com/contact/?utm_source=wpadmin&utm_medium=pluginsettings&utm_campaign=catalogx\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-23T01:04:12+00:00\n"
+"POT-Creation-Date: 2026-11-03T11:01:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: catalogx\n"
@@ -44,7 +44,6 @@ msgid "Dashboard"
 msgstr ""
 
 #: classes/Admin.php:76
-#: assets/js/index.js:1
 msgid "Enquiry Messages"
 msgstr ""
 
@@ -63,7 +62,7 @@ msgid "Dynamic Pricing Rules"
 msgstr ""
 
 #: classes/Admin.php:96
-#: classes/Promotions.php:70
+#: classes/Communications.php:75
 #: assets/js/index.js:1
 msgid "Settings"
 msgstr ""
@@ -74,9 +73,9 @@ msgid "Modules"
 msgstr ""
 
 #: classes/Admin.php:133
-#: classes/Promotions.php:81
-#: classes/Promotions.php:117
-#: classes/Promotions.php:118
+#: classes/Communications.php:86
+#: classes/Communications.php:122
+#: classes/Communications.php:123
 msgid "Upgrade to Pro"
 msgstr ""
 
@@ -98,6 +97,39 @@ msgstr ""
 #: modules/Enquiry/Frontend.php:338
 #: assets/js/block/enquiry-button/index.js:1
 msgid "Send an enquiry"
+msgstr ""
+
+#: classes/Communications.php:57
+msgid "Heads up!"
+msgstr ""
+
+#: classes/Communications.php:58
+msgid "6.0.0 is a major update. Make a full site backup before upgrading your marketplace to avoid any undesirable situations."
+msgstr ""
+
+#: classes/Communications.php:109
+msgid "Docs"
+msgstr ""
+
+#: classes/Communications.php:114
+#: assets/js/index.js:1
+msgid "Support"
+msgstr ""
+
+#: classes/Communications.php:145
+msgid "Improve your email deliverability with VuloMail"
+msgstr ""
+
+#: classes/Communications.php:148
+msgid "Track outgoing emails, monitor email delivery, and quickly identify failed notifications with VuloMail."
+msgstr ""
+
+#: classes/Communications.php:153
+msgid "Install VuloMail"
+msgstr ""
+
+#: classes/Communications.php:157
+msgid "Learn more"
 msgstr ""
 
 #: classes/Core/QuoteCart.php:233
@@ -152,23 +184,6 @@ msgstr ""
 msgid "No more product in Quote list!"
 msgstr ""
 
-#: classes/Promotions.php:52
-msgid "Heads up!"
-msgstr ""
-
-#: classes/Promotions.php:53
-msgid "6.0.0 is a major update. Make a full site backup before upgrading your marketplace to avoid any undesirable situations."
-msgstr ""
-
-#: classes/Promotions.php:104
-msgid "Docs"
-msgstr ""
-
-#: classes/Promotions.php:109
-#: assets/js/index.js:1
-msgid "Support"
-msgstr ""
-
 #: classes/RestAPI/Controllers/Logs.php:141
 msgid "Logs cleared successfully."
 msgstr ""
@@ -186,11 +201,11 @@ msgstr ""
 msgid "Settings Saved"
 msgstr ""
 
-#: classes/Utill.php:354
+#: classes/Utill.php:355
 msgid "Invalid nonce."
 msgstr ""
 
-#: classes/Utill.php:447
+#: classes/Utill.php:448
 msgid "Unexpected server error."
 msgstr ""
 
